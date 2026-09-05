@@ -28,10 +28,12 @@ function openEntityDetail(id: string): void {
   document.body.appendChild(overlay)
 }
 
+const log: RollEntry[] = []
+let logCollapsed = true
+let lastEntry: RollEntry | null = null
+
 export function TablesView(): HTMLElement {
   const tables = getTables()
-  const log: RollEntry[] = []
-  let logCollapsed = true
 
   const el = document.createElement('div')
   el.className = 'view tables-view'
@@ -42,7 +44,11 @@ export function TablesView(): HTMLElement {
 
   const resultArea = document.createElement('div')
   resultArea.className = 'tables-view__result'
-  resultArea.hidden = true
+  resultArea.hidden = lastEntry === null
+
+  if (lastEntry !== null) {
+    resultArea.appendChild(RollResult(lastEntry, 0, { onEntityClick: openEntityDetail }))
+  }
 
   const logContainer = document.createElement('div')
   logContainer.className = 'tables-view__log'
@@ -95,6 +101,7 @@ export function TablesView(): HTMLElement {
     const input = table.requiresInput ? await promptForInput(table) : undefined
     const entry = await rollTable(table, input, promptForInput)
 
+    lastEntry = entry
     resultArea.innerHTML = ''
     resultArea.appendChild(RollResult(entry, 0, { onEntityClick: openEntityDetail }))
     resultArea.hidden = false
