@@ -1,5 +1,5 @@
 import type { Creature } from '../types'
-import type { EncounterCreature, EncounterState } from '../types/encounter'
+import type { EncounterState } from '../types/encounter'
 
 let state: EncounterState = { creatures: [], round: 1 }
 const listeners = new Set<() => void>()
