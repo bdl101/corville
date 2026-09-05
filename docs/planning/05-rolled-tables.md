@@ -37,9 +37,10 @@ Implement the full Tables view: table selection, optional user input prompting, 
 ### Chain Resolution
 
 - If the matched result has a `chain` field, automatically look up that table by ID and roll it
-- Append the chained result below the primary result
-- Continue resolving chains recursively until a result has no `chain`
-- Each level of the chain should be visually distinct (indented or labelled) so the user can follow the sequence
+- If the matched result has a `chains` field (array), roll each referenced table in order
+- Append chained results below the primary result, each visually distinct (indented or labelled)
+- Continue resolving chains recursively until a result has no `chain` or `chains`
+- If a chained table has `requiresInput`, prompt the user for that input before rolling it — chains do not skip input prompts
 
 ### Session Log
 
@@ -59,19 +60,21 @@ export interface RollEntry {
   table: RolledTable
   rolledValue: number
   result: TableResult
-  input?: string          // selected input option if table required one
-  chain?: RollEntry       // recursively nested chained roll
+  input?: string           // selected input option if table required one
+  chains?: RollEntry[]     // resolved chain(s) — one entry per chain/chains reference
 }
 
 export function rollTable(table: RolledTable, input?: string): RollEntry
-export function resolveChain(result: TableResult): RollEntry | undefined
+export function resolveChains(result: TableResult, onNeedsInput: (table: RolledTable) => Promise<string>): Promise<RollEntry[]>
 ```
 
 `rollTable` should:
 1. Roll `Math.ceil(Math.random() * table.die)`
 2. Find the matching `TableResult`
-3. Recursively call `resolveChain` if a `chain` is present
+3. Call `resolveChains` for `chain` or `chains` if present
 4. Return a fully resolved `RollEntry`
+
+`resolveChains` handles both the single `chain` and multi-table `chains` cases, and calls `onNeedsInput` when a chained table requires user input before rolling.
 
 ## Component Structure
 

@@ -119,7 +119,8 @@ _Note_: For the purposes of this doc, the term `creatures` refers to any no-PC e
 - Lookup is divided into two sub-lists: **Creatures** (monsters + NPCs) and **Items**
 - Each list supports filter-as-you-type search
 - Selecting an entry opens a full detail view (replaces the list; back button returns to list)
-- Specific statblock fields per entity type are TBD — to be defined when playtest PDF is reviewed
+- Creature fields: name, size, power, type, stamina, speed, agility, mind, strength, attacks, features; humans also have AD, expertises, and equipment; monsters also have colloquial names and reactions
+- Item fields: name, category (weapon/armor/ammo/consumable/magic/book/tool/gear/treasure), stack, slots, cost; weapons also have range, attackStat, damage tiers (12-16 / 17+), keywords; armor has AD; consumables and magic items have ud, maneuver/action text, and an optional RR table (≤11 / 12-16 / 17+); books have rank, school, actionType, range, target, duration, and an RR table; tools/gear have optional fine and masterwork upgrade descriptions
 
 ### Encounter Builder (post MVP)
 

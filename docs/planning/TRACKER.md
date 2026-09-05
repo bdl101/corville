@@ -33,8 +33,6 @@ Each milestone has a spec file with full task details, deliverables, and accepta
 These are out of scope until the MVP milestones above are complete.
 
 - **Encounter Builder** — track creatures in an encounter, stamina management, disabled state at 0 stamina. See rough feature spec in `docs/design-doc.md` under "Encounter Builder (post MVP)".
-- **Real creature/item data** — stub data in Spec 04 uses placeholder fields. Full field schema is defined in the Crows playtest PDF and needs to be transcribed into `src/data/creatures.json`, `src/data/items.json`, and the TypeScript types in `src/types/index.ts`.
-- **Real rolled table data** — same as above; full tables need to be transcribed from the PDF into `src/data/tables.json`.
 - **Browser localStorage persistence** — persist session state (current encounter, log) across page reloads.
 - **Conditions tracking** — apply and display conditions on creatures in the Encounter Builder.
 

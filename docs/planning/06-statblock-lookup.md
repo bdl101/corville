@@ -32,14 +32,47 @@ Implement the full Lookup view: tabbed Creatures/Items lists with filter-as-you-
 
 - Replaces the list (full view swap, not a side panel)
 - Shows a back button at the top to return to the list (restores previous filter state)
-- Displays all available fields for the entity
-- Since full field definitions are TBD (pending PDF review), render fields generically: iterate the entity object's keys and display each as a labelled row
-- Skip rendering `id` as it is an internal field
+- Renders fields in a structured layout based on creature type (see below)
 
-### Empty/Stub State
+**Common header** (all creatures):
+```
+[Name]                    [Type badge]
+Size: Medium  Power: 4    Stamina: 15
+Speed: 6      Agility: 1  Mind: 2  Strength: 0
+```
 
-- Stub data from Spec 04 will have minimal fields (name + id only)
-- The detail view should still render usefully with sparse data — e.g. just the name as a heading and a note that full stats are pending
+**Attacks table** (all creatures): name, range, tier 2 damage (12-16), tier 3 damage (17+)
+
+**Features list** (all creatures): each feature as a heading + description block; show `uses` next to the name if present (e.g. "Fire Beam — 1/Day")
+
+**Human-only fields** (rendered after attacks):
+- AD (if present)
+- Expertises (comma-separated list)
+- Equipment (comma-separated list)
+
+**Monster-only fields**:
+- Colloquial names (if present), rendered as italic subtitle below the name
+- Reactions (if not 1), shown in the header row
+
+**Item detail** — render by `category` using type guards (`entity.category === 'weapon'` etc.):
+
+*weapon*: name, keywords as badges, `range`, `attackStat`, damage table (12-16 | 17+ rows), `slots`, `stack`, crafting if present, cost
+
+*armor*: name, `AD: N` badge, `slots`, `stack`, crafting if present, cost
+
+*ammo*: name, `ammoFor`, `ud` if present, cost
+
+*consumable*: name, `ud` if present, maneuver text if present, action text if present, RR table (≤11 | 12-16 | 17+) if present, crafting if present, cost
+
+*magic*: name, slot badge if present, `ud` if present, maneuver/action text, RR table if present, crafting if present, cost
+
+*book*: name, rank badge (e.g. "R0"), school, action type, range, target if present, duration, `ud`, RR table if present, cost
+
+*tool*: name, description if present, Fine upgrade text if present, Masterwork upgrade text if present, crafting if present, cost
+
+*gear*: name, description if present, maneuver text if present, action text if present, RR table if present, Fine if present, Masterwork if present, crafting if present, cost
+
+*treasure*: name, description if present (value and type are ref-determined)
 
 ## Component Structure
 
@@ -74,19 +107,12 @@ Renders a `.card` with the entity name and a right-facing chevron or similar aff
 
 ```ts
 interface EntityDetailProps {
-  entity: Record<string, unknown>
+  entity: Creature | Item
   onBack: () => void
 }
 ```
 
-Renders:
-- Back button at the top
-- Entity name as a heading (`h2`)
-- Each non-`id` field as a labelled row:
-  ```
-  [Field Label]   [Field Value]
-  ```
-- Fields with object or array values should be rendered as JSON for now (pending real schema)
+Renders the structured layout described above. Use `'type' in entity` to discriminate between `Creature` and `Item` at the top level. For creatures, use `entity.type === 'Human'` etc. For items, use `entity.category === 'weapon'` etc. to select the correct rendering path.
 
 ### `LookupView`
 
