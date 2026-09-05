@@ -1,6 +1,11 @@
 import type { RollEntry } from '../logic/roller'
+import { getCreatureById, getItemById } from '../data/loader'
 
-export function RollResult(entry: RollEntry, depth = 0): HTMLElement {
+interface RollResultOptions {
+  onEntityClick?: (id: string) => void
+}
+
+export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptions = {}): HTMLElement {
   const el = document.createElement('div')
   el.className = depth === 0 ? 'roll-result' : 'roll-result roll-result--chained'
 
@@ -28,14 +33,26 @@ export function RollResult(entry: RollEntry, depth = 0): HTMLElement {
 
   const text = document.createElement('div')
   text.className = 'roll-result__text'
-  text.textContent = entry.result.text
+  text.textContent = entry.resolvedText
   el.appendChild(text)
+
+  if (entry.result.entityRef && options.onEntityClick) {
+    const ref = entry.result.entityRef
+    const entity = getCreatureById(ref) ?? getItemById(ref)
+    if (entity) {
+      const link = document.createElement('button')
+      link.className = 'btn btn--ghost roll-result__entity-link'
+      link.textContent = `${entity.name} →`
+      link.addEventListener('click', () => options.onEntityClick!(ref))
+      el.appendChild(link)
+    }
+  }
 
   if (entry.chains?.length) {
     const chainsEl = document.createElement('div')
     chainsEl.className = 'roll-result__chains'
     for (const chain of entry.chains) {
-      chainsEl.appendChild(RollResult(chain, depth + 1))
+      chainsEl.appendChild(RollResult(chain, depth + 1, options))
     }
     el.appendChild(chainsEl)
   }

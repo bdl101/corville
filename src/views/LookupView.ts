@@ -3,6 +3,7 @@ import { EntityList } from '../components/EntityList'
 import { EntityDetail } from '../components/EntityDetail'
 import type { Creature, Item } from '../types'
 
+
 type SubTab = 'creatures' | 'items'
 
 export function LookupView(): HTMLElement {
@@ -51,6 +52,9 @@ export function LookupView(): HTMLElement {
       },
       initialFilter: filterState[activeTab],
       onFilterChange: (f) => { filterState[activeTab] = f },
+      getMeta: activeTab === 'creatures'
+        ? (e) => (e as Creature).type
+        : (e) => (e as Item).category,
     })
     contentArea.appendChild(list)
   }

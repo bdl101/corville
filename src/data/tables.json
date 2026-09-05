@@ -4,14 +4,44 @@
     "name": "Travel Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 20], "text": "Any Monster", "chain": "any-monster-encounter" },
-      { "range": [21, 25], "text": "Bad Weather", "chain": "bad-weather" },
-      { "range": [26, 30], "text": "Merchant", "chains": ["merchant-sales", "merchant-guards"] },
-      { "range": [31, 50], "text": "Miasma-Touched", "chains": ["miasma-touched-humans", "miasma-touched-encounters"] },
-      { "range": [51, 70], "text": "Monster from Nearby — use the encounter table for the nearest dungeon" },
-      { "range": [71, 75], "text": "Strong Miasma — the area is saturated with miasma" },
-      { "range": [76, 80], "text": "Traveler", "chains": ["travelers", "traveler-encounters"] },
-      { "range": [81, 100], "text": "Wild Animal — roll on the habitat animal encounter table, then Wild Animal Reaction", "chain": "wild-animal-reaction" }
+      {
+        "range": [1, 20],
+        "text": "Any Monster",
+        "chain": "any-monster-encounter"
+      },
+      {
+        "range": [21, 25],
+        "text": "Bad Weather",
+        "chain": "bad-weather"
+      },
+      {
+        "range": [26, 30],
+        "text": "Merchant",
+        "chains": ["merchant-sales", "merchant-guards"]
+      },
+      {
+        "range": [31, 50],
+        "text": "Miasma-Touched",
+        "chains": ["miasma-touched-humans", "miasma-touched-encounters"]
+      },
+      {
+        "range": [51, 70],
+        "text": "Monster from Nearby — use the encounter table for the nearest dungeon"
+      },
+      {
+        "range": [71, 75],
+        "text": "Strong Miasma — the area is saturated with miasma"
+      },
+      {
+        "range": [76, 80],
+        "text": "Traveler",
+        "chains": ["travelers", "traveler-encounters"]
+      },
+      {
+        "range": [81, 100],
+        "text": "Wild Animal — roll on the habitat animal encounter table, then Wild Animal Reaction",
+        "chain": "wild-animal-reaction"
+      }
     ]
   },
   {
@@ -20,11 +50,31 @@
     "die": 10,
     "notes": "Only the Blood Dungeon and Undead Dungeon encounter tables exist in this playtest. This will be updated in future versions of the game.",
     "results": [
-      { "range": [1, 2], "text": "Angel Dungeon Encounters", "chain": "angel-dungeon-encounters" },
-      { "range": [3, 4], "text": "Blood Dungeon Encounters", "chain": "blood-dungeon-encounters" },
-      { "range": [5, 6], "text": "Demon Dungeon Encounters", "chain": "demon-dungeon-encounters" },
-      { "range": [7, 8], "text": "Plant Dungeon Encounters", "chain": "plant-dungeon-encounters" },
-      { "range": [9, 10], "text": "Undead Dungeon Encounters", "chain": "undead-dungeon-encounters" }
+      {
+        "range": [1, 2],
+        "text": "Angel Dungeon Encounters",
+        "chain": "angel-dungeon-encounters"
+      },
+      {
+        "range": [3, 4],
+        "text": "Blood Dungeon Encounters",
+        "chain": "blood-dungeon-encounters"
+      },
+      {
+        "range": [5, 6],
+        "text": "Demon Dungeon Encounters",
+        "chain": "demon-dungeon-encounters"
+      },
+      {
+        "range": [7, 8],
+        "text": "Plant Dungeon Encounters",
+        "chain": "plant-dungeon-encounters"
+      },
+      {
+        "range": [9, 10],
+        "text": "Undead Dungeon Encounters",
+        "chain": "undead-dungeon-encounters"
+      }
     ]
   },
   {
@@ -33,7 +83,13 @@
     "die": 2,
     "requiresInput": {
       "prompt": "What is the current climate or season?",
-      "options": ["Cold or Winter", "Desert", "Fall", "Spring", "Tropical or Summer"]
+      "options": [
+        "Cold or Winter",
+        "Desert",
+        "Fall",
+        "Spring",
+        "Tropical or Summer"
+      ]
     },
     "results": [
       {
@@ -51,26 +107,86 @@
     "name": "Merchant Sales",
     "die": 100,
     "results": [
-      { "range": [1, 10], "text": "Alchemist — 1st level" },
-      { "range": [11, 15], "text": "Alchemist — 2nd level" },
-      { "range": [16, 18], "text": "Alchemist — 3rd level" },
-      { "range": [19, 20], "text": "Alchemist — 4th level" },
-      { "range": [21, 30], "text": "Blacksmith — 1st level" },
-      { "range": [31, 35], "text": "Blacksmith — 2nd level" },
-      { "range": [36, 38], "text": "Blacksmith — 3rd level" },
-      { "range": [39, 40], "text": "Blacksmith — 4th level" },
-      { "range": [41, 50], "text": "Bookseller — 1st level" },
-      { "range": [51, 55], "text": "Bookseller — 2nd level" },
-      { "range": [56, 58], "text": "Bookseller — 3rd level" },
-      { "range": [59, 60], "text": "Bookseller — 4th level" },
-      { "range": [61, 70], "text": "Enchanter — 1st level" },
-      { "range": [71, 75], "text": "Enchanter — 2nd level" },
-      { "range": [76, 78], "text": "Enchanter — 3rd level" },
-      { "range": [79, 80], "text": "Enchanter — 4th level" },
-      { "range": [81, 90], "text": "General Store — 1st level" },
-      { "range": [91, 95], "text": "General Store — 2nd level" },
-      { "range": [96, 98], "text": "General Store — 3rd level" },
-      { "range": [99, 100], "text": "Roll twice — merchant operates as two different institutions" }
+      {
+        "range": [1, 10],
+        "text": "Alchemist — 1st level"
+      },
+      {
+        "range": [11, 15],
+        "text": "Alchemist — 2nd level"
+      },
+      {
+        "range": [16, 18],
+        "text": "Alchemist — 3rd level"
+      },
+      {
+        "range": [19, 20],
+        "text": "Alchemist — 4th level"
+      },
+      {
+        "range": [21, 30],
+        "text": "Blacksmith — 1st level"
+      },
+      {
+        "range": [31, 35],
+        "text": "Blacksmith — 2nd level"
+      },
+      {
+        "range": [36, 38],
+        "text": "Blacksmith — 3rd level"
+      },
+      {
+        "range": [39, 40],
+        "text": "Blacksmith — 4th level"
+      },
+      {
+        "range": [41, 50],
+        "text": "Bookseller — 1st level"
+      },
+      {
+        "range": [51, 55],
+        "text": "Bookseller — 2nd level"
+      },
+      {
+        "range": [56, 58],
+        "text": "Bookseller — 3rd level"
+      },
+      {
+        "range": [59, 60],
+        "text": "Bookseller — 4th level"
+      },
+      {
+        "range": [61, 70],
+        "text": "Enchanter — 1st level"
+      },
+      {
+        "range": [71, 75],
+        "text": "Enchanter — 2nd level"
+      },
+      {
+        "range": [76, 78],
+        "text": "Enchanter — 3rd level"
+      },
+      {
+        "range": [79, 80],
+        "text": "Enchanter — 4th level"
+      },
+      {
+        "range": [81, 90],
+        "text": "General Store — 1st level"
+      },
+      {
+        "range": [91, 95],
+        "text": "General Store — 2nd level"
+      },
+      {
+        "range": [96, 98],
+        "text": "General Store — 3rd level"
+      },
+      {
+        "range": [99, 100],
+        "text": "Roll twice — merchant operates as two different institutions"
+      }
     ]
   },
   {
@@ -78,12 +194,35 @@
     "name": "Blood Dungeon Encounters",
     "die": 6,
     "results": [
-      { "range": [1, 1], "text": "1d6 Blood Creature A" },
-      { "range": [2, 2], "text": "2d6 Blood Creature A" },
-      { "range": [3, 3], "text": "1 Blood Creature B" },
-      { "range": [4, 4], "text": "1d6 Blood Creature B" },
-      { "range": [5, 5], "text": "1 Blood Creature C" },
-      { "range": [6, 6], "text": "1 Blood Creature C and 1d6 Blood Creature A" }
+      {
+        "range": [1, 1],
+        "text": "1d6 Blood Creature A",
+        "entityRef": "blood-creature-a"
+      },
+      {
+        "range": [2, 2],
+        "text": "2d6 Blood Creature A",
+        "entityRef": "blood-creature-a"
+      },
+      {
+        "range": [3, 3],
+        "text": "1 Blood Creature B",
+        "entityRef": "blood-creature-b"
+      },
+      {
+        "range": [4, 4],
+        "text": "1d6 Blood Creature B",
+        "entityRef": "blood-creature-b"
+      },
+      {
+        "range": [5, 5],
+        "text": "1 Blood Creature C",
+        "entityRef": "blood-creature-c"
+      },
+      {
+        "range": [6, 6],
+        "text": "1 Blood Creature C and 1d6 Blood Creature A"
+      }
     ]
   },
   {
@@ -91,16 +230,54 @@
     "name": "Undead Dungeon Encounters",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "1d6 Undead A" },
-      { "range": [2, 2], "text": "1d6 Undead A and 1 Undead B" },
-      { "range": [3, 3], "text": "1d6 Undead B" },
-      { "range": [4, 4], "text": "2d6 Undead A" },
-      { "range": [5, 5], "text": "1d6 Undead A and 1d6 Undead B" },
-      { "range": [6, 6], "text": "1 Undead C" },
-      { "range": [7, 7], "text": "2 Undead C" },
-      { "range": [8, 8], "text": "1 Undead D" },
-      { "range": [9, 9], "text": "1 Undead E" },
-      { "range": [10, 10], "text": "1 Undead F" }
+      {
+        "range": [1, 1],
+        "text": "1d6 Undead A",
+        "entityRef": "undead-a"
+      },
+      {
+        "range": [2, 2],
+        "text": "1d6 Undead A and 1 Undead B"
+      },
+      {
+        "range": [3, 3],
+        "text": "1d6 Undead B",
+        "entityRef": "undead-b"
+      },
+      {
+        "range": [4, 4],
+        "text": "2d6 Undead A",
+        "entityRef": "undead-a"
+      },
+      {
+        "range": [5, 5],
+        "text": "1d6 Undead A and 1d6 Undead B"
+      },
+      {
+        "range": [6, 6],
+        "text": "1 Undead C",
+        "entityRef": "undead-c"
+      },
+      {
+        "range": [7, 7],
+        "text": "2 Undead C",
+        "entityRef": "undead-c"
+      },
+      {
+        "range": [8, 8],
+        "text": "1 Undead D",
+        "entityRef": "undead-d"
+      },
+      {
+        "range": [9, 9],
+        "text": "1 Undead E",
+        "entityRef": "undead-e"
+      },
+      {
+        "range": [10, 10],
+        "text": "1 Undead F",
+        "entityRef": "undead-f"
+      }
     ]
   },
   {
@@ -108,21 +285,66 @@
     "name": "Wild Animal Reaction",
     "die": 100,
     "results": [
-      { "range": [1, 5], "text": "Asleep — unconscious in the PCs' path. Waking the animal causes them to become violent." },
-      { "range": [6, 10], "text": "Attached — inexplicably attracted to a randomly chosen PC. Follows and is friendly toward that PC, but frightened of all others." },
-      { "range": [11, 15], "text": "Curious — approaches cautiously but openly. Aggressive behavior causes fright; calm behavior causes them to investigate then leave; sharing food makes them friendly." },
-      { "range": [16, 20], "text": "Embattled — pick or roll on an encounter table for other animals, humans, or monsters battling the animals. If the PCs aid the original group, one animal becomes friendly." },
-      { "range": [21, 25], "text": "Friendly — happily follows the PCs for an hour. A PC can make a test to become the animal's owner. Mean or aggressive behavior causes them to flee." },
-      { "range": [26, 35], "text": "Frightened — freezes and stares at the PCs. Anything other than utmost calm causes flight (if outmatched and has a way out) or fighting until PCs flee (if cornered). A Mind test with Handle Animal can turn attitude to curious." },
-      { "range": [36, 45], "text": "Hungry — approaches when PCs are eating. If given ≥1 ration, becomes friendly. If not fed, attacks to steal food and flee." },
-      { "range": [46, 50], "text": "Injured — Stamina equal to half maximum, visibly hurt. Frightened and considered cornered, but any PC who heals them turns their attitude to friendly." },
-      { "range": [51, 55], "text": "Playful — wants to catch sticks, be chased, wrestle, etc. Approaches energetically. If PCs engage in play, becomes friendly. If not, becomes violent." },
-      { "range": [56, 65], "text": "Protective — guarding something; attacks any creature who approaches it; fights to the death. Roll any die: even = defending a nest with 1d10 babies or eggs (each sellable to a village stables as a pet). Odd = protecting one thing from the Minor Interesting Things table." },
-      { "range": [66, 70], "text": "Stalking — follows the PCs from hidden positions. Waits until one or two PCs are alone, then pounces." },
-      { "range": [71, 80], "text": "Starved — desperate for food. Approaches aggressively. Attacks unless given a full day's worth of food (by size), then flees. Carnivores may attempt to kill and carry off a PC if not fed." },
-      { "range": [81, 90], "text": "Territorial — follows the PCs displaying aggression but never closing in. Stops pursuing when PCs exit the hex where the encounter occurred. If the PCs stop moving, attacks and fights to the death." },
-      { "range": [91, 95], "text": "Treasure-Seeking — attracted to something a PC wears or holds (often shiny or looks like food). Makes its interest clear; attacks if not given the item." },
-      { "range": [96, 100], "text": "Violent — out for blood due to past trauma or incurable infection. Ambushes and attacks the PCs." }
+      {
+        "range": [1, 5],
+        "text": "Asleep — unconscious in the PCs' path. Waking the animal causes them to become violent."
+      },
+      {
+        "range": [6, 10],
+        "text": "Attached — inexplicably attracted to a randomly chosen PC. Follows and is friendly toward that PC, but frightened of all others."
+      },
+      {
+        "range": [11, 15],
+        "text": "Curious — approaches cautiously but openly. Aggressive behavior causes fright; calm behavior causes them to investigate then leave; sharing food makes them friendly."
+      },
+      {
+        "range": [16, 20],
+        "text": "Embattled — pick or roll on an encounter table for other animals, humans, or monsters battling the animals. If the PCs aid the original group, one animal becomes friendly."
+      },
+      {
+        "range": [21, 25],
+        "text": "Friendly — happily follows the PCs for an hour. A PC can make a test to become the animal's owner. Mean or aggressive behavior causes them to flee."
+      },
+      {
+        "range": [26, 35],
+        "text": "Frightened — freezes and stares at the PCs. Anything other than utmost calm causes flight (if outmatched and has a way out) or fighting until PCs flee (if cornered). A Mind test with Handle Animal can turn attitude to curious."
+      },
+      {
+        "range": [36, 45],
+        "text": "Hungry — approaches when PCs are eating. If given ≥1 ration, becomes friendly. If not fed, attacks to steal food and flee."
+      },
+      {
+        "range": [46, 50],
+        "text": "Injured — Stamina equal to half maximum, visibly hurt. Frightened and considered cornered, but any PC who heals them turns their attitude to friendly."
+      },
+      {
+        "range": [51, 55],
+        "text": "Playful — wants to catch sticks, be chased, wrestle, etc. Approaches energetically. If PCs engage in play, becomes friendly. If not, becomes violent."
+      },
+      {
+        "range": [56, 65],
+        "text": "Protective — guarding something; attacks any creature who approaches it; fights to the death. Roll any die: even = defending a nest with 1d10 babies or eggs (each sellable to a village stables as a pet). Odd = protecting one thing from the Minor Interesting Things table."
+      },
+      {
+        "range": [66, 70],
+        "text": "Stalking — follows the PCs from hidden positions. Waits until one or two PCs are alone, then pounces."
+      },
+      {
+        "range": [71, 80],
+        "text": "Starved — desperate for food. Approaches aggressively. Attacks unless given a full day's worth of food (by size), then flees. Carnivores may attempt to kill and carry off a PC if not fed."
+      },
+      {
+        "range": [81, 90],
+        "text": "Territorial — follows the PCs displaying aggression but never closing in. Stops pursuing when PCs exit the hex where the encounter occurred. If the PCs stop moving, attacks and fights to the death."
+      },
+      {
+        "range": [91, 95],
+        "text": "Treasure-Seeking — attracted to something a PC wears or holds (often shiny or looks like food). Makes its interest clear; attacks if not given the item."
+      },
+      {
+        "range": [96, 100],
+        "text": "Violent — out for blood due to past trauma or incurable infection. Ambushes and attacks the PCs."
+      }
     ]
   },
   {
@@ -130,16 +352,56 @@
     "name": "Coastal Animal Encounters",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "1 Crocodile" },
-      { "range": [2, 2], "text": "2 Crocodiles" },
-      { "range": [3, 3], "text": "1d6 Giant Crows" },
-      { "range": [4, 4], "text": "1 Hawk" },
-      { "range": [5, 5], "text": "1 Monitor Lizard" },
-      { "range": [6, 6], "text": "2 Monitor Lizards" },
-      { "range": [7, 7], "text": "1 Constrictor Snake" },
-      { "range": [8, 8], "text": "1 Venomous Snake" },
-      { "range": [9, 9], "text": "1 Giant Venomous Snake" },
-      { "range": [10, 10], "text": "1 Giant Spider" }
+      {
+        "range": [1, 1],
+        "text": "1 Crocodile",
+        "entityRef": "crocodile"
+      },
+      {
+        "range": [2, 2],
+        "text": "2 Crocodiles",
+        "entityRef": "crocodile"
+      },
+      {
+        "range": [3, 3],
+        "text": "1d6 Giant Crows",
+        "entityRef": "crow-giant"
+      },
+      {
+        "range": [4, 4],
+        "text": "1 Hawk",
+        "entityRef": "hawk"
+      },
+      {
+        "range": [5, 5],
+        "text": "1 Monitor Lizard",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [6, 6],
+        "text": "2 Monitor Lizards",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [7, 7],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [8, 8],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [9, 9],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [10, 10],
+        "text": "1 Giant Spider",
+        "entityRef": "spider-giant"
+      }
     ]
   },
   {
@@ -147,16 +409,55 @@
     "name": "Cold Climate Animal Encounters",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "1 Bear" },
-      { "range": [2, 2], "text": "2 Bears" },
-      { "range": [3, 3], "text": "1 Cave Bear" },
-      { "range": [4, 4], "text": "2 Cave Bears" },
-      { "range": [5, 5], "text": "2d6 Deer" },
-      { "range": [6, 6], "text": "1d6 Oxen" },
-      { "range": [7, 7], "text": "2d6 Oxen" },
-      { "range": [8, 8], "text": "1d6 Wolves" },
-      { "range": [9, 9], "text": "1 Dire Wolf" },
-      { "range": [10, 10], "text": "1 Dire Wolf and 1d6 Wolves" }
+      {
+        "range": [1, 1],
+        "text": "1 Bear",
+        "entityRef": "bear"
+      },
+      {
+        "range": [2, 2],
+        "text": "2 Bears",
+        "entityRef": "bear"
+      },
+      {
+        "range": [3, 3],
+        "text": "1 Cave Bear",
+        "entityRef": "bear-cave"
+      },
+      {
+        "range": [4, 4],
+        "text": "2 Cave Bears",
+        "entityRef": "bear-cave"
+      },
+      {
+        "range": [5, 5],
+        "text": "2d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [6, 6],
+        "text": "1d6 Oxen",
+        "entityRef": "ox"
+      },
+      {
+        "range": [7, 7],
+        "text": "2d6 Oxen",
+        "entityRef": "ox"
+      },
+      {
+        "range": [8, 8],
+        "text": "1d6 Wolves",
+        "entityRef": "wolf"
+      },
+      {
+        "range": [9, 9],
+        "text": "1 Dire Wolf",
+        "entityRef": "wolf-dire"
+      },
+      {
+        "range": [10, 10],
+        "text": "1 Dire Wolf and 1d6 Wolves"
+      }
     ]
   },
   {
@@ -164,21 +465,81 @@
     "name": "Desert Animal Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 7], "text": "1 Big Cat" },
-      { "range": [8, 13], "text": "1d6 Big Cats" },
-      { "range": [14, 20], "text": "2d6 Dogs" },
-      { "range": [21, 27], "text": "1 Elephant" },
-      { "range": [28, 33], "text": "2d6 Elephants" },
-      { "range": [34, 40], "text": "1 Monitor Lizard" },
-      { "range": [41, 46], "text": "2 Monitor Lizards" },
-      { "range": [47, 53], "text": "1 Giant Scorpion" },
-      { "range": [54, 59], "text": "2 Giant Scorpions" },
-      { "range": [60, 66], "text": "1 Constrictor Snake" },
-      { "range": [67, 73], "text": "1 Venomous Snake" },
-      { "range": [74, 80], "text": "1 Giant Venomous Snake" },
-      { "range": [81, 87], "text": "2d6 Venomous Snakes" },
-      { "range": [88, 94], "text": "1 Giant Spider" },
-      { "range": [95, 100], "text": "2 Giant Spiders" }
+      {
+        "range": [1, 7],
+        "text": "1 Big Cat",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [8, 13],
+        "text": "1d6 Big Cats",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [14, 20],
+        "text": "2d6 Dogs",
+        "entityRef": "dog"
+      },
+      {
+        "range": [21, 27],
+        "text": "1 Elephant",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [28, 33],
+        "text": "2d6 Elephants",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [34, 40],
+        "text": "1 Monitor Lizard",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [41, 46],
+        "text": "2 Monitor Lizards",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [47, 53],
+        "text": "1 Giant Scorpion",
+        "entityRef": "scorpion-giant"
+      },
+      {
+        "range": [54, 59],
+        "text": "2 Giant Scorpions",
+        "entityRef": "scorpion-giant"
+      },
+      {
+        "range": [60, 66],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [67, 73],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [74, 80],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [81, 87],
+        "text": "2d6 Venomous Snakes",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [88, 94],
+        "text": "1 Giant Spider",
+        "entityRef": "spider-giant"
+      },
+      {
+        "range": [95, 100],
+        "text": "2 Giant Spiders",
+        "entityRef": "spider-giant"
+      }
     ]
   },
   {
@@ -186,26 +547,104 @@
     "name": "Forest Animal Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 5], "text": "1 Ape" },
-      { "range": [6, 10], "text": "1d6 Apes" },
-      { "range": [11, 15], "text": "1 Bear" },
-      { "range": [16, 20], "text": "2 Bears" },
-      { "range": [21, 25], "text": "1 Big Cat" },
-      { "range": [26, 30], "text": "1 Wildcat" },
-      { "range": [31, 35], "text": "1d6 Giant Crows" },
-      { "range": [36, 40], "text": "2d6 Deer" },
-      { "range": [41, 45], "text": "2d6 Dogs" },
-      { "range": [46, 50], "text": "1 Elephant" },
-      { "range": [51, 55], "text": "2d6 Elephants" },
-      { "range": [56, 60], "text": "1 Hawk" },
-      { "range": [61, 65], "text": "1 Constrictor Snake" },
-      { "range": [66, 70], "text": "1 Venomous Snake" },
-      { "range": [71, 75], "text": "1 Giant Venomous Snake" },
-      { "range": [76, 80], "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes" },
-      { "range": [81, 85], "text": "1 Giant Spider" },
-      { "range": [86, 90], "text": "2 Giant Spiders" },
-      { "range": [91, 95], "text": "1d6 Wolves" },
-      { "range": [96, 100], "text": "1 Dire Wolf and 1d6 Wolves" }
+      {
+        "range": [1, 5],
+        "text": "1 Ape",
+        "entityRef": "ape"
+      },
+      {
+        "range": [6, 10],
+        "text": "1d6 Apes",
+        "entityRef": "ape"
+      },
+      {
+        "range": [11, 15],
+        "text": "1 Bear",
+        "entityRef": "bear"
+      },
+      {
+        "range": [16, 20],
+        "text": "2 Bears",
+        "entityRef": "bear"
+      },
+      {
+        "range": [21, 25],
+        "text": "1 Big Cat",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [26, 30],
+        "text": "1 Wildcat",
+        "entityRef": "wildcat"
+      },
+      {
+        "range": [31, 35],
+        "text": "1d6 Giant Crows",
+        "entityRef": "crow-giant"
+      },
+      {
+        "range": [36, 40],
+        "text": "2d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [41, 45],
+        "text": "2d6 Dogs",
+        "entityRef": "dog"
+      },
+      {
+        "range": [46, 50],
+        "text": "1 Elephant",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [51, 55],
+        "text": "2d6 Elephants",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [56, 60],
+        "text": "1 Hawk",
+        "entityRef": "hawk"
+      },
+      {
+        "range": [61, 65],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [66, 70],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [71, 75],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [76, 80],
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+      },
+      {
+        "range": [81, 85],
+        "text": "1 Giant Spider",
+        "entityRef": "spider-giant"
+      },
+      {
+        "range": [86, 90],
+        "text": "2 Giant Spiders",
+        "entityRef": "spider-giant"
+      },
+      {
+        "range": [91, 95],
+        "text": "1d6 Wolves",
+        "entityRef": "wolf"
+      },
+      {
+        "range": [96, 100],
+        "text": "1 Dire Wolf and 1d6 Wolves"
+      }
     ]
   },
   {
@@ -213,26 +652,104 @@
     "name": "Grassland Animal Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 5], "text": "1 Bear" },
-      { "range": [6, 10], "text": "2 Bears" },
-      { "range": [11, 15], "text": "1 Big Cat" },
-      { "range": [16, 20], "text": "1d6 Big Cats" },
-      { "range": [21, 25], "text": "1 Wildcat" },
-      { "range": [26, 30], "text": "1d6 Deer" },
-      { "range": [31, 35], "text": "2d6 Deer" },
-      { "range": [36, 40], "text": "1 Dog" },
-      { "range": [41, 45], "text": "2d6 Dogs" },
-      { "range": [46, 50], "text": "1 Elephant" },
-      { "range": [51, 55], "text": "2d6 Elephants" },
-      { "range": [56, 60], "text": "1 Hawk" },
-      { "range": [61, 65], "text": "2 Hawks" },
-      { "range": [66, 70], "text": "1 Constrictor Snake" },
-      { "range": [71, 75], "text": "1 Venomous Snake" },
-      { "range": [76, 80], "text": "1 Giant Venomous Snake" },
-      { "range": [81, 85], "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes" },
-      { "range": [86, 90], "text": "1d6 Wolves" },
-      { "range": [91, 95], "text": "1 Dire Wolf" },
-      { "range": [96, 100], "text": "1 Dire Wolf and 1d6 Wolves" }
+      {
+        "range": [1, 5],
+        "text": "1 Bear",
+        "entityRef": "bear"
+      },
+      {
+        "range": [6, 10],
+        "text": "2 Bears",
+        "entityRef": "bear"
+      },
+      {
+        "range": [11, 15],
+        "text": "1 Big Cat",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [16, 20],
+        "text": "1d6 Big Cats",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [21, 25],
+        "text": "1 Wildcat",
+        "entityRef": "wildcat"
+      },
+      {
+        "range": [26, 30],
+        "text": "1d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [31, 35],
+        "text": "2d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [36, 40],
+        "text": "1 Dog",
+        "entityRef": "dog"
+      },
+      {
+        "range": [41, 45],
+        "text": "2d6 Dogs",
+        "entityRef": "dog"
+      },
+      {
+        "range": [46, 50],
+        "text": "1 Elephant",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [51, 55],
+        "text": "2d6 Elephants",
+        "entityRef": "elephant"
+      },
+      {
+        "range": [56, 60],
+        "text": "1 Hawk",
+        "entityRef": "hawk"
+      },
+      {
+        "range": [61, 65],
+        "text": "2 Hawks",
+        "entityRef": "hawk"
+      },
+      {
+        "range": [66, 70],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [71, 75],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [76, 80],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [81, 85],
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+      },
+      {
+        "range": [86, 90],
+        "text": "1d6 Wolves",
+        "entityRef": "wolf"
+      },
+      {
+        "range": [91, 95],
+        "text": "1 Dire Wolf",
+        "entityRef": "wolf-dire"
+      },
+      {
+        "range": [96, 100],
+        "text": "1 Dire Wolf and 1d6 Wolves"
+      }
     ]
   },
   {
@@ -240,26 +757,104 @@
     "name": "Hill/Mountain Animal Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 5], "text": "1 Bear" },
-      { "range": [6, 10], "text": "2 Bears" },
-      { "range": [11, 15], "text": "1 Cave Bear" },
-      { "range": [16, 20], "text": "1 Big Cat" },
-      { "range": [21, 25], "text": "1d6 Big Cats" },
-      { "range": [26, 30], "text": "1 Wildcat" },
-      { "range": [31, 35], "text": "1d6 Deer" },
-      { "range": [36, 40], "text": "2d6 Deer" },
-      { "range": [41, 45], "text": "1 Dog" },
-      { "range": [46, 50], "text": "2d6 Dogs" },
-      { "range": [51, 55], "text": "2d6 Goats" },
-      { "range": [56, 60], "text": "1 Hawk" },
-      { "range": [61, 65], "text": "1 Giant Scorpion" },
-      { "range": [66, 70], "text": "1 Constrictor Snake" },
-      { "range": [71, 75], "text": "1 Venomous Snake" },
-      { "range": [76, 80], "text": "1 Giant Venomous Snake" },
-      { "range": [81, 85], "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes" },
-      { "range": [86, 90], "text": "1 Giant Spider" },
-      { "range": [91, 95], "text": "1d6 Wolves" },
-      { "range": [96, 100], "text": "1 Dire Wolf and 1d6 Wolves" }
+      {
+        "range": [1, 5],
+        "text": "1 Bear",
+        "entityRef": "bear"
+      },
+      {
+        "range": [6, 10],
+        "text": "2 Bears",
+        "entityRef": "bear"
+      },
+      {
+        "range": [11, 15],
+        "text": "1 Cave Bear",
+        "entityRef": "bear-cave"
+      },
+      {
+        "range": [16, 20],
+        "text": "1 Big Cat",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [21, 25],
+        "text": "1d6 Big Cats",
+        "entityRef": "cat-big"
+      },
+      {
+        "range": [26, 30],
+        "text": "1 Wildcat",
+        "entityRef": "wildcat"
+      },
+      {
+        "range": [31, 35],
+        "text": "1d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [36, 40],
+        "text": "2d6 Deer",
+        "entityRef": "deer"
+      },
+      {
+        "range": [41, 45],
+        "text": "1 Dog",
+        "entityRef": "dog"
+      },
+      {
+        "range": [46, 50],
+        "text": "2d6 Dogs",
+        "entityRef": "dog"
+      },
+      {
+        "range": [51, 55],
+        "text": "2d6 Goats",
+        "entityRef": "goat"
+      },
+      {
+        "range": [56, 60],
+        "text": "1 Hawk",
+        "entityRef": "hawk"
+      },
+      {
+        "range": [61, 65],
+        "text": "1 Giant Scorpion",
+        "entityRef": "scorpion-giant"
+      },
+      {
+        "range": [66, 70],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [71, 75],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [76, 80],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [81, 85],
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+      },
+      {
+        "range": [86, 90],
+        "text": "1 Giant Spider",
+        "entityRef": "spider-giant"
+      },
+      {
+        "range": [91, 95],
+        "text": "1d6 Wolves",
+        "entityRef": "wolf"
+      },
+      {
+        "range": [96, 100],
+        "text": "1 Dire Wolf and 1d6 Wolves"
+      }
     ]
   },
   {
@@ -267,16 +862,55 @@
     "name": "Marsh/Swamp Animal Encounters",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "1 Bear" },
-      { "range": [2, 2], "text": "1d6 Crocodiles" },
-      { "range": [3, 3], "text": "1d6 Giant Crows" },
-      { "range": [4, 4], "text": "1 Monitor Lizard" },
-      { "range": [5, 5], "text": "2 Monitor Lizards" },
-      { "range": [6, 6], "text": "1 Constrictor Snake" },
-      { "range": [7, 7], "text": "1 Venomous Snake" },
-      { "range": [8, 8], "text": "1 Giant Venomous Snake" },
-      { "range": [9, 9], "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes" },
-      { "range": [10, 10], "text": "1 Giant Spider" }
+      {
+        "range": [1, 1],
+        "text": "1 Bear",
+        "entityRef": "bear"
+      },
+      {
+        "range": [2, 2],
+        "text": "1d6 Crocodiles",
+        "entityRef": "crocodile"
+      },
+      {
+        "range": [3, 3],
+        "text": "1d6 Giant Crows",
+        "entityRef": "crow-giant"
+      },
+      {
+        "range": [4, 4],
+        "text": "1 Monitor Lizard",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [5, 5],
+        "text": "2 Monitor Lizards",
+        "entityRef": "monitor-lizard"
+      },
+      {
+        "range": [6, 6],
+        "text": "1 Constrictor Snake",
+        "entityRef": "snake-constrictor"
+      },
+      {
+        "range": [7, 7],
+        "text": "1 Venomous Snake",
+        "entityRef": "snake-venomous"
+      },
+      {
+        "range": [8, 8],
+        "text": "1 Giant Venomous Snake",
+        "entityRef": "snake-venomous-giant"
+      },
+      {
+        "range": [9, 9],
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+      },
+      {
+        "range": [10, 10],
+        "text": "1 Giant Spider",
+        "entityRef": "spider-giant"
+      }
     ]
   },
   {
@@ -284,16 +918,46 @@
     "name": "Merchant Guards",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "Archer (Power 4)" },
-      { "range": [2, 2], "text": "Archer (Power 7)" },
-      { "range": [3, 3], "text": "Archer (Power 8)" },
-      { "range": [4, 4], "text": "Elementalist" },
-      { "range": [5, 5], "text": "Pike Warrior (Power 4)" },
-      { "range": [6, 6], "text": "Pike Warrior (Power 7)" },
-      { "range": [7, 7], "text": "Pike Warrior (Power 10)" },
-      { "range": [8, 8], "text": "Sword Warrior (Power 4)" },
-      { "range": [9, 9], "text": "Sword Warrior (Power 7)" },
-      { "range": [10, 10], "text": "Sword Warrior (Power 10)" }
+      {
+        "range": [1, 1],
+        "text": "Archer (Power 4)"
+      },
+      {
+        "range": [2, 2],
+        "text": "Archer (Power 7)"
+      },
+      {
+        "range": [3, 3],
+        "text": "Archer (Power 8)"
+      },
+      {
+        "range": [4, 4],
+        "text": "Elementalist"
+      },
+      {
+        "range": [5, 5],
+        "text": "Pike Warrior (Power 4)"
+      },
+      {
+        "range": [6, 6],
+        "text": "Pike Warrior (Power 7)"
+      },
+      {
+        "range": [7, 7],
+        "text": "Pike Warrior (Power 10)"
+      },
+      {
+        "range": [8, 8],
+        "text": "Sword Warrior (Power 4)"
+      },
+      {
+        "range": [9, 9],
+        "text": "Sword Warrior (Power 7)"
+      },
+      {
+        "range": [10, 10],
+        "text": "Sword Warrior (Power 10)"
+      }
     ]
   },
   {
@@ -301,31 +965,106 @@
     "name": "Miasma-Touched Humans",
     "die": 100,
     "results": [
-      { "range": [1, 4], "text": "Alchemist" },
-      { "range": [5, 8], "text": "Archer (Power 4)" },
-      { "range": [9, 12], "text": "Archer (Power 7)" },
-      { "range": [13, 16], "text": "Archer (Power 8)" },
-      { "range": [17, 20], "text": "Blacksmith" },
-      { "range": [21, 24], "text": "Conjurer" },
-      { "range": [25, 28], "text": "Cultist" },
-      { "range": [29, 32], "text": "Elementalist" },
-      { "range": [33, 36], "text": "Enchanter" },
-      { "range": [37, 40], "text": "Guide" },
-      { "range": [41, 44], "text": "Illusionist" },
-      { "range": [45, 48], "text": "Priest" },
-      { "range": [49, 52], "text": "Sage (Power 3)" },
-      { "range": [53, 56], "text": "Sage (Power 6)" },
-      { "range": [57, 60], "text": "Thief (Power 3)" },
-      { "range": [61, 64], "text": "Thief (Power 6)" },
-      { "range": [65, 68], "text": "Thief (Power 9)" },
-      { "range": [69, 72], "text": "Transmuter" },
-      { "range": [73, 76], "text": "Trapper" },
-      { "range": [77, 80], "text": "Pike Warrior (Power 4)" },
-      { "range": [81, 84], "text": "Pike Warrior (Power 7)" },
-      { "range": [85, 88], "text": "Pike Warrior (Power 10)" },
-      { "range": [89, 92], "text": "Sword Warrior (Power 4)" },
-      { "range": [93, 96], "text": "Sword Warrior (Power 7)" },
-      { "range": [97, 100], "text": "Sword Warrior (Power 10)" }
+      {
+        "range": [1, 4],
+        "text": "Alchemist"
+      },
+      {
+        "range": [5, 8],
+        "text": "Archer (Power 4)"
+      },
+      {
+        "range": [9, 12],
+        "text": "Archer (Power 7)"
+      },
+      {
+        "range": [13, 16],
+        "text": "Archer (Power 8)"
+      },
+      {
+        "range": [17, 20],
+        "text": "Blacksmith"
+      },
+      {
+        "range": [21, 24],
+        "text": "Conjurer"
+      },
+      {
+        "range": [25, 28],
+        "text": "Cultist"
+      },
+      {
+        "range": [29, 32],
+        "text": "Elementalist"
+      },
+      {
+        "range": [33, 36],
+        "text": "Enchanter"
+      },
+      {
+        "range": [37, 40],
+        "text": "Guide"
+      },
+      {
+        "range": [41, 44],
+        "text": "Illusionist"
+      },
+      {
+        "range": [45, 48],
+        "text": "Priest"
+      },
+      {
+        "range": [49, 52],
+        "text": "Sage (Power 3)"
+      },
+      {
+        "range": [53, 56],
+        "text": "Sage (Power 6)"
+      },
+      {
+        "range": [57, 60],
+        "text": "Thief (Power 3)"
+      },
+      {
+        "range": [61, 64],
+        "text": "Thief (Power 6)"
+      },
+      {
+        "range": [65, 68],
+        "text": "Thief (Power 9)"
+      },
+      {
+        "range": [69, 72],
+        "text": "Transmuter"
+      },
+      {
+        "range": [73, 76],
+        "text": "Trapper"
+      },
+      {
+        "range": [77, 80],
+        "text": "Pike Warrior (Power 4)"
+      },
+      {
+        "range": [81, 84],
+        "text": "Pike Warrior (Power 7)"
+      },
+      {
+        "range": [85, 88],
+        "text": "Pike Warrior (Power 10)"
+      },
+      {
+        "range": [89, 92],
+        "text": "Sword Warrior (Power 4)"
+      },
+      {
+        "range": [93, 96],
+        "text": "Sword Warrior (Power 7)"
+      },
+      {
+        "range": [97, 100],
+        "text": "Sword Warrior (Power 10)"
+      }
     ]
   },
   {
@@ -333,31 +1072,106 @@
     "name": "Travelers",
     "die": 100,
     "results": [
-      { "range": [1, 4], "text": "Alchemist" },
-      { "range": [5, 8], "text": "Archer (Power 4)" },
-      { "range": [9, 12], "text": "Archer (Power 7)" },
-      { "range": [13, 16], "text": "Archer (Power 8)" },
-      { "range": [17, 20], "text": "Blacksmith" },
-      { "range": [21, 24], "text": "Commoner" },
-      { "range": [25, 28], "text": "Conjurer" },
-      { "range": [29, 32], "text": "Elementalist" },
-      { "range": [33, 36], "text": "Enchanter" },
-      { "range": [37, 40], "text": "Guide" },
-      { "range": [41, 44], "text": "Illusionist" },
-      { "range": [45, 48], "text": "Priest" },
-      { "range": [49, 52], "text": "Sage (Power 3)" },
-      { "range": [53, 56], "text": "Sage (Power 6)" },
-      { "range": [57, 60], "text": "Thief (Power 3)" },
-      { "range": [61, 64], "text": "Thief (Power 6)" },
-      { "range": [65, 68], "text": "Thief (Power 9)" },
-      { "range": [69, 72], "text": "Transmuter" },
-      { "range": [73, 76], "text": "Trapper" },
-      { "range": [77, 80], "text": "Pike Warrior (Power 4)" },
-      { "range": [81, 84], "text": "Pike Warrior (Power 7)" },
-      { "range": [85, 88], "text": "Pike Warrior (Power 10)" },
-      { "range": [89, 92], "text": "Sword Warrior (Power 4)" },
-      { "range": [93, 96], "text": "Sword Warrior (Power 7)" },
-      { "range": [97, 100], "text": "Sword Warrior (Power 10)" }
+      {
+        "range": [1, 4],
+        "text": "Alchemist"
+      },
+      {
+        "range": [5, 8],
+        "text": "Archer (Power 4)"
+      },
+      {
+        "range": [9, 12],
+        "text": "Archer (Power 7)"
+      },
+      {
+        "range": [13, 16],
+        "text": "Archer (Power 8)"
+      },
+      {
+        "range": [17, 20],
+        "text": "Blacksmith"
+      },
+      {
+        "range": [21, 24],
+        "text": "Commoner"
+      },
+      {
+        "range": [25, 28],
+        "text": "Conjurer"
+      },
+      {
+        "range": [29, 32],
+        "text": "Elementalist"
+      },
+      {
+        "range": [33, 36],
+        "text": "Enchanter"
+      },
+      {
+        "range": [37, 40],
+        "text": "Guide"
+      },
+      {
+        "range": [41, 44],
+        "text": "Illusionist"
+      },
+      {
+        "range": [45, 48],
+        "text": "Priest"
+      },
+      {
+        "range": [49, 52],
+        "text": "Sage (Power 3)"
+      },
+      {
+        "range": [53, 56],
+        "text": "Sage (Power 6)"
+      },
+      {
+        "range": [57, 60],
+        "text": "Thief (Power 3)"
+      },
+      {
+        "range": [61, 64],
+        "text": "Thief (Power 6)"
+      },
+      {
+        "range": [65, 68],
+        "text": "Thief (Power 9)"
+      },
+      {
+        "range": [69, 72],
+        "text": "Transmuter"
+      },
+      {
+        "range": [73, 76],
+        "text": "Trapper"
+      },
+      {
+        "range": [77, 80],
+        "text": "Pike Warrior (Power 4)"
+      },
+      {
+        "range": [81, 84],
+        "text": "Pike Warrior (Power 7)"
+      },
+      {
+        "range": [85, 88],
+        "text": "Pike Warrior (Power 10)"
+      },
+      {
+        "range": [89, 92],
+        "text": "Sword Warrior (Power 4)"
+      },
+      {
+        "range": [93, 96],
+        "text": "Sword Warrior (Power 7)"
+      },
+      {
+        "range": [97, 100],
+        "text": "Sword Warrior (Power 10)"
+      }
     ]
   },
   {
@@ -365,16 +1179,46 @@
     "name": "Traveler Encounters",
     "die": 10,
     "results": [
-      { "range": [1, 1], "text": "Animal Hunt — travelers hunt an animal on the appropriate habitat table. If the PCs help, reward from Traveler Rewards." },
-      { "range": [2, 2], "text": "Battle — travelers battling 2d6 Miasma-touched humans. Roll 1d6: 1–2 bandits, 3–4 cannibals, 5–6 cultists. If PCs save the travelers, reward from Traveler Rewards." },
-      { "range": [3, 3], "text": "Camping — travelers camping, welcoming PCs with caution. Friendly PCs are offered a shared meal (skip rations next rest). Standoffish PCs are asked to leave." },
-      { "range": [4, 4], "text": "Crows — another crow group heading to a nearby dungeon. Roll 1d6: 1–2 invite PCs along; 3–4 standoffish but share lore if PCs are kind; 5–6 view PCs as rivals and plan to kill them." },
-      { "range": [5, 5], "text": "Injured — one or more travelers has 1d6 wounds and an injured leg. If PCs heal them or provide a mount, reward from Traveler Rewards." },
-      { "range": [6, 6], "text": "Lost — travelers are lost. If PCs spend a day guiding them, reward from Traveler Rewards." },
-      { "range": [7, 7], "text": "Need an Escort — survivors of a monster attack need escort to the nearest village. If PCs agree, reward from Traveler Rewards." },
-      { "range": [8, 8], "text": "Pursued by Monsters — travelers chased by monsters from the nearest dungeon's encounter table. If PCs intervene, travelers flee, leaving their dead behind." },
-      { "range": [9, 9], "text": "Starving — travelers are out of food. If PCs provide 1d6 days of food, reward from Traveler Rewards." },
-      { "range": [10, 10], "text": "Treasure Hunt — travelers searching for a specific item (perhaps from Major Interesting Things). If PCs help and hand over the item, reward from Traveler Rewards." }
+      {
+        "range": [1, 1],
+        "text": "Animal Hunt — travelers hunt an animal on the appropriate habitat table. If the PCs help, reward from Traveler Rewards."
+      },
+      {
+        "range": [2, 2],
+        "text": "Battle — travelers battling 2d6 Miasma-touched humans. Roll 1d6: 1–2 bandits, 3–4 cannibals, 5–6 cultists. If PCs save the travelers, reward from Traveler Rewards."
+      },
+      {
+        "range": [3, 3],
+        "text": "Camping — travelers camping, welcoming PCs with caution. Friendly PCs are offered a shared meal (skip rations next rest). Standoffish PCs are asked to leave."
+      },
+      {
+        "range": [4, 4],
+        "text": "Crows — another crow group heading to a nearby dungeon. Roll 1d6: 1–2 invite PCs along; 3–4 standoffish but share lore if PCs are kind; 5–6 view PCs as rivals and plan to kill them."
+      },
+      {
+        "range": [5, 5],
+        "text": "Injured — one or more travelers has 1d6 wounds and an injured leg. If PCs heal them or provide a mount, reward from Traveler Rewards."
+      },
+      {
+        "range": [6, 6],
+        "text": "Lost — travelers are lost. If PCs spend a day guiding them, reward from Traveler Rewards."
+      },
+      {
+        "range": [7, 7],
+        "text": "Need an Escort — survivors of a monster attack need escort to the nearest village. If PCs agree, reward from Traveler Rewards."
+      },
+      {
+        "range": [8, 8],
+        "text": "Pursued by Monsters — travelers chased by monsters from the nearest dungeon's encounter table. If PCs intervene, travelers flee, leaving their dead behind."
+      },
+      {
+        "range": [9, 9],
+        "text": "Starving — travelers are out of food. If PCs provide 1d6 days of food, reward from Traveler Rewards."
+      },
+      {
+        "range": [10, 10],
+        "text": "Treasure Hunt — travelers searching for a specific item (perhaps from Major Interesting Things). If PCs help and hand over the item, reward from Traveler Rewards."
+      }
     ]
   },
   {
@@ -382,12 +1226,30 @@
     "name": "Traveler Rewards",
     "die": 6,
     "results": [
-      { "range": [1, 1], "text": "Nothing — the travelers have nothing to give, or consider virtue its own reward. Jerks." },
-      { "range": [2, 2], "text": "A piece of useful information about a nearby POI, dungeon, village, or treasure." },
-      { "range": [3, 3], "text": "1d6 × 100 gc" },
-      { "range": [4, 4], "text": "2d10 × 100 gc" },
-      { "range": [5, 5], "text": "An item from the Minor Interesting Things table" },
-      { "range": [6, 6], "text": "An item from the Major Interesting Things table" }
+      {
+        "range": [1, 1],
+        "text": "Nothing — the travelers have nothing to give, or consider virtue its own reward. Jerks."
+      },
+      {
+        "range": [2, 2],
+        "text": "A piece of useful information about a nearby POI, dungeon, village, or treasure."
+      },
+      {
+        "range": [3, 3],
+        "text": "1d6 × 100 gc"
+      },
+      {
+        "range": [4, 4],
+        "text": "2d10 × 100 gc"
+      },
+      {
+        "range": [5, 5],
+        "text": "An item from the Minor Interesting Things table"
+      },
+      {
+        "range": [6, 6],
+        "text": "An item from the Major Interesting Things table"
+      }
     ]
   },
   {
@@ -395,28 +1257,94 @@
     "name": "Miasma-Touched Encounters",
     "die": 100,
     "results": [
-      { "range": [1, 10], "text": "Bandits — threaten to kill PCs unless given 10d10 × 10 gc worth of goods. Only attack if refused and they believe they have the advantage." },
-      { "range": [11, 14], "text": "Cannibals — want to eat the PCs. If they outnumber the PCs, ambush them. Otherwise pose as fellow travelers, then attack when PCs are vulnerable." },
-      { "range": [15, 18], "text": "Competitive — challenge PCs to a contest (strength, foot race, trivia) with a wager. Gracious winner/loser = they leave. Disagreement or gloating = attack." },
-      { "range": [19, 22], "text": "Cruel — revel in cruelty. 50% chance they've captured a creature to torture. Otherwise approach as friendly, planning to kidnap a PC." },
-      { "range": [23, 32], "text": "Cultists — cult of a Necromancer. Trade anything for necromancy spellbooks. Attempt to convert PCs; attack those who've stolen from or insulted their Necromancer." },
-      { "range": [33, 36], "text": "Death to the Gods — hate all religion. If any PCs carry religious material, wait for an opportune moment to attack them. Agreeable PCs may receive assistance, though the NPCs won't enter towns." },
-      { "range": [37, 40], "text": "Deceitful — fabricate tales about nearby monsters, dungeons, and landmarks. Lure believers into traps. If accused of lying, attack (if confident) or flee." },
-      { "range": [41, 44], "text": "Despondent — trudge through the world crying and upset. Defend themselves if threatened; lash out verbally then physically at anyone who tries to comfort them." },
-      { "range": [45, 48], "text": "Destructive — confrontational, trying to bait a fight. Give their anger a direction and they go destroy it. Otherwise they battle the PCs." },
-      { "range": [49, 52], "text": "False Bravado — claim to be brave crows seeking treasure. Invite PCs to join them. Actually cowards who run off when any fight starts." },
-      { "range": [53, 56], "text": "Greedy — want food, shelter, supplies, and treasure for as little effort as possible. Appear as beggars if PCs are stronger; as bandits if PCs can be bullied." },
-      { "range": [57, 60], "text": "Knowledge Seeker — want lore books and expert conversations. Stop PCs and pepper them with questions. Attack if PCs try to leave, planning to kidnap the most knowledgeable." },
-      { "range": [61, 64], "text": "Mage Hunter — ambush PCs openly carrying spellbooks. If none, ask if PCs know of any mages. Goal: kill magic users and claim their spellbooks." },
-      { "range": [65, 68], "text": "Monster Hatred — hate a specific monster type in a nearby dungeon or POI. Ask PCs to help kill them. Rush in recklessly as soon as monsters are encountered." },
-      { "range": [69, 72], "text": "Monster Obsessed — love a specific monster nearby. Lure PCs inside with treasure rumors. The place is rigged with bear traps for their favorite monsters." },
-      { "range": [73, 76], "text": "Sluggish — claim to be lost, want to find civilization. Actually aimless wanderers who slow the group by 1 hex/day. Leave happily at a village. If abandoned, ambush PCs on next outdoor encounter." },
-      { "range": [77, 80], "text": "Suspicious — friendly at first, then quickly suspicious of the PCs' intentions. Flee if outmatched; follow and ambush the PCs' camp if they believe they can win." },
-      { "range": [81, 84], "text": "Thieves — befriend PCs while sizing up their possessions. Steal one or more valuable items and flee when an opportunity arises." },
-      { "range": [85, 88], "text": "Tyrant — one leader whom the others worship. Demands fealty from all; kills those who refuse. Grants a blessing to those who swear loyalty. Next time this encounter is rolled, the group demands a progress update." },
-      { "range": [89, 92], "text": "Vain — value appearance above all. Praise well-groomed PCs; suggest a bath to dirty ones; plot to kidnap and clean those who refuse." },
-      { "range": [93, 96], "text": "Violent — attack PCs on the road, offering to stop if just one PC agrees to die for the others." },
-      { "range": [97, 100], "text": "Wicked Crows — corrupted crows who offer to raid a dungeon together. Once inside, they systematically use the dungeon's horrors to eliminate the PCs one by one." }
+      {
+        "range": [1, 10],
+        "text": "Bandits — threaten to kill PCs unless given 10d10 × 10 gc worth of goods. Only attack if refused and they believe they have the advantage."
+      },
+      {
+        "range": [11, 14],
+        "text": "Cannibals — want to eat the PCs. If they outnumber the PCs, ambush them. Otherwise pose as fellow travelers, then attack when PCs are vulnerable."
+      },
+      {
+        "range": [15, 18],
+        "text": "Competitive — challenge PCs to a contest (strength, foot race, trivia) with a wager. Gracious winner/loser = they leave. Disagreement or gloating = attack."
+      },
+      {
+        "range": [19, 22],
+        "text": "Cruel — revel in cruelty. 50% chance they've captured a creature to torture. Otherwise approach as friendly, planning to kidnap a PC."
+      },
+      {
+        "range": [23, 32],
+        "text": "Cultists — cult of a Necromancer. Trade anything for necromancy spellbooks. Attempt to convert PCs; attack those who've stolen from or insulted their Necromancer."
+      },
+      {
+        "range": [33, 36],
+        "text": "Death to the Gods — hate all religion. If any PCs carry religious material, wait for an opportune moment to attack them. Agreeable PCs may receive assistance, though the NPCs won't enter towns."
+      },
+      {
+        "range": [37, 40],
+        "text": "Deceitful — fabricate tales about nearby monsters, dungeons, and landmarks. Lure believers into traps. If accused of lying, attack (if confident) or flee."
+      },
+      {
+        "range": [41, 44],
+        "text": "Despondent — trudge through the world crying and upset. Defend themselves if threatened; lash out verbally then physically at anyone who tries to comfort them."
+      },
+      {
+        "range": [45, 48],
+        "text": "Destructive — confrontational, trying to bait a fight. Give their anger a direction and they go destroy it. Otherwise they battle the PCs."
+      },
+      {
+        "range": [49, 52],
+        "text": "False Bravado — claim to be brave crows seeking treasure. Invite PCs to join them. Actually cowards who run off when any fight starts."
+      },
+      {
+        "range": [53, 56],
+        "text": "Greedy — want food, shelter, supplies, and treasure for as little effort as possible. Appear as beggars if PCs are stronger; as bandits if PCs can be bullied."
+      },
+      {
+        "range": [57, 60],
+        "text": "Knowledge Seeker — want lore books and expert conversations. Stop PCs and pepper them with questions. Attack if PCs try to leave, planning to kidnap the most knowledgeable."
+      },
+      {
+        "range": [61, 64],
+        "text": "Mage Hunter — ambush PCs openly carrying spellbooks. If none, ask if PCs know of any mages. Goal: kill magic users and claim their spellbooks."
+      },
+      {
+        "range": [65, 68],
+        "text": "Monster Hatred — hate a specific monster type in a nearby dungeon or POI. Ask PCs to help kill them. Rush in recklessly as soon as monsters are encountered."
+      },
+      {
+        "range": [69, 72],
+        "text": "Monster Obsessed — love a specific monster nearby. Lure PCs inside with treasure rumors. The place is rigged with bear traps for their favorite monsters."
+      },
+      {
+        "range": [73, 76],
+        "text": "Sluggish — claim to be lost, want to find civilization. Actually aimless wanderers who slow the group by 1 hex/day. Leave happily at a village. If abandoned, ambush PCs on next outdoor encounter."
+      },
+      {
+        "range": [77, 80],
+        "text": "Suspicious — friendly at first, then quickly suspicious of the PCs' intentions. Flee if outmatched; follow and ambush the PCs' camp if they believe they can win."
+      },
+      {
+        "range": [81, 84],
+        "text": "Thieves — befriend PCs while sizing up their possessions. Steal one or more valuable items and flee when an opportunity arises."
+      },
+      {
+        "range": [85, 88],
+        "text": "Tyrant — one leader whom the others worship. Demands fealty from all; kills those who refuse. Grants a blessing to those who swear loyalty. Next time this encounter is rolled, the group demands a progress update."
+      },
+      {
+        "range": [89, 92],
+        "text": "Vain — value appearance above all. Praise well-groomed PCs; suggest a bath to dirty ones; plot to kidnap and clean those who refuse."
+      },
+      {
+        "range": [93, 96],
+        "text": "Violent — attack PCs on the road, offering to stop if just one PC agrees to die for the others."
+      },
+      {
+        "range": [97, 100],
+        "text": "Wicked Crows — corrupted crows who offer to raid a dungeon together. Once inside, they systematically use the dungeon's horrors to eliminate the PCs one by one."
+      }
     ]
   },
   {
@@ -424,82 +1352,311 @@
     "name": "Minor Interesting Things",
     "die": 100,
     "results": [
-      { "range": [1, 1], "text": "An angel creature corpse" },
-      { "range": [2, 2], "text": "A blood creature corpse" },
-      { "range": [3, 3], "text": "A demon corpse" },
-      { "range": [4, 4], "text": "A plant creature corpse" },
-      { "range": [5, 5], "text": "An undead creature's remains" },
-      { "range": [6, 6], "text": "A map to a hidden POI" },
-      { "range": [7, 7], "text": "A map to buried treasure" },
-      { "range": [8, 9], "text": "An empty coin purse" },
-      { "range": [10, 11], "text": "A bag of ball bearings" },
-      { "range": [12, 13], "text": "A bag of caltrops" },
-      { "range": [14, 15], "text": "10 feet of chain" },
-      { "range": [16, 17], "text": "Flask of oil" },
-      { "range": [18, 19], "text": "Net" },
-      { "range": [20, 21], "text": "Quiver of arrows" },
-      { "range": [22, 23], "text": "Case of crossbow bolts" },
-      { "range": [24, 25], "text": "Soap" },
-      { "range": [26, 27], "text": "Acid vial" },
-      { "range": [28, 29], "text": "Poison vial" },
-      { "range": [30, 30], "text": "An IOU note for 5d10 gc from an NPC in a nearby village" },
-      { "range": [31, 32], "text": "Bashing weapon of the Ref's choice" },
-      { "range": [33, 34], "text": "Bow weapon of the Ref's choice" },
-      { "range": [35, 36], "text": "Chopping weapon of the Ref's choice" },
-      { "range": [37, 38], "text": "Slashing weapon of the Ref's choice" },
-      { "range": [39, 40], "text": "Stabbing weapon of the Ref's choice" },
-      { "range": [41, 41], "text": "Shield with 0 AD remaining" },
-      { "range": [42, 42], "text": "Gluepot" },
-      { "range": [43, 44], "text": "Padlock" },
-      { "range": [45, 45], "text": "Lockpick set" },
-      { "range": [46, 46], "text": "Gem worth 10d10 gc" },
-      { "range": [47, 48], "text": "Lore book with an expertise chosen by the Ref" },
-      { "range": [49, 49], "text": "Light armor with 0 AD remaining" },
-      { "range": [50, 50], "text": "Smoke bomb" },
-      { "range": [51, 51], "text": "Healing potion" },
-      { "range": [52, 54], "text": "Surgical kit" },
-      { "range": [55, 55], "text": "Speed potion" },
-      { "range": [56, 57], "text": "Quiver of steel arrows" },
-      { "range": [58, 58], "text": "Case of steel crossbow bolts" },
-      { "range": [59, 59], "text": "Fine torch" },
-      { "range": [60, 61], "text": "Art object worth 20d10 gc" },
-      { "range": [62, 62], "text": "Medium armor with 0 AD remaining" },
-      { "range": [63, 63], "text": "Masterwork torch" },
-      { "range": [64, 65], "text": "Strong Acid Vial" },
-      { "range": [66, 67], "text": "Strong Poison Vial" },
-      { "range": [68, 68], "text": "Fire bomb" },
-      { "range": [69, 69], "text": "Rage potion" },
-      { "range": [70, 70], "text": "Rank 0 alteration spellbook of the Ref's choice" },
-      { "range": [71, 71], "text": "Rank 0 benefaction spellbook of the Ref's choice" },
-      { "range": [72, 72], "text": "Rank 0 conjuration spellbook of the Ref's choice" },
-      { "range": [73, 73], "text": "Rank 0 elemental spellbook of the Ref's choice" },
-      { "range": [74, 74], "text": "Rank 0 illusion spellbook of the Ref's choice" },
-      { "range": [75, 75], "text": "Rank 0 necromancy spellbook of the Ref's choice" },
-      { "range": [76, 76], "text": "Bear trap" },
-      { "range": [77, 77], "text": "Gem worth 1d6 × 100 gc" },
-      { "range": [78, 78], "text": "Steel shield with 0 AD remaining" },
-      { "range": [79, 79], "text": "Yew bow weapon of the Ref's choice" },
-      { "range": [80, 80], "text": "Heavy armor with 0 AD remaining" },
-      { "range": [81, 81], "text": "Boom wand" },
-      { "range": [82, 82], "text": "Fine block and tackle" },
-      { "range": [83, 83], "text": "Fine ladder" },
-      { "range": [84, 84], "text": "Fine spyglass" },
-      { "range": [85, 85], "text": "Fine coin purse" },
-      { "range": [86, 86], "text": "Fine rope" },
-      { "range": [87, 87], "text": "Fine alchemist's tools" },
-      { "range": [88, 88], "text": "Fine blacksmith's tools" },
-      { "range": [89, 89], "text": "Fine enchanter's tools" },
-      { "range": [90, 90], "text": "Plague mask" },
-      { "range": [91, 91], "text": "Light bloodhide armor with 0 AD remaining" },
-      { "range": [92, 92], "text": "Steel bashing weapon of the Ref's choice" },
-      { "range": [93, 93], "text": "Steel chopping weapon of the Ref's choice" },
-      { "range": [94, 94], "text": "Steel slashing weapon of the Ref's choice" },
-      { "range": [95, 95], "text": "Steel stabbing weapon of the Ref's choice" },
-      { "range": [96, 96], "text": "Absorbing bow weapon of the Ref's choice" },
-      { "range": [97, 97], "text": "Absorbing melee weapon of the Ref's choice" },
-      { "range": [98, 98], "text": "Vicious bow weapon of the Ref's choice" },
-      { "range": [99, 99], "text": "Vicious melee weapon of the Ref's choice" },
-      { "range": [100, 100], "text": "Roll on the Major Interesting Things table instead", "chain": "major-interesting-things" }
+      {
+        "range": [1, 1],
+        "text": "An angel creature corpse"
+      },
+      {
+        "range": [2, 2],
+        "text": "A blood creature corpse"
+      },
+      {
+        "range": [3, 3],
+        "text": "A demon corpse"
+      },
+      {
+        "range": [4, 4],
+        "text": "A plant creature corpse"
+      },
+      {
+        "range": [5, 5],
+        "text": "An undead creature's remains"
+      },
+      {
+        "range": [6, 6],
+        "text": "A map to a hidden POI"
+      },
+      {
+        "range": [7, 7],
+        "text": "A map to buried treasure"
+      },
+      {
+        "range": [8, 9],
+        "text": "An empty coin purse"
+      },
+      {
+        "range": [10, 11],
+        "text": "A bag of ball bearings"
+      },
+      {
+        "range": [12, 13],
+        "text": "A bag of caltrops"
+      },
+      {
+        "range": [14, 15],
+        "text": "10 feet of chain"
+      },
+      {
+        "range": [16, 17],
+        "text": "Flask of oil"
+      },
+      {
+        "range": [18, 19],
+        "text": "Net"
+      },
+      {
+        "range": [20, 21],
+        "text": "Quiver of arrows"
+      },
+      {
+        "range": [22, 23],
+        "text": "Case of crossbow bolts"
+      },
+      {
+        "range": [24, 25],
+        "text": "Soap"
+      },
+      {
+        "range": [26, 27],
+        "text": "Acid vial"
+      },
+      {
+        "range": [28, 29],
+        "text": "Poison vial"
+      },
+      {
+        "range": [30, 30],
+        "text": "An IOU note for 5d10 gc from an NPC in a nearby village"
+      },
+      {
+        "range": [31, 32],
+        "text": "Bashing weapon of the Ref's choice"
+      },
+      {
+        "range": [33, 34],
+        "text": "Bow weapon of the Ref's choice"
+      },
+      {
+        "range": [35, 36],
+        "text": "Chopping weapon of the Ref's choice"
+      },
+      {
+        "range": [37, 38],
+        "text": "Slashing weapon of the Ref's choice"
+      },
+      {
+        "range": [39, 40],
+        "text": "Stabbing weapon of the Ref's choice"
+      },
+      {
+        "range": [41, 41],
+        "text": "Shield with 0 AD remaining"
+      },
+      {
+        "range": [42, 42],
+        "text": "Gluepot"
+      },
+      {
+        "range": [43, 44],
+        "text": "Padlock"
+      },
+      {
+        "range": [45, 45],
+        "text": "Lockpick set"
+      },
+      {
+        "range": [46, 46],
+        "text": "Gem worth 10d10 gc"
+      },
+      {
+        "range": [47, 48],
+        "text": "Lore book with an expertise chosen by the Ref"
+      },
+      {
+        "range": [49, 49],
+        "text": "Light armor with 0 AD remaining"
+      },
+      {
+        "range": [50, 50],
+        "text": "Smoke bomb"
+      },
+      {
+        "range": [51, 51],
+        "text": "Healing potion"
+      },
+      {
+        "range": [52, 54],
+        "text": "Surgical kit"
+      },
+      {
+        "range": [55, 55],
+        "text": "Speed potion"
+      },
+      {
+        "range": [56, 57],
+        "text": "Quiver of steel arrows"
+      },
+      {
+        "range": [58, 58],
+        "text": "Case of steel crossbow bolts"
+      },
+      {
+        "range": [59, 59],
+        "text": "Fine torch"
+      },
+      {
+        "range": [60, 61],
+        "text": "Art object worth 20d10 gc"
+      },
+      {
+        "range": [62, 62],
+        "text": "Medium armor with 0 AD remaining"
+      },
+      {
+        "range": [63, 63],
+        "text": "Masterwork torch"
+      },
+      {
+        "range": [64, 65],
+        "text": "Strong Acid Vial"
+      },
+      {
+        "range": [66, 67],
+        "text": "Strong Poison Vial"
+      },
+      {
+        "range": [68, 68],
+        "text": "Fire bomb"
+      },
+      {
+        "range": [69, 69],
+        "text": "Rage potion"
+      },
+      {
+        "range": [70, 70],
+        "text": "Rank 0 alteration spellbook of the Ref's choice"
+      },
+      {
+        "range": [71, 71],
+        "text": "Rank 0 benefaction spellbook of the Ref's choice"
+      },
+      {
+        "range": [72, 72],
+        "text": "Rank 0 conjuration spellbook of the Ref's choice"
+      },
+      {
+        "range": [73, 73],
+        "text": "Rank 0 elemental spellbook of the Ref's choice"
+      },
+      {
+        "range": [74, 74],
+        "text": "Rank 0 illusion spellbook of the Ref's choice"
+      },
+      {
+        "range": [75, 75],
+        "text": "Rank 0 necromancy spellbook of the Ref's choice"
+      },
+      {
+        "range": [76, 76],
+        "text": "Bear trap"
+      },
+      {
+        "range": [77, 77],
+        "text": "Gem worth 1d6 × 100 gc"
+      },
+      {
+        "range": [78, 78],
+        "text": "Steel shield with 0 AD remaining"
+      },
+      {
+        "range": [79, 79],
+        "text": "Yew bow weapon of the Ref's choice"
+      },
+      {
+        "range": [80, 80],
+        "text": "Heavy armor with 0 AD remaining"
+      },
+      {
+        "range": [81, 81],
+        "text": "Boom wand"
+      },
+      {
+        "range": [82, 82],
+        "text": "Fine block and tackle"
+      },
+      {
+        "range": [83, 83],
+        "text": "Fine ladder"
+      },
+      {
+        "range": [84, 84],
+        "text": "Fine spyglass"
+      },
+      {
+        "range": [85, 85],
+        "text": "Fine coin purse"
+      },
+      {
+        "range": [86, 86],
+        "text": "Fine rope"
+      },
+      {
+        "range": [87, 87],
+        "text": "Fine alchemist's tools"
+      },
+      {
+        "range": [88, 88],
+        "text": "Fine blacksmith's tools"
+      },
+      {
+        "range": [89, 89],
+        "text": "Fine enchanter's tools"
+      },
+      {
+        "range": [90, 90],
+        "text": "Plague mask"
+      },
+      {
+        "range": [91, 91],
+        "text": "Light bloodhide armor with 0 AD remaining"
+      },
+      {
+        "range": [92, 92],
+        "text": "Steel bashing weapon of the Ref's choice"
+      },
+      {
+        "range": [93, 93],
+        "text": "Steel chopping weapon of the Ref's choice"
+      },
+      {
+        "range": [94, 94],
+        "text": "Steel slashing weapon of the Ref's choice"
+      },
+      {
+        "range": [95, 95],
+        "text": "Steel stabbing weapon of the Ref's choice"
+      },
+      {
+        "range": [96, 96],
+        "text": "Absorbing bow weapon of the Ref's choice"
+      },
+      {
+        "range": [97, 97],
+        "text": "Absorbing melee weapon of the Ref's choice"
+      },
+      {
+        "range": [98, 98],
+        "text": "Vicious bow weapon of the Ref's choice"
+      },
+      {
+        "range": [99, 99],
+        "text": "Vicious melee weapon of the Ref's choice"
+      },
+      {
+        "range": [100, 100],
+        "text": "Roll on the Major Interesting Things table instead",
+        "chain": "major-interesting-things"
+      }
     ]
   },
   {
@@ -508,56 +1665,207 @@
     "die": 100,
     "notes": "A result of 101+ (from the Greed Exchange temple option) yields an archmage obsidian weapon of the Ref's choice.",
     "results": [
-      { "range": [1, 2], "text": "Roll on the Minor Interesting Things table instead", "chain": "minor-interesting-things" },
-      { "range": [3, 4], "text": "Quiver of archmage obsidian arrows" },
-      { "range": [5, 6], "text": "Case of archmage obsidian bolts" },
-      { "range": [7, 8], "text": "Waterwalking light armor" },
-      { "range": [9, 10], "text": "Archmage obsidian bar" },
-      { "range": [11, 12], "text": "Steel medium armor with 0 AD remaining" },
-      { "range": [13, 14], "text": "Fine lockpick set" },
-      { "range": [15, 16], "text": "Fine padlock" },
-      { "range": [17, 18], "text": "Fine compass" },
-      { "range": [19, 20], "text": "Fine lantern" },
-      { "range": [21, 22], "text": "Fine lore book with an expertise chosen by the Ref" },
-      { "range": [23, 24], "text": "Masterwork block and tackle" },
-      { "range": [25, 26], "text": "Masterwork alchemist's tools" },
-      { "range": [27, 28], "text": "Masterwork blacksmith's tools" },
-      { "range": [29, 30], "text": "Masterwork enchanter's tools" },
-      { "range": [31, 32], "text": "Masterwork coin purse" },
-      { "range": [33, 34], "text": "Masterwork rope" },
-      { "range": [35, 36], "text": "Masterwork spyglass" },
-      { "range": [37, 38], "text": "Cart" },
-      { "range": [39, 40], "text": "Necromancer silver bar" },
-      { "range": [41, 42], "text": "Demon's head shield" },
-      { "range": [43, 44], "text": "Feather light armor" },
-      { "range": [45, 46], "text": "Glow shield" },
-      { "range": [47, 48], "text": "Glow light armor" },
-      { "range": [49, 50], "text": "Luring shield" },
-      { "range": [51, 52], "text": "Luring light armor" },
-      { "range": [53, 54], "text": "Spell-storing shield" },
-      { "range": [55, 56], "text": "Spell-storing light armor" },
-      { "range": [57, 58], "text": "Impact bow weapon of the Ref's choice" },
-      { "range": [59, 60], "text": "Impact melee weapon of the Ref's choice" },
-      { "range": [61, 62], "text": "Raging bow weapon of the Ref's choice" },
-      { "range": [63, 64], "text": "Raging melee weapon of the Ref's choice" },
-      { "range": [65, 66], "text": "Defending bow weapon of the Ref's choice" },
-      { "range": [67, 68], "text": "Defending melee weapon of the Ref's choice" },
-      { "range": [69, 70], "text": "Heavy steel armor with 0 AD remaining" },
-      { "range": [71, 72], "text": "Masterwork lockpick set" },
-      { "range": [73, 74], "text": "Masterwork padlock" },
-      { "range": [75, 76], "text": "Archmage willow log" },
-      { "range": [77, 78], "text": "Archmage obsidian shield with 0 AD remaining" },
-      { "range": [79, 80], "text": "Masterwork compass" },
-      { "range": [81, 82], "text": "Masterwork lantern" },
-      { "range": [83, 84], "text": "Masterwork lore book with an expertise chosen by the Ref" },
-      { "range": [85, 86], "text": "Telepathic node light armor" },
-      { "range": [87, 88], "text": "Exploding bow weapon of the Ref's choice" },
-      { "range": [89, 90], "text": "Exploding melee weapon of the Ref's choice" },
-      { "range": [91, 92], "text": "Lightning bow weapon of the Ref's choice" },
-      { "range": [93, 94], "text": "Lightning melee weapon of the Ref's choice" },
-      { "range": [95, 96], "text": "Poison bow weapon of the Ref's choice" },
-      { "range": [97, 98], "text": "Poison melee weapon of the Ref's choice" },
-      { "range": [99, 100], "text": "Undead bone light armor" }
+      {
+        "range": [1, 2],
+        "text": "Roll on the Minor Interesting Things table instead",
+        "chain": "minor-interesting-things"
+      },
+      {
+        "range": [3, 4],
+        "text": "Quiver of archmage obsidian arrows"
+      },
+      {
+        "range": [5, 6],
+        "text": "Case of archmage obsidian bolts"
+      },
+      {
+        "range": [7, 8],
+        "text": "Waterwalking light armor"
+      },
+      {
+        "range": [9, 10],
+        "text": "Archmage obsidian bar"
+      },
+      {
+        "range": [11, 12],
+        "text": "Steel medium armor with 0 AD remaining"
+      },
+      {
+        "range": [13, 14],
+        "text": "Fine lockpick set"
+      },
+      {
+        "range": [15, 16],
+        "text": "Fine padlock"
+      },
+      {
+        "range": [17, 18],
+        "text": "Fine compass"
+      },
+      {
+        "range": [19, 20],
+        "text": "Fine lantern"
+      },
+      {
+        "range": [21, 22],
+        "text": "Fine lore book with an expertise chosen by the Ref"
+      },
+      {
+        "range": [23, 24],
+        "text": "Masterwork block and tackle"
+      },
+      {
+        "range": [25, 26],
+        "text": "Masterwork alchemist's tools"
+      },
+      {
+        "range": [27, 28],
+        "text": "Masterwork blacksmith's tools"
+      },
+      {
+        "range": [29, 30],
+        "text": "Masterwork enchanter's tools"
+      },
+      {
+        "range": [31, 32],
+        "text": "Masterwork coin purse"
+      },
+      {
+        "range": [33, 34],
+        "text": "Masterwork rope"
+      },
+      {
+        "range": [35, 36],
+        "text": "Masterwork spyglass"
+      },
+      {
+        "range": [37, 38],
+        "text": "Cart"
+      },
+      {
+        "range": [39, 40],
+        "text": "Necromancer silver bar"
+      },
+      {
+        "range": [41, 42],
+        "text": "Demon's head shield"
+      },
+      {
+        "range": [43, 44],
+        "text": "Feather light armor"
+      },
+      {
+        "range": [45, 46],
+        "text": "Glow shield"
+      },
+      {
+        "range": [47, 48],
+        "text": "Glow light armor"
+      },
+      {
+        "range": [49, 50],
+        "text": "Luring shield"
+      },
+      {
+        "range": [51, 52],
+        "text": "Luring light armor"
+      },
+      {
+        "range": [53, 54],
+        "text": "Spell-storing shield"
+      },
+      {
+        "range": [55, 56],
+        "text": "Spell-storing light armor"
+      },
+      {
+        "range": [57, 58],
+        "text": "Impact bow weapon of the Ref's choice"
+      },
+      {
+        "range": [59, 60],
+        "text": "Impact melee weapon of the Ref's choice"
+      },
+      {
+        "range": [61, 62],
+        "text": "Raging bow weapon of the Ref's choice"
+      },
+      {
+        "range": [63, 64],
+        "text": "Raging melee weapon of the Ref's choice"
+      },
+      {
+        "range": [65, 66],
+        "text": "Defending bow weapon of the Ref's choice"
+      },
+      {
+        "range": [67, 68],
+        "text": "Defending melee weapon of the Ref's choice"
+      },
+      {
+        "range": [69, 70],
+        "text": "Heavy steel armor with 0 AD remaining"
+      },
+      {
+        "range": [71, 72],
+        "text": "Masterwork lockpick set"
+      },
+      {
+        "range": [73, 74],
+        "text": "Masterwork padlock"
+      },
+      {
+        "range": [75, 76],
+        "text": "Archmage willow log"
+      },
+      {
+        "range": [77, 78],
+        "text": "Archmage obsidian shield with 0 AD remaining"
+      },
+      {
+        "range": [79, 80],
+        "text": "Masterwork compass"
+      },
+      {
+        "range": [81, 82],
+        "text": "Masterwork lantern"
+      },
+      {
+        "range": [83, 84],
+        "text": "Masterwork lore book with an expertise chosen by the Ref"
+      },
+      {
+        "range": [85, 86],
+        "text": "Telepathic node light armor"
+      },
+      {
+        "range": [87, 88],
+        "text": "Exploding bow weapon of the Ref's choice"
+      },
+      {
+        "range": [89, 90],
+        "text": "Exploding melee weapon of the Ref's choice"
+      },
+      {
+        "range": [91, 92],
+        "text": "Lightning bow weapon of the Ref's choice"
+      },
+      {
+        "range": [93, 94],
+        "text": "Lightning melee weapon of the Ref's choice"
+      },
+      {
+        "range": [95, 96],
+        "text": "Poison bow weapon of the Ref's choice"
+      },
+      {
+        "range": [97, 98],
+        "text": "Poison melee weapon of the Ref's choice"
+      },
+      {
+        "range": [99, 100],
+        "text": "Undead bone light armor"
+      }
     ]
   }
 ]

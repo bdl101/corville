@@ -1,0 +1,17 @@
+export const KEYWORD_DESCRIPTIONS: Record<string, string> = {
+  'Bashing': '',
+  'Bow': '',
+  'Brutal': '',
+  'Chopping': '',
+  'Cumbersome': '',
+  'Disengage': '',
+  'Dismember': '',
+  'Light': '',
+  'Parry 2': '',
+  'Parry 4': '',
+  'Parry 6': '',
+  'Pummeling': '',
+  'Reload': '',
+  'Slashing': '',
+  'Stabbing': '',
+}

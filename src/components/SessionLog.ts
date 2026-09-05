@@ -5,9 +5,10 @@ interface SessionLogOptions {
   entries: RollEntry[]
   collapsed: boolean
   onToggle: () => void
+  onEntityClick?: (id: string) => void
 }
 
-export function SessionLog({ entries, collapsed, onToggle }: SessionLogOptions): HTMLElement {
+export function SessionLog({ entries, collapsed, onToggle, onEntityClick }: SessionLogOptions): HTMLElement {
   const el = document.createElement('div')
   el.className = 'session-log'
 
@@ -27,7 +28,7 @@ export function SessionLog({ entries, collapsed, onToggle }: SessionLogOptions):
     for (const entry of [...entries].reverse()) {
       const entryEl = document.createElement('div')
       entryEl.className = 'session-log__entry'
-      entryEl.appendChild(RollResult(entry))
+      entryEl.appendChild(RollResult(entry, 0, { onEntityClick }))
       content.appendChild(entryEl)
     }
   }

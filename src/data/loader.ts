@@ -22,3 +22,7 @@ export function getCreatureById(id: string): Creature | undefined {
 export function getItems(): Item[] {
   return itemsData as Item[]
 }
+
+export function getItemById(id: string): Item | undefined {
+  return getItems().find(i => i.id === id)
+}

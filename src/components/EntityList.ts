@@ -5,6 +5,7 @@ interface EntityListProps<T extends { id: string; name: string }> {
   onSelect: (entity: T) => void
   initialFilter?: string
   onFilterChange?: (filter: string) => void
+  getMeta?: (entity: T) => string | undefined
 }
 
 export function EntityList<T extends { id: string; name: string }>({
@@ -12,6 +13,7 @@ export function EntityList<T extends { id: string; name: string }>({
   onSelect,
   initialFilter = '',
   onFilterChange,
+  getMeta,
 }: EntityListProps<T>): HTMLElement {
   const el = document.createElement('div')
   el.className = 'entity-list'
@@ -41,7 +43,11 @@ export function EntityList<T extends { id: string; name: string }>({
     }
 
     for (const entity of filtered) {
-      listEl.appendChild(EntityCard({ name: entity.name, onClick: () => onSelect(entity) }))
+      listEl.appendChild(EntityCard({
+        name: entity.name,
+        meta: getMeta?.(entity),
+        onClick: () => onSelect(entity),
+      }))
     }
   }
 

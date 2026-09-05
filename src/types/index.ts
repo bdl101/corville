@@ -10,6 +10,7 @@ export interface TableResult {
   text: string
   chain?: string
   chains?: string[]
+  entityRef?: string
 }
 
 export interface RolledTable {

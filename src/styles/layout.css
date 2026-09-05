@@ -1,19 +1,28 @@
 #app {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "view"
+    "nav";
   height: 100dvh;
   max-width: 768px;
   margin: 0 auto;
 }
 
-.view {
-  flex: 1;
+#view-container {
+  grid-area: view;
   overflow-y: auto;
+}
+
+#tab-bar-container {
+  grid-area: nav;
+}
+
+.view {
   padding: var(--space-4);
 }
 
 .tab-bar {
-  flex-shrink: 0;
   display: flex;
   border-top: var(--border-width) solid var(--color-border);
   background: var(--color-surface);
@@ -40,4 +49,23 @@
 .tab-bar__tab--disabled {
   opacity: 0.35;
   cursor: not-allowed;
+}
+
+@media (min-width: 600px) {
+  #app {
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "nav"
+      "view";
+  }
+
+  .tab-bar {
+    border-top: none;
+    border-bottom: var(--border-width) solid var(--color-border);
+  }
+
+  .tab-bar__tab--active {
+    border-top: none;
+    border-bottom: 2px solid var(--color-accent);
+  }
 }

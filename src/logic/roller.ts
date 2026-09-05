@@ -5,8 +5,19 @@ export interface RollEntry {
   table: RolledTable
   rolledValue: number
   result: TableResult
+  resolvedText: string
   input?: string
   chains?: RollEntry[]
+}
+
+function resolveInlineRolls(text: string): string {
+  return text.replace(/\b(\d+)d(\d+)\b/gi, (_, count, sides) => {
+    let total = 0
+    const c = parseInt(count, 10)
+    const s = parseInt(sides, 10)
+    for (let i = 0; i < c; i++) total += Math.ceil(Math.random() * s)
+    return String(total)
+  })
 }
 
 const MAX_CHAIN_DEPTH = 8
@@ -24,6 +35,7 @@ export async function rollTable(
     table,
     rolledValue,
     result,
+    resolvedText: resolveInlineRolls(result.text),
     input,
     chains: chains.length ? chains : undefined,
   }

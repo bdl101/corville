@@ -3,6 +3,8 @@ import type {
   HumanCreature, MonsterCreature, WeaponItem, ArmorItem, AmmoItem,
   ConsumableItem, MagicItem, BookItem, ToolItem, GearItem,
 } from '../types'
+import { KEYWORD_DESCRIPTIONS } from '../data/keywords'
+import { showPopup } from '../utils/popup'
 
 interface EntityDetailProps {
   entity: Creature | Item
@@ -198,7 +200,11 @@ function renderItem(item: Item): DocumentFragment {
   if (item.category === 'weapon') {
     const w = item as WeaponItem
     const kwRow = el('div', 'keywords')
-    for (const kw of w.keywords) kwRow.appendChild(badge(kw))
+    for (const kw of w.keywords) {
+      const btn = el('button', 'badge badge--keyword', kw)
+      btn.addEventListener('click', () => showPopup(kw, KEYWORD_DESCRIPTIONS[kw] ?? ''))
+      kwRow.appendChild(btn)
+    }
     body.appendChild(kwRow)
     body.appendChild(field('Attack', w.attackStat))
     body.appendChild(field('Range', w.range))
