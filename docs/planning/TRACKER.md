@@ -17,7 +17,7 @@ Each milestone has a spec file with full task details, deliverables, and accepta
 
 | # | Milestone | Spec | Status |
 |---|-----------|------|--------|
-| 01 | Project setup — Vite + TS scaffold, GitHub Pages, linting | [01-project-setup.md](01-project-setup.md) | [ ] Not started |
+| 01 | Project setup — Vite + TS scaffold, GitHub Pages, linting | [01-project-setup.md](01-project-setup.md) | [x] Done |
 | 02 | Design system — CSS tokens, base styles, card/layout shell | [02-design-system.md](02-design-system.md) | [ ] Not started |
 | 03 | Navigation — tab bar, view switcher, placeholder views | [03-navigation.md](03-navigation.md) | [ ] Not started |
 | 04 | Data layer — TS types, JSON configs, stub data, loader | [04-data-layer.md](04-data-layer.md) | [ ] Not started |
