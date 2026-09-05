@@ -62,7 +62,11 @@ Each table entry in the rolled tables config follows this shape:
   },
   "results": [
     { "range": [1, 3], "text": "Result text" },
-    { "range": [4, 6], "text": "Result with chain", "chain": "another-table-id" }
+    {
+      "range": [4, 6],
+      "text": "Result with chain",
+      "chain": "another-table-id"
+    }
   ]
 }
 ```
@@ -135,3 +139,6 @@ _Note_: For the purposes of this doc, the term `creatures` refers to any no-PC e
 - creature UI should show disabled state if stamina reaches 0 or below
 - creature UI should be minimal (show bare minimum info), but user should be able to select creature to see full stats
 - post-post-MVP: user should be able to apply a condition to creatures and have it be obvious in the UI
+- user should be able to mark a creature as having taken its turn during the round
+- user should be able to mark a creature as having used its reaction the round
+- user should be able to trigger a new round, resetting creature turns and reactions
