@@ -535,7 +535,17 @@
           6,
           6
         ],
-        "text": "1 Blood Creature C and 1d6 Blood Creature A"
+        "text": "1 Blood Creature C and 1d6 Blood Creature A",
+        "entityRefs": [
+          {
+            "id": "blood-creature-c",
+            "count": 1
+          },
+          {
+            "id": "blood-creature-a",
+            "count": "1d6"
+          }
+        ]
       }
     ]
   },
@@ -557,7 +567,17 @@
           2,
           2
         ],
-        "text": "1d6 Undead A and 1 Undead B"
+        "text": "1d6 Undead A and 1 Undead B",
+        "entityRefs": [
+          {
+            "id": "undead-a",
+            "count": "1d6"
+          },
+          {
+            "id": "undead-b",
+            "count": 1
+          }
+        ]
       },
       {
         "range": [
@@ -580,7 +600,17 @@
           5,
           5
         ],
-        "text": "1d6 Undead A and 1d6 Undead B"
+        "text": "1d6 Undead A and 1d6 Undead B",
+        "entityRefs": [
+          {
+            "id": "undead-a",
+            "count": "1d6"
+          },
+          {
+            "id": "undead-b",
+            "count": "1d6"
+          }
+        ]
       },
       {
         "range": [
@@ -905,7 +935,17 @@
           10,
           10
         ],
-        "text": "1 Dire Wolf and 1d6 Wolves"
+        "text": "1 Dire Wolf and 1d6 Wolves",
+        "entityRefs": [
+          {
+            "id": "wolf-dire",
+            "count": 1
+          },
+          {
+            "id": "wolf",
+            "count": "1d6"
+          }
+        ]
       }
     ]
   },
@@ -1166,7 +1206,17 @@
           76,
           80
         ],
-        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes",
+        "entityRefs": [
+          {
+            "id": "snake-venomous-giant",
+            "count": 1
+          },
+          {
+            "id": "snake-venomous",
+            "count": "1d6"
+          }
+        ]
       },
       {
         "range": [
@@ -1197,7 +1247,17 @@
           96,
           100
         ],
-        "text": "1 Dire Wolf and 1d6 Wolves"
+        "text": "1 Dire Wolf and 1d6 Wolves",
+        "entityRefs": [
+          {
+            "id": "wolf-dire",
+            "count": 1
+          },
+          {
+            "id": "wolf",
+            "count": "1d6"
+          }
+        ]
       }
     ]
   },
@@ -1339,7 +1399,17 @@
           81,
           85
         ],
-        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes",
+        "entityRefs": [
+          {
+            "id": "snake-venomous-giant",
+            "count": 1
+          },
+          {
+            "id": "snake-venomous",
+            "count": "1d6"
+          }
+        ]
       },
       {
         "range": [
@@ -1362,7 +1432,17 @@
           96,
           100
         ],
-        "text": "1 Dire Wolf and 1d6 Wolves"
+        "text": "1 Dire Wolf and 1d6 Wolves",
+        "entityRefs": [
+          {
+            "id": "wolf-dire",
+            "count": 1
+          },
+          {
+            "id": "wolf",
+            "count": "1d6"
+          }
+        ]
       }
     ]
   },
@@ -1504,7 +1584,17 @@
           81,
           85
         ],
-        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes",
+        "entityRefs": [
+          {
+            "id": "snake-venomous-giant",
+            "count": 1
+          },
+          {
+            "id": "snake-venomous",
+            "count": "1d6"
+          }
+        ]
       },
       {
         "range": [
@@ -1527,7 +1617,17 @@
           96,
           100
         ],
-        "text": "1 Dire Wolf and 1d6 Wolves"
+        "text": "1 Dire Wolf and 1d6 Wolves",
+        "entityRefs": [
+          {
+            "id": "wolf-dire",
+            "count": 1
+          },
+          {
+            "id": "wolf",
+            "count": "1d6"
+          }
+        ]
       }
     ]
   },
@@ -1605,7 +1705,17 @@
           9,
           9
         ],
-        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes"
+        "text": "1 Giant Venomous Snake and 1d6 Venomous Snakes",
+        "entityRefs": [
+          {
+            "id": "snake-venomous-giant",
+            "count": 1
+          },
+          {
+            "id": "snake-venomous",
+            "count": "1d6"
+          }
+        ]
       },
       {
         "range": [

@@ -1,4 +1,4 @@
-import type { RollEntry } from '../logic/roller'
+import type { RollEntry, ResolvedEntityRef } from '../logic/roller'
 import { getCreatureById, getItemById } from '../data/loader'
 import { addCreature } from '../state/encounter'
 import type { Creature } from '../types'
@@ -7,10 +7,11 @@ interface RollResultOptions {
   onEntityClick?: (id: string) => void
 }
 
-function collectEntityRefs(entry: RollEntry): string[] {
-  const refs: string[] = []
-  if (entry.result.entityRef) refs.push(entry.result.entityRef)
-  for (const chain of entry.chains ?? []) refs.push(...collectEntityRefs(chain))
+function collectResolvedRefs(entry: RollEntry): ResolvedEntityRef[] {
+  const refs: ResolvedEntityRef[] = []
+  if (entry.result.entityRef) refs.push({ id: entry.result.entityRef, count: 1 })
+  for (const ref of entry.resolvedEntityRefs ?? []) refs.push(ref)
+  for (const chain of entry.chains ?? []) refs.push(...collectResolvedRefs(chain))
   return refs
 }
 
@@ -82,6 +83,20 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
     }
   }
 
+  for (const ref of entry.resolvedEntityRefs ?? []) {
+    const creature = getCreatureById(ref.id)
+    if (creature) {
+      const btn = document.createElement('button')
+      btn.className = 'btn btn--sm roll-result__add-creature'
+      btn.textContent = `+ Add ${ref.count} ${creature.name} to Encounter`
+      btn.addEventListener('click', () => {
+        for (let i = 0; i < ref.count; i++) addCreature(creature)
+        switchToEncounter()
+      })
+      el.appendChild(btn)
+    }
+  }
+
   if (entry.chains?.length) {
     const chainsEl = document.createElement('div')
     chainsEl.className = 'roll-result__chains'
@@ -92,18 +107,18 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
   }
 
   if (depth === 0) {
-    const allRefs = collectEntityRefs(entry)
+    const allRefs = collectResolvedRefs(entry)
     const resolvable = allRefs
-      .map(ref => getCreatureById(ref))
-      .filter((c): c is Creature => c !== undefined)
+      .map(ref => ({ creature: getCreatureById(ref.id), count: ref.count }))
+      .filter((r): r is { creature: Creature; count: number } => r.creature !== undefined)
 
     if (resolvable.length >= 2) {
       const addAllBtn = document.createElement('button')
       addAllBtn.className = 'btn roll-result__add-all'
       addAllBtn.textContent = 'Add all to Encounter'
       addAllBtn.addEventListener('click', () => {
-        for (const creature of resolvable) {
-          addCreature(creature)
+        for (const { creature, count } of resolvable) {
+          for (let i = 0; i < count; i++) addCreature(creature)
         }
         switchToEncounter()
       })

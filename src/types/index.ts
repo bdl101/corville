@@ -12,6 +12,7 @@ export interface TableResult {
   chain?: string
   chains?: string[]
   entityRef?: string
+  entityRefs?: Array<{ id: string; count: number | string }>
 }
 
 export interface RolledTable {

@@ -1,6 +1,11 @@
 import type { RolledTable, TableResult } from '../types'
 import { getTableById } from '../data/loader'
 
+export interface ResolvedEntityRef {
+  id: string
+  count: number
+}
+
 export interface RollEntry {
   table: RolledTable
   rolledValue: number
@@ -8,6 +13,17 @@ export interface RollEntry {
   resolvedText: string
   input?: string
   chains?: RollEntry[]
+  resolvedEntityRefs?: ResolvedEntityRef[]
+}
+
+function rollDiceExpr(expr: string): number {
+  const match = expr.match(/^(\d+)d(\d+)$/i)
+  if (!match) return parseInt(expr, 10) || 1
+  let total = 0
+  const count = parseInt(match[1], 10)
+  const sides = parseInt(match[2], 10)
+  for (let i = 0; i < count; i++) total += Math.ceil(Math.random() * sides)
+  return total
 }
 
 function resolveInlineRolls(text: string): string {
@@ -32,6 +48,10 @@ export async function rollTable(
   const result = table.results.find(r => rolledValue >= r.range[0] && rolledValue <= r.range[1])!
   const inputChainIds: string[] = (input !== undefined ? table.inputChains?.[input] : undefined) ?? []
   const chains = await resolveChains(result, onNeedsInput, depth, inputChainIds)
+  const resolvedEntityRefs = result.entityRefs?.map(ref => ({
+    id: ref.id,
+    count: typeof ref.count === 'number' ? ref.count : rollDiceExpr(String(ref.count)),
+  }))
   return {
     table,
     rolledValue,
@@ -39,6 +59,7 @@ export async function rollTable(
     resolvedText: resolveInlineRolls(result.text).replace('{roll}', String(rolledValue)),
     input,
     chains: chains.length ? chains : undefined,
+    resolvedEntityRefs: resolvedEntityRefs?.length ? resolvedEntityRefs : undefined,
   }
 }
 
