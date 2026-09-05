@@ -1,0 +1,20 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.view {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+}
+
+.tab-bar {
+  flex-shrink: 0;
+  display: flex;
+  border-top: var(--border-width) solid var(--color-border);
+  background: var(--color-surface);
+}
