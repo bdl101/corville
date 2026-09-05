@@ -18,3 +18,26 @@
   border-top: var(--border-width) solid var(--color-border);
   background: var(--color-surface);
 }
+
+.tab-bar__tab {
+  flex: 1;
+  padding: var(--space-3);
+  background: none;
+  border: none;
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tab-bar__tab--active {
+  color: var(--color-text-primary);
+  border-top: 2px solid var(--color-accent);
+}
+
+.tab-bar__tab--disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
