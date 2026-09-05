@@ -36,8 +36,8 @@ Dungeon crawling in Crows is lethal and fun with straightforward rules. Tracking
 
 ### Tech Stack
 
-- html/css/typescript (javascript)
-- use a framework? TODO
+- html/css/typescript
+- Vite (no framework)
 - browser based webapp
 - hosted on github pages
 
@@ -45,7 +45,31 @@ Dungeon crawling in Crows is lethal and fun with straightforward rules. Tracking
 
 - Configuration files stored as JSON
 - One config file each for items, monsters, rolled tables
-- Browser localstorage used for permanence across sessions (post-MVP, should not be needed for intial feature set)
+- Browser localstorage used for permanence across sessions (post-MVP, should not be needed for initial feature set)
+
+#### Rolled Table Schema
+
+Each table entry in the rolled tables config follows this shape:
+
+```json
+{
+  "id": "table-id",
+  "name": "Display Name",
+  "die": 6,
+  "requiresInput": {
+    "prompt": "Question to ask the user?",
+    "options": ["option-a", "option-b"]
+  },
+  "results": [
+    { "range": [1, 3], "text": "Result text" },
+    { "range": [4, 6], "text": "Result with chain", "chain": "another-table-id" }
+  ]
+}
+```
+
+- `requiresInput` is optional; omit it for tables that need no user input before rolling
+- `chain` on a result is optional; when present the tool automatically rolls the referenced table and appends its result to the log
+- Chains can be multiple levels deep
 
 ### Layout/UI
 
@@ -56,7 +80,23 @@ Dungeon crawling in Crows is lethal and fun with straightforward rules. Tracking
 
 ### Navigation
 
-TODO
+- Persistent tab bar with three tabs: **Tables**, **Lookup**, **Encounter**
+- Tab bar is always visible regardless of active view
+- Encounter tab is present in the nav but non-functional until Encounter Builder is implemented (post-MVP)
+
+## MVP Scope
+
+The following are in scope for MVP:
+
+- Rolled Tables — full feature including chaining and session log
+- Statblock Lookup — Creatures and Items lists with filter-as-you-type and detail view
+- Tab bar navigation with Tables, Lookup, and Encounter tabs (Encounter is non-functional)
+- Vite + TypeScript project hosted on GitHub Pages
+
+The following are explicitly post-MVP:
+
+- Encounter Builder
+- Browser localStorage persistence
 
 ## Core Features
 
@@ -76,7 +116,10 @@ _Note_: For the purposes of this doc, the term `creatures` refers to any no-PC e
 
 ### Statblock Lookup
 
-- should be able to easily search list of items, monsters, NPCs and display relevant statblocks when selected
+- Lookup is divided into two sub-lists: **Creatures** (monsters + NPCs) and **Items**
+- Each list supports filter-as-you-type search
+- Selecting an entry opens a full detail view (replaces the list; back button returns to list)
+- Specific statblock fields per entity type are TBD — to be defined when playtest PDF is reviewed
 
 ### Encounter Builder (post MVP)
 
