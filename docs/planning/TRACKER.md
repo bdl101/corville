@@ -20,7 +20,7 @@ Each milestone has a spec file with full task details, deliverables, and accepta
 | 01 | Project setup — Vite + TS scaffold, GitHub Pages, linting | [01-project-setup.md](01-project-setup.md) | [x] Done |
 | 02 | Design system — CSS tokens, base styles, card/layout shell | [02-design-system.md](02-design-system.md) | [x] Done |
 | 03 | Navigation — tab bar, view switcher, placeholder views | [03-navigation.md](03-navigation.md) | [x] Done |
-| 04 | Data layer — TS types, JSON configs, stub data, loader | [04-data-layer.md](04-data-layer.md) | [ ] Not started |
+| 04 | Data layer — TS types, JSON configs, stub data, loader | [04-data-layer.md](04-data-layer.md) | [x] Done |
 | 05 | Rolled Tables — table selection, input prompting, chaining, session log | [05-rolled-tables.md](05-rolled-tables.md) | [ ] Not started |
 | 06 | Statblock Lookup — filter-as-you-type list, detail view | [06-statblock-lookup.md](06-statblock-lookup.md) | [ ] Not started |
 

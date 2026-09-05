@@ -1,0 +1,1488 @@
+[
+  {
+    "id": "ape",
+    "name": "Ape",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 10,
+    "speed": "5, climb 5",
+    "agility": 1,
+    "mind": -1,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Punch", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "5 dam" }
+    ],
+    "features": [
+      { "name": "Dangerous When Cornered", "description": "When the ape has 0 Stamina, they deal an additional 2 dam with attacks." }
+    ]
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "type": "Animal",
+    "size": "Large",
+    "power": 6,
+    "stamina": 20,
+    "speed": "6, climb 6",
+    "agility": 0,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "6 dam" },
+      { "name": "Claws", "bonus": 2, "range": "Melee 1 (2 tar)", "tier2": "2 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "Dangerous When Cornered", "description": "When the bear has 15 or lower Stamina, they deal an additional 2 dam with attacks." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the bear." }
+    ]
+  },
+  {
+    "id": "bear-cave",
+    "name": "Bear, Cave",
+    "type": "Animal",
+    "size": "Large",
+    "power": 9,
+    "stamina": 30,
+    "speed": "6",
+    "agility": 0,
+    "mind": -2,
+    "strength": 3,
+    "slots": 15,
+    "attacks": [
+      { "name": "Bite", "bonus": 3, "range": "Melee 1", "tier2": "6 dam", "tier3": "6 dam" },
+      { "name": "Claws", "bonus": 3, "range": "Melee 1 (2 tar)", "tier2": "2 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "Dangerous When Cornered", "description": "When the bear has 22 or lower Stamina, they deal an additional 2 dam with attacks." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the bear." }
+    ]
+  },
+  {
+    "id": "camel",
+    "name": "Camel",
+    "type": "Animal",
+    "size": "Large",
+    "power": 5,
+    "stamina": 15,
+    "speed": "8",
+    "agility": 0,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Kick", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Sustained", "description": "The camel can gain the benefits of a rest without eating or drinking anything for up to three days in a row. They also can go for three days without food and water before beginning to starve." }
+    ]
+  },
+  {
+    "id": "cat",
+    "name": "Cat",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 1,
+    "stamina": 4,
+    "speed": "5, climb 5",
+    "agility": 1,
+    "mind": -2,
+    "strength": -3,
+    "slots": 1,
+    "attacks": [
+      { "name": "Scratch", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the cat." }
+    ]
+  },
+  {
+    "id": "cat-big",
+    "name": "Cat, Big",
+    "type": "Animal",
+    "size": "Large",
+    "power": 7,
+    "stamina": 25,
+    "speed": "6, climb 6",
+    "agility": 2,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "7 dam" },
+      { "name": "Scratch", "bonus": 2, "range": "Melee 1 (2 tar)", "tier2": "2 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "Charge", "description": "If the cat moves at least 4 squares before making an attack on the same turn, the attack deals an additional 3 dam." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the cat." }
+    ]
+  },
+  {
+    "id": "wildcat",
+    "name": "Wildcat",
+    "type": "Animal",
+    "size": "Small",
+    "power": 2,
+    "stamina": 9,
+    "speed": "6, climb 6",
+    "agility": 1,
+    "mind": -2,
+    "strength": 0,
+    "slots": 1,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "4 dam" },
+      { "name": "Scratch", "bonus": 1, "range": "Melee 1 (2 tar)", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Charge", "description": "If the cat moves at least 4 squares before making an attack on the same turn, the attack deals an additional 2 dam." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the cat." }
+    ]
+  },
+  {
+    "id": "chicken",
+    "name": "Chicken",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 0,
+    "stamina": 2,
+    "speed": "2, fly 3",
+    "agility": 1,
+    "mind": -2,
+    "strength": -4,
+    "slots": 0,
+    "attacks": [
+      { "name": "Peck", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Clumsy Flyer", "description": "If the chicken is still in the air when they stop flying, they fall." }
+    ]
+  },
+  {
+    "id": "crocodile",
+    "name": "Crocodile",
+    "type": "Animal",
+    "size": "Large",
+    "power": 6,
+    "stamina": 20,
+    "speed": "4, swim 6",
+    "agility": 1,
+    "mind": -3,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "6 dam", "note": "Vise Grip" }
+    ],
+    "features": [
+      { "name": "Vise Grip", "description": "When the crocodile gets a tier 3 result with their bite against a Medium or smaller target, the target is grabbed. While grabbed this way, the crocodile can't bite another target. While they have a target grabbed this way, the crocodile can use a maneuver to deal 3 P dam to the target." },
+      { "name": "No Darkness Penalty", "description": "Dim light and darkness imposes no penalties for the crocodile." }
+    ]
+  },
+  {
+    "id": "crow",
+    "name": "Crow",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 0,
+    "stamina": 2,
+    "speed": "2, fly 8",
+    "agility": 1,
+    "mind": -2,
+    "strength": -4,
+    "slots": 0,
+    "attacks": [
+      { "name": "Peck", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Messenger", "description": "The crow can carry a single sheet of paper without penalty. When outside, a pet crow always knows how to return to their owner's village and does so if their owner commands it." }
+    ]
+  },
+  {
+    "id": "crow-giant",
+    "name": "Crow, Giant",
+    "type": "Animal",
+    "size": "Large",
+    "power": 5,
+    "stamina": 15,
+    "speed": "2, fly 10",
+    "agility": 2,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Peck", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Grabber", "description": "While flying, the crow has an edge on attempts made to grab other creatures, and other creatures take a bane on tests made to escape being grabbed by the crow." }
+    ]
+  },
+  {
+    "id": "deer",
+    "name": "Deer",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 2,
+    "stamina": 5,
+    "speed": "8",
+    "agility": 1,
+    "mind": -2,
+    "strength": 0,
+    "slots": 5,
+    "attacks": [
+      { "name": "Ram", "bonus": 2, "range": "Melee 1", "tier2": "2 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "Charge", "description": "If the deer moves at least 4 squares before making an attack on the same turn, the attack deals an additional 2 dam." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the deer." }
+    ]
+  },
+  {
+    "id": "dog",
+    "name": "Dog",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 2,
+    "stamina": 9,
+    "speed": "7",
+    "agility": 1,
+    "mind": -2,
+    "strength": 0,
+    "slots": 1,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the dog." }
+    ]
+  },
+  {
+    "id": "donkey",
+    "name": "Donkey",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "6",
+    "agility": 0,
+    "mind": -2,
+    "strength": 1,
+    "slots": 10,
+    "attacks": [
+      { "name": "Kick", "bonus": 1, "range": "Melee 1", "tier2": "3 dam", "tier3": "4 dam" }
+    ],
+    "features": []
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "type": "Animal",
+    "size": "Huge",
+    "power": 10,
+    "stamina": 25,
+    "speed": "5",
+    "agility": -1,
+    "mind": -2,
+    "strength": 3,
+    "slots": 25,
+    "attacks": [
+      { "name": "Stomp", "bonus": 3, "range": "Melee 1", "tier2": "5 dam", "tier3": "9 dam" }
+    ],
+    "features": [
+      { "name": "Draft Animal", "description": "When hauling a vehicle, the elephant has 15 open slots that can be used to carry equipment." }
+    ]
+  },
+  {
+    "id": "goat",
+    "name": "Goat",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 2,
+    "stamina": 8,
+    "speed": "5",
+    "agility": 0,
+    "mind": -2,
+    "strength": 1,
+    "slots": 2,
+    "attacks": [
+      { "name": "Gore", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the goat." }
+    ]
+  },
+  {
+    "id": "hawk",
+    "name": "Hawk",
+    "type": "Animal",
+    "size": "Small",
+    "power": 1,
+    "stamina": 5,
+    "speed": "2, fly 8",
+    "agility": 1,
+    "mind": -2,
+    "strength": -1,
+    "slots": 0,
+    "attacks": [
+      { "name": "Rake", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "Carrier", "description": "This creature can carry one Tiny object." }
+    ]
+  },
+  {
+    "id": "horse-draft",
+    "name": "Horse, Draft",
+    "type": "Animal",
+    "size": "Large",
+    "power": 5,
+    "stamina": 10,
+    "speed": "8",
+    "agility": 0,
+    "mind": -2,
+    "strength": 2,
+    "slots": 15,
+    "attacks": [
+      { "name": "Kick", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Draft Animal", "description": "When hauling a vehicle, the horse has 5 open slots that can be used to carry equipment." }
+    ]
+  },
+  {
+    "id": "horse-riding",
+    "name": "Horse, Riding",
+    "type": "Animal",
+    "size": "Large",
+    "power": 5,
+    "stamina": 15,
+    "speed": "10",
+    "agility": 2,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Kick", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam" }
+    ],
+    "features": []
+  },
+  {
+    "id": "horse-war",
+    "name": "Horse, War",
+    "type": "Animal",
+    "size": "Large",
+    "power": 6,
+    "stamina": 20,
+    "speed": "8",
+    "agility": 0,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Kick", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Mounted Charge", "description": "If the horse moves at least 4 squares before their rider makes an attack on the same turn, the rider's attack deals an additional 2 damage." }
+    ]
+  },
+  {
+    "id": "monitor-lizard",
+    "name": "Monitor Lizard",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 15,
+    "speed": "4, swim 4",
+    "agility": 2,
+    "mind": -3,
+    "strength": 1,
+    "slots": 5,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "5 dam", "note": "Lacerate" }
+    ],
+    "features": [
+      { "name": "Lacerate", "description": "When the lizard gets a tier 3 result with their bite against a creature and damages their Stamina or gives them a wound, the target gains a laceration until they regain Stamina. When the target takes a maneuver and an action on their turn, they take 1 P dam for each laceration they have." }
+    ]
+  },
+  {
+    "id": "mule",
+    "name": "Mule",
+    "type": "Animal",
+    "size": "Large",
+    "power": 4,
+    "stamina": 10,
+    "speed": "7",
+    "agility": 1,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Kick", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "5 dam" }
+    ],
+    "features": []
+  },
+  {
+    "id": "ox",
+    "name": "Ox",
+    "type": "Animal",
+    "size": "Large",
+    "power": 8,
+    "stamina": 20,
+    "speed": "5",
+    "agility": -1,
+    "mind": -2,
+    "strength": 3,
+    "slots": 20,
+    "attacks": [
+      { "name": "Kick", "bonus": 3, "range": "Melee 1", "tier2": "4 dam", "tier3": "8 dam" }
+    ],
+    "features": [
+      { "name": "Draft Animal", "description": "When hauling a vehicle, the ox has 10 open slots that can be used to carry equipment." }
+    ]
+  },
+  {
+    "id": "rat",
+    "name": "Rat",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 0,
+    "stamina": 2,
+    "speed": "4, climb 4",
+    "agility": 1,
+    "mind": -3,
+    "strength": -5,
+    "slots": 0,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the rat." }
+    ]
+  },
+  {
+    "id": "scorpion-giant",
+    "name": "Scorpion, Giant",
+    "type": "Animal",
+    "size": "Large",
+    "power": 7,
+    "stamina": 25,
+    "speed": "6, climb 6 (U)",
+    "agility": 2,
+    "mind": -4,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Pince", "bonus": 2, "range": "Melee 1 (2 tar)", "tier2": "2 dam", "tier3": "4 dam", "note": "Vise Grip" },
+      { "name": "Sting", "bonus": 2, "range": "Melee 2", "tier2": "4 dam", "tier3": "7 dam", "note": "Highly Venomous" }
+    ],
+    "features": [
+      { "name": "Vise Grip", "description": "When the scorpion gets a tier 3 result with their pince against a Medium or smaller target, the target is grabbed. The scorpion can use a maneuver to deal 3 P dam to all targets grabbed this way. The scorpion can have two creatures grabbed this way." },
+      { "name": "Highly Venomous", "description": "When the scorpion gets a tier 2 result with their sting, the target is weakened, or vulnerable and weakened on a tier 3 result." },
+      { "name": "Vibration Sense", "description": "The scorpion is aware of the exact location of any creature within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "snake-constrictor",
+    "name": "Snake, Constrictor",
+    "type": "Animal",
+    "size": "Huge",
+    "power": 5,
+    "stamina": 15,
+    "speed": "6, climb 6",
+    "agility": 2,
+    "mind": -3,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Grabber", "description": "The snake has an edge on attempts made to grab other creatures, and other creatures take a bane on tests made to escape being grabbed by the snake. While they have a target grabbed this way, the snake can use a maneuver to deal 2 P dam to the target." },
+      { "name": "Heat Sense", "description": "The snake is aware of the exact location of any human, blood creature, demon, or bird or mammal animal within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "snake-venomous",
+    "name": "Snake, Venomous",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 1,
+    "stamina": 5,
+    "speed": "6, climb 6",
+    "agility": 1,
+    "mind": -3,
+    "strength": -4,
+    "slots": 0,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam", "note": "Venomous" }
+    ],
+    "features": [
+      { "name": "Venomous", "description": "When the snake gets a tier 3 result with their bite, the target is weakened." },
+      { "name": "Heat Sense", "description": "The snake is aware of the exact location of any human, blood creature, demon, or bird or mammal animal within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "snake-venomous-giant",
+    "name": "Snake, Venomous Giant",
+    "type": "Animal",
+    "size": "Large",
+    "power": 4,
+    "stamina": 15,
+    "speed": "6, climb 6",
+    "agility": 2,
+    "mind": -4,
+    "strength": 1,
+    "slots": 5,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "5 dam", "note": "Highly Venomous" }
+    ],
+    "features": [
+      { "name": "Highly Venomous", "description": "When the snake gets a tier 2 result with their bite, the target is weakened, or vulnerable and weakened on a tier 3 result." },
+      { "name": "Heat Sense", "description": "The snake is aware of the exact location of any human, blood creature, demon, or bird or mammal animal within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "spider",
+    "name": "Spider",
+    "type": "Animal",
+    "size": "Tiny",
+    "power": 0,
+    "stamina": 2,
+    "speed": "5, climb 5 (U)",
+    "agility": 1,
+    "mind": -4,
+    "strength": -5,
+    "slots": 0,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Vibration Sense", "description": "The spider is aware of the exact location of any creature within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "spider-giant",
+    "name": "Spider, Giant",
+    "type": "Animal",
+    "size": "Huge",
+    "power": 10,
+    "stamina": 30,
+    "speed": "8, climb 8 (U)",
+    "agility": 2,
+    "mind": -4,
+    "strength": 3,
+    "slots": 20,
+    "attacks": [
+      { "name": "Bite", "bonus": 3, "range": "Melee 1", "tier2": "5 dam", "tier3": "9 dam", "note": "Highly Venomous" }
+    ],
+    "features": [
+      { "name": "Highly Venomous", "description": "When the spider gets a tier 2 result with their bite, the target is weakened, or vulnerable and weakened on a tier 3 result." },
+      { "name": "Web", "description": "As an action, the spider showers a 3 square area within 1 square of them with web. The web has 10 Stamina. Each creature in the area must make an Agility RR. 1 The creature is grabbed by the web. 2 The creature's speed is halved until the end of their next turn. 3 No effect." },
+      { "name": "Vibration Sense", "description": "The spider is aware of the exact location of any creature within 2 squares and suffers no penalties on attacks against or tests made to observe them." }
+    ]
+  },
+  {
+    "id": "wolf",
+    "name": "Wolf",
+    "type": "Animal",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 10,
+    "speed": "7",
+    "agility": 1,
+    "mind": -2,
+    "strength": 0,
+    "slots": 5,
+    "attacks": [
+      { "name": "Bite", "bonus": 1, "range": "Melee 1", "tier2": "3 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "Pack Hunter", "description": "The wolf gains a total +3 bonus to attacks (instead of +2) for flanking with another wolf." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the wolf." }
+    ]
+  },
+  {
+    "id": "wolf-dire",
+    "name": "Wolf, Dire",
+    "type": "Animal",
+    "size": "Large",
+    "power": 5,
+    "stamina": 15,
+    "speed": "7",
+    "agility": 2,
+    "mind": -2,
+    "strength": 2,
+    "slots": 10,
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "6 dam", "note": "Pull Down" }
+    ],
+    "features": [
+      { "name": "Pull Down", "description": "When the wolf gets a tier 3 result on a bite against a Medium or smaller creature, the target is knocked prone." },
+      { "name": "Pack Hunter", "description": "The wolf gains a total +3 bonus to attacks (instead of +2) for flanking with another wolf." },
+      { "name": "No Dim Light Penalty", "description": "Dim light imposes no penalties for the wolf." }
+    ]
+  },
+  {
+    "id": "alchemist",
+    "name": "Alchemist",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 1,
+    "mind": 1,
+    "strength": -1,
+    "slots": 10,
+    "expertises": ["Alchemy (3 uses)", "Magic Lore", "Monster Lore"],
+    "equipment": ["Acid vial (5)", "alchemist's tools", "fire bomb", "poison vial (5)"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "2 dam", "tier3": "3 dam" },
+      { "name": "Acid Vial", "bonus": 1, "range": "Ranged 5", "tier2": "5 dam", "tier3": "9 dam" }
+    ],
+    "features": [
+      { "name": "Fire Bomb", "description": "The alchemist hurls a bomb up to 10 squares. It explodes in a 3 cube. Each creature in the cube must make an Agility RR. ≤11: 10 dam, 12-16: 5 dam, 17+: 0 dam" }
+    ]
+  },
+  {
+    "id": "archer-4",
+    "name": "Archer (Power 4)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 10,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 0,
+    "slots": 10,
+    "ad": "2 (from knife)",
+    "expertises": ["Athletics", "Stealth", "Bow"],
+    "equipment": ["Quiver of 20 arrows", "shortbow"],
+    "attacks": [
+      { "name": "Shortbow", "bonus": 2, "range": "Ranged 12", "tier2": "3 dam", "tier3": "5 dam" }
+    ],
+    "features": []
+  },
+  {
+    "id": "archer-7",
+    "name": "Archer (Power 7)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 7,
+    "stamina": 25,
+    "speed": "5",
+    "agility": 2,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Athletics", "Stealth", "Bow (2 uses)"],
+    "equipment": ["Longbow", "quiver of 20 arrows"],
+    "attacks": [
+      { "name": "Longbow", "bonus": 4, "range": "Ranged 22", "tier2": "5 dam", "tier3": "8 dam", "note": "Walls Cannot Save You" }
+    ],
+    "features": [
+      { "name": "Walls Cannot Save You", "description": "The archer's longbow attacks ignore cover." }
+    ]
+  },
+  {
+    "id": "archer-10",
+    "name": "Archer (Power 10)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 10,
+    "stamina": 40,
+    "speed": "5",
+    "agility": 3,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Athletics", "Stealth", "Bow (2 uses)"],
+    "equipment": ["Longbow", "quiver of 20 arrows"],
+    "attacks": [
+      { "name": "Longbow", "bonus": 5, "range": "Ranged 22", "tier2": "6 dam", "tier3": "9 dam", "note": "Split Shot, Walls Cannot Save You" }
+    ],
+    "features": [
+      { "name": "Split Shot", "description": "When the archer makes a longbow attack, they can use 2 arrows and pick 2 targets." },
+      { "name": "Walls Cannot Save You", "description": "The archer's longbow attacks ignore cover." }
+    ]
+  },
+  {
+    "id": "blacksmith",
+    "name": "Blacksmith",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 0,
+    "strength": 1,
+    "slots": 10,
+    "expertises": ["Blacksmithing (3 uses)", "Bashing"],
+    "equipment": ["Blacksmith's tools", "hammer"],
+    "attacks": [
+      { "name": "Hammer", "bonus": 2, "range": "Melee 1/Ranged 5", "tier2": "3 dam", "tier3": "5 dam", "note": "Pummeling" }
+    ],
+    "features": [
+      { "name": "Pummeling", "description": "When the blacksmith gets a tier 3 result on a hammer attack against a Medium or smaller target, the target is pushed 1 square. If the blacksmith gets a crit on a hammer attacks against a Medium or smaller creature, the target is knocked prone." }
+    ]
+  },
+  {
+    "id": "commoner",
+    "name": "Commoner",
+    "type": "Human",
+    "size": "Medium",
+    "power": 0,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 0,
+    "strength": 0,
+    "slots": 10,
+    "expertises": [],
+    "equipment": [],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 0, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": []
+  },
+  {
+    "id": "conjurer",
+    "name": "Conjurer",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Magic Lore", "Conjuration"],
+    "equipment": ["Spellbooks: jaunt, summon object, teleport object"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Jumper", "description": "When the conjurer casts a conjuration spell that causes a target to teleport, they can teleport the target up to 1 additional square." }
+    ]
+  },
+  {
+    "id": "cultist",
+    "name": "Cultist",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Religious Lore", "Necromancy"],
+    "equipment": ["Spellbooks: bone capture, minor curse, monster sense"],
+    "attacks": [
+      { "name": "Bone Capture", "bonus": 2, "range": "Ranged 5", "tier2": "3 dam", "tier3": "4 dam", "note": "Knock Prone" }
+    ],
+    "features": [
+      { "name": "Knock Prone", "description": "When the cultist gets a tier 3 result with the bone capture spell, the target falls prone." }
+    ]
+  },
+  {
+    "id": "elementalist",
+    "name": "Elementalist",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Magic Lore", "Elemental"],
+    "equipment": ["Spellbooks: create water, fire hands, fire lance"],
+    "attacks": [
+      { "name": "Fire Hands", "bonus": 2, "range": "Melee 1", "tier2": "6 dam", "tier3": "10 dam" },
+      { "name": "Fire Lance", "bonus": 2, "range": "Ranged 10", "tier2": "4 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Burn, Baby!", "description": "When the elementalist casts an elemental spell that deals damage, the spell deals an extra 1 dam." }
+    ]
+  },
+  {
+    "id": "enchanter",
+    "name": "Enchanter",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Enchanting (3 uses)", "Magic Lore"],
+    "equipment": ["Enchanter's tools"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Material Transfer", "description": "As a rest activity, the enchanter can choose two items that can be weapons or armor that can be crafted from the same materials, but are made of different ones. The items swap materials." }
+    ]
+  },
+  {
+    "id": "guide",
+    "name": "Guide",
+    "type": "Human",
+    "size": "Medium",
+    "power": 5,
+    "stamina": 15,
+    "speed": "5",
+    "agility": 1,
+    "mind": 2,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Historical Lore", "Nature Lore", "Navigate (2 uses)", "Stealth"],
+    "equipment": ["Compass", "longbow", "quiver of 20 arrows", "torch"],
+    "attacks": [
+      { "name": "Longbow", "bonus": 1, "range": "Ranged 20", "tier2": "4 dam", "tier3": "7 dam" }
+    ],
+    "features": [
+      { "name": "Travel Expert", "description": "When the guide makes a test related to a travel role, they can roll twice and choose either result." }
+    ]
+  },
+  {
+    "id": "illusionist",
+    "name": "Illusionist",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Magic Lore", "Illusion"],
+    "equipment": ["Spellbooks: cacophony, light, minor phantasm"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Lasting Illusion", "description": "When the illusionist casts an illusion spell with a duration listed in UD, the duration gains 1 additional UD." }
+    ]
+  },
+  {
+    "id": "priest",
+    "name": "Priest",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Religious Lore", "Benefaction"],
+    "equipment": ["Spellbooks: minor blessing, minor healing, minor ward"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Enhanced Healing", "description": "When the priest restores Stamina to another creature with a benefaction spell, the creature regains an additional 1 Stamina." }
+    ]
+  },
+  {
+    "id": "sage-3",
+    "name": "Sage (Power 3)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 2,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Historical Lore", "Magic Lore", "Monster Lore", "Nature Lore", "Religious Lore"],
+    "equipment": ["Journal", "lore book (4; Historical Lore, Magic Lore, Monster Lore, Nature Lore, Religious Lore)", "quill and ink pot", "spellbooks: fire lance"],
+    "attacks": [
+      { "name": "Fire Lance", "bonus": 2, "range": "Ranged 10", "tier2": "4 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Shared Knowledge", "description": "When the sage reads a lore book as a rest activity, they can choose one other human resting with them who also gains the activity's benefits." }
+    ]
+  },
+  {
+    "id": "sage-6",
+    "name": "Sage (Power 6)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 6,
+    "stamina": 20,
+    "speed": "5",
+    "agility": 1,
+    "mind": 3,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Historical Lore (2 uses)", "Magic Lore (2 uses)", "Monster Lore (2 uses)", "Nature Lore (2 uses)", "Religious Lore (2 uses)"],
+    "equipment": ["Journal", "lore book (4; Historical Lore, Magic Lore, Monster Lore, Nature Lore, Religious Lore)", "quill and ink pot", "spellbooks: fire lance"],
+    "attacks": [
+      { "name": "Fire Lance", "bonus": 3, "range": "Ranged 10", "tier2": "5 dam", "tier3": "7 dam" }
+    ],
+    "features": [
+      { "name": "Lecture", "description": "When the sage reads a lore book as a rest activity, they can choose up to two other humans resting with them who also gains the activity's benefits." }
+    ]
+  },
+  {
+    "id": "thief-3",
+    "name": "Thief (Power 3)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 0,
+    "slots": 10,
+    "ad": "2 (from knife)",
+    "expertises": ["Stealth (2 uses)", "Thievery (2 uses)"],
+    "equipment": ["Crowbar", "knife", "lock pick set"],
+    "attacks": [
+      { "name": "Knife", "bonus": 1, "range": "Melee 1/Ranged 5", "tier2": "3 dam", "tier3": "5 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the thief uses the Shift maneuver while wielding a knife, they can shift 1 additional square." },
+      { "name": "Stealthy", "description": "When the thief makes a test to hide or sneak while not wearing armor, they can roll twice and choose either result." }
+    ]
+  },
+  {
+    "id": "thief-6",
+    "name": "Thief (Power 6)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 6,
+    "stamina": 20,
+    "speed": "5",
+    "agility": 2,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "ad": "2 (from knife)",
+    "expertises": ["Stealth (3 uses)", "Thievery (3 uses)"],
+    "equipment": ["Crowbar", "knife", "lock pick set"],
+    "attacks": [
+      { "name": "Knife", "bonus": 2, "range": "Melee 1/Ranged 5", "tier2": "4 dam", "tier3": "6 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the thief uses the Shift maneuver while wielding a knife, they can shift 1 additional square." },
+      { "name": "Stealthy Safe Cracker", "description": "When the thief makes a test to hide or sneak or pick a lock while not wearing armor, they can roll twice and choose either result." }
+    ]
+  },
+  {
+    "id": "thief-9",
+    "name": "Thief (Power 9)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 9,
+    "stamina": 35,
+    "speed": "5",
+    "agility": 3,
+    "mind": 1,
+    "strength": 1,
+    "slots": 10,
+    "ad": "2 (from knife)",
+    "expertises": ["Stealth (4 uses)", "Thievery (4 uses)"],
+    "equipment": ["Crowbar", "knife", "lock pick set (fine)"],
+    "attacks": [
+      { "name": "Knife", "bonus": 3, "range": "Melee 1/Ranged 5", "tier2": "5 dam", "tier3": "7 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the thief uses the Shift maneuver while wielding a knife, they can shift 1 additional square." },
+      { "name": "Master Thief", "description": "When the thief makes an Agility RR or a test to hide or sneak or pick a lock while not wearing armor, they can roll twice and choose either result." }
+    ]
+  },
+  {
+    "id": "torchbearer",
+    "name": "Torchbearer",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 0,
+    "slots": 10,
+    "ad": "2 (from knife)",
+    "expertises": ["Search (1 use)", "Stealth (1 use)"],
+    "equipment": ["Knife", "torches (6)"],
+    "attacks": [
+      { "name": "Knife", "bonus": 1, "range": "Melee 1/Ranged 5", "tier2": "3 dam", "tier3": "5 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the torchbearer uses the Shift maneuver while wielding the knife, they can shift 1 additional square." },
+      { "name": "Lasting Light", "description": "While the torchbearer holds a torch, its UD maximum is 2." }
+    ]
+  },
+  {
+    "id": "transmuter",
+    "name": "Transmuter",
+    "type": "Human",
+    "size": "Medium",
+    "power": 3,
+    "stamina": 5,
+    "speed": "5",
+    "agility": 0,
+    "mind": 1,
+    "strength": 0,
+    "slots": 10,
+    "expertises": ["Magic Lore", "Alteration"],
+    "equipment": ["Spellbooks: animal form, repair, take shape"],
+    "attacks": [
+      { "name": "Unarmed", "bonus": 1, "range": "Melee 1", "tier2": "1 dam", "tier3": "2 dam" }
+    ],
+    "features": [
+      { "name": "Lasting Alteration", "description": "When the transmuter casts an alteration spell with a duration listed in UD, the duration gains 1 additional UD." }
+    ]
+  },
+  {
+    "id": "trapper",
+    "name": "Trapper",
+    "type": "Human",
+    "size": "Medium",
+    "power": 5,
+    "stamina": 15,
+    "speed": "5",
+    "agility": 2,
+    "mind": 1,
+    "strength": 1,
+    "slots": 10,
+    "expertises": ["Nature Lore (2 uses)", "Navigate", "Stealth"],
+    "equipment": ["Bear trap (2)", "caltrops (2)", "knife", "lantern", "longbow", "oil pint (2)", "quiver of 20 arrows"],
+    "attacks": [
+      { "name": "Longbow", "bonus": 2, "range": "Ranged 20", "tier2": "5 dam", "tier3": "8 dam" }
+    ],
+    "features": [
+      { "name": "Trap Master", "description": "Other creatures take a bane on RRs made to resist terrain effects created by the trapper." }
+    ]
+  },
+  {
+    "id": "warrior-pike-4",
+    "name": "Warrior, Pike (Power 4)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 10,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 1,
+    "slots": 10,
+    "ad": "5 (light armor)",
+    "expertises": ["Athletics", "Lift", "Stabbing"],
+    "equipment": ["Light armor", "pike"],
+    "attacks": [
+      { "name": "Pike", "bonus": 2, "range": "Melee 2", "tier2": "4 dam", "tier3": "8 dam", "note": "Brutal" }
+    ],
+    "features": [
+      { "name": "Brutal", "description": "The warrior scores a crit with a pike attack when the dice total 18, 19, or 20 without modifiers. When the warrior scores a crit with a pike attack, it deals 16 dam." }
+    ]
+  },
+  {
+    "id": "warrior-pike-7",
+    "name": "Warrior, Pike (Power 7)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 7,
+    "stamina": 25,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 2,
+    "slots": 10,
+    "ad": "10 (medium armor)",
+    "expertises": ["Athletics", "Lift", "Stabbing (2 uses)"],
+    "equipment": ["Medium armor", "pike"],
+    "attacks": [
+      { "name": "Pike", "bonus": 4, "range": "Melee 2", "tier2": "5 dam", "tier3": "9 dam", "note": "Brutal, Spinning Shaft" }
+    ],
+    "features": [
+      { "name": "Brutal", "description": "The warrior scores a crit with a pike attack when the dice total 18, 19, or 20 without modifiers. When the warrior scores a crit with a pike attack, it deals 18 dam." },
+      { "name": "Spinning Shaft", "description": "When the warrior gets a tier 3 result with a pike attack, they can deal 2 dam to another target within range." }
+    ]
+  },
+  {
+    "id": "warrior-pike-10",
+    "name": "Warrior, Pike (Power 10)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 10,
+    "stamina": 40,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 3,
+    "slots": 10,
+    "ad": "15 (heavy armor)",
+    "expertises": ["Athletics (2 uses)", "Lift (2 uses)", "Stabbing (2 uses)"],
+    "equipment": ["Heavy armor", "pike"],
+    "attacks": [
+      { "name": "Pike", "bonus": 5, "range": "Melee 2", "tier2": "6 dam", "tier3": "10 dam", "note": "Brutal, Spinning Shaft" }
+    ],
+    "features": [
+      { "name": "Brutal", "description": "The warrior scores a crit with a pike attack when the dice total 18, 19, or 20 without modifiers. When the warrior scores a crit with a pike attack, it deals 20 dam." },
+      { "name": "Spinning Shaft", "description": "When the warrior gets a tier 3 result with a pike attack, they can deal 3 dam to another target within range." }
+    ]
+  },
+  {
+    "id": "warrior-sword-4",
+    "name": "Warrior, Sword (Power 4)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 10,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 1,
+    "slots": 10,
+    "ad": "14 (light armor, shield, sword)",
+    "expertises": ["Endurance", "Lift", "Slashing"],
+    "equipment": ["Light armor", "shield", "sword"],
+    "attacks": [
+      { "name": "Sword", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "7 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the warrior uses the Shift maneuver while wielding a sword, they can shift 2 additional squares." }
+    ]
+  },
+  {
+    "id": "warrior-sword-7",
+    "name": "Warrior, Sword (Power 7)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 7,
+    "stamina": 25,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 2,
+    "slots": 10,
+    "ad": "19 (medium armor, shield, sword)",
+    "expertises": ["Endurance", "Lift", "Slashing (2 uses)"],
+    "equipment": ["Medium armor", "shield", "sword"],
+    "attacks": [
+      { "name": "Sword", "bonus": 4, "range": "Melee 1", "tier2": "5 dam", "tier3": "8 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the warrior uses the Shift maneuver while wielding a sword, they can shift 2 additional squares." },
+      { "name": "Interposing Arm", "description": "When a creature within 1 square of the warrior is hit with an attack while the warrior wields a shield, the warrior can use their reaction to have the damage dealt to the shield as if the target were wielding it." }
+    ]
+  },
+  {
+    "id": "warrior-sword-10",
+    "name": "Warrior, Sword (Power 10)",
+    "type": "Human",
+    "size": "Medium",
+    "power": 10,
+    "stamina": 40,
+    "speed": "5",
+    "agility": 1,
+    "mind": 0,
+    "strength": 3,
+    "slots": 10,
+    "ad": "24 (heavy armor, shield, sword)",
+    "expertises": ["Endurance (2 uses)", "Lift (2 uses)", "Slashing (2 uses)"],
+    "equipment": ["Heavy armor", "shield", "sword"],
+    "attacks": [
+      { "name": "Sword", "bonus": 5, "range": "Melee 1", "tier2": "6 dam", "tier3": "9 dam" }
+    ],
+    "features": [
+      { "name": "Disengage", "description": "When the warrior uses the Shift maneuver while wielding a sword, they can shift 2 additional squares." },
+      { "name": "Interposing Arm", "description": "When a creature within 1 square of the warrior is hit with an attack while the warrior wields a shield, the warrior can use their reaction to have the damage dealt to the shield as if the target were wielding it." }
+    ]
+  },
+  {
+    "id": "blood-creature-a",
+    "name": "Blood Creature A",
+    "type": "Blood",
+    "size": "Small",
+    "power": 1,
+    "stamina": 5,
+    "speed": "6, climb 6",
+    "agility": 2,
+    "mind": -2,
+    "strength": 0,
+    "colloquialNames": ["creep", "red drool", "spindleclaw"],
+    "description": "These blood creatures hunt in packs, dropping from above onto prey. They drool bright red saliva when food is near.",
+    "attacks": [
+      { "name": "Claws", "bonus": 2, "range": "Melee 1", "tier2": "2 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "Drop Attack", "description": "This blood creature treats falls as 10 squares shorter when calculating fall damage. After falling and taking no damage, they gain an edge on attacks and damage until the end of the turn." }
+    ]
+  },
+  {
+    "id": "blood-creature-b",
+    "name": "Blood Creature B",
+    "type": "Blood",
+    "size": "Small",
+    "power": 3,
+    "stamina": 15,
+    "speed": "6, climb 6 (U)",
+    "agility": 2,
+    "mind": -1,
+    "strength": 1,
+    "colloquialNames": ["blood spider", "mouth eyes"],
+    "description": "An orb of tendrils split by a toothy maw that parts to reveal glowing red eyes, this blood creature clings to surfaces and their enemies.",
+    "attacks": [
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "4 dam" },
+      { "name": "Tendril", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "4 dam", "note": "Tendril Snare" }
+    ],
+    "features": [
+      { "name": "Tendril Snare", "description": "When this creature gets a tier 3 result on a tendril attack against a Medium or smaller target, the target is grabbed. While the target is grabbed this way, this creature's bite attack deals an additional 2 dam to them, and this creature can use a maneuver to deal 2 dam to the target." }
+    ]
+  },
+  {
+    "id": "blood-creature-c",
+    "name": "Blood Creature C",
+    "type": "Blood",
+    "size": "Large",
+    "power": 8,
+    "stamina": 40,
+    "speed": "5",
+    "agility": 0,
+    "mind": 0,
+    "strength": 2,
+    "colloquialNames": ["blood brute", "tiny arms"],
+    "description": "A malleable creature that most often resides in somewhat humanoid form, this monster has the power to knock down doors to get at prey but prefers to flow through them.",
+    "attacks": [
+      { "name": "Punch", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "8 dam" },
+      { "name": "Clot", "bonus": 2, "range": "Ranged 10", "tier2": "3 dam", "tier3": "7 dam" }
+    ],
+    "features": [
+      { "name": "Malleable", "description": "This blood creature can fit through spaces as small as 1 inch wide and never needs to squeeze. They can't be grabbed or knocked prone." }
+    ]
+  },
+  {
+    "id": "ring-collector",
+    "name": "Ring Collector",
+    "type": "Unique",
+    "size": "Medium",
+    "power": 20,
+    "stamina": 100,
+    "speed": "7",
+    "reactions": 4,
+    "agility": 4,
+    "mind": 5,
+    "strength": 4,
+    "description": "The Ring Collector is a creature gifted with supernatural strength and speed who is obsessed with finding and collecting magic rings. They invaded and wiped out several villages during the Necromancer War in pursuit of rings. The Ring Collector is Craelin's advisor, Namlin. Namlin stayed loyal to the archmage after he became a necromancer even after all others left Craelin's side. As a gift, Craelin warped Namlin's flesh and turned them into a hunter of magic rings. Namlin became too covetous of their rings and refused to give them over to Craelin. The necromancer stripped the Ring Collector of their collection and imprisoned them in a crystal for insolence a short time before disappearing.",
+    "attacks": [
+      { "name": "Kneel", "bonus": 5, "range": "Ranged 10", "tier2": "8 dam", "tier3": "14 dam", "note": "Literally Kneel" },
+      { "name": "Sword", "bonus": 4, "range": "Melee 1", "tier2": "7 dam", "tier3": "12 dam", "note": "Exploding Sword" },
+      { "name": "Punches", "bonus": 4, "range": "Melee 1 (2 tar)", "tier2": "4 dam", "tier3": "8 dam", "note": "Literally Kneel" }
+    ],
+    "features": [
+      { "name": "Literally Kneel", "description": "When this creature gets a tier 3 result with a Kneel or Punches attack, the target falls prone." },
+      { "name": "Exploding Sword", "description": "When this creature's sword attack kills a creature, the target explodes and deals 1d6 dam to each creature within 1 square." },
+      { "name": "Extra Action", "description": "This creature can take one additional action or maneuver on their combat turn." },
+      { "name": "Vanish", "description": "This creature can teleport up to 50 miles to a location they have visited before regardless of line of effect.", "uses": "1/Rest" },
+      { "name": "Ring Sense", "description": "This creature knows the exact location of any magic ring within 20 squares of them regardless of line of effect." }
+    ]
+  },
+  {
+    "id": "undead-a",
+    "name": "Undead A",
+    "type": "Undead",
+    "size": "Medium",
+    "power": 2,
+    "stamina": 10,
+    "speed": "5",
+    "agility": 1,
+    "mind": -3,
+    "strength": 2,
+    "colloquialNames": ["razorback", "spined death"],
+    "description": "These undead move in packs, like feral dogs — feral dogs that grow bony spines and can shoot them at a distance before closing in.",
+    "attacks": [
+      { "name": "Claws", "bonus": 2, "range": "Melee 1", "tier2": "2 dam", "tier3": "4 dam", "note": "Lacerate" },
+      { "name": "Spine", "bonus": 2, "range": "Ranged 5", "tier2": "1 dam", "tier3": "3 dam" }
+    ],
+    "features": [
+      { "name": "Lacerate", "description": "When the undead gets a tier 3 result with their claws against a creature and damages their Stamina or gives them a wound, the target gains a laceration until they regain Stamina. When the target takes a maneuver and an action on their turn, they take 1 P dam for each laceration they have." },
+      { "name": "Leap", "description": "The undead can jump a distance equal to their speed as a maneuver." }
+    ]
+  },
+  {
+    "id": "undead-b",
+    "name": "Undead B",
+    "type": "Undead",
+    "size": "Medium",
+    "power": 4,
+    "stamina": 20,
+    "speed": "6",
+    "agility": 2,
+    "mind": -2,
+    "strength": 2,
+    "colloquialNames": ["longclaw", "spined one"],
+    "description": "When an undead A devours enough flesh, their body evolves, growing more and longer spines on their rotting form. Many groups of undead A have one or two of these creatures among their ranks, though the most successful packs consist almost entirely of undead B.",
+    "attacks": [
+      { "name": "Claws", "bonus": 2, "range": "Melee 1", "tier2": "3 dam", "tier3": "5 dam", "note": "Lacerate" },
+      { "name": "Spine", "bonus": 2, "range": "Ranged 10", "tier2": "2 dam", "tier3": "4 dam" }
+    ],
+    "features": [
+      { "name": "Lacerate", "description": "When the undead hits with their claws against a creature and damages their Stamina or gives them a wound, the target gains a laceration until they regain Stamina. When the target takes a maneuver and an action on their turn, they take 1 P dam for each laceration they have." },
+      { "name": "Leap", "description": "The undead can jump a distance equal to their speed as a maneuver." },
+      { "name": "Spiked Counter", "description": "When the undead counters, they deal 5 dam." }
+    ]
+  },
+  {
+    "id": "undead-c",
+    "name": "Undead C",
+    "type": "Undead",
+    "size": "Large",
+    "power": 6,
+    "stamina": 30,
+    "speed": "6, climb 6 (U)",
+    "agility": 2,
+    "mind": 0,
+    "strength": 2,
+    "colloquialNames": ["gray death", "rotting breath"],
+    "description": "The many limbs of this horse-sized undead make them an agile, quick predator that can squeeze the breath and break the ribs of a victim as they scale a wall and into the dark to avoid other threats.",
+    "attacks": [
+      { "name": "Crush", "bonus": 2, "range": "Melee 2", "tier2": "4 dam", "tier3": "6 dam", "note": "Grabber" },
+      { "name": "Bite", "bonus": 2, "range": "Melee 1", "tier2": "4 dam", "tier3": "6 dam", "note": "Big Bite" }
+    ],
+    "features": [
+      { "name": "Grabber", "description": "When the undead gets a tier 3 result with a Crush attack against a Medium or smaller creature, the creature is grabbed. There is no limit to the number of creatures they can grab." },
+      { "name": "Big Bite", "description": "While they have a target grabbed, the undead's bite deals an additional 2 dam." },
+      { "name": "Squeeze", "description": "As a maneuver, the undead deals 2 P dam to each creature they have grabbed." }
+    ]
+  },
+  {
+    "id": "undead-d",
+    "name": "Undead D",
+    "type": "Undead",
+    "size": "Huge",
+    "power": 10,
+    "stamina": 50,
+    "speed": "5",
+    "reactions": 2,
+    "agility": -2,
+    "mind": 0,
+    "strength": 3,
+    "colloquialNames": ["fire belly", "skull mountain"],
+    "description": "A pile of skulls atop a mound of gelatinous flesh, a literal fire caused by the tormented souls trapped inside the undead burns in the belly of this creature.",
+    "attacks": [
+      { "name": "Claws", "bonus": 3, "range": "Melee 2 (2 tar)", "tier2": "3 dam", "tier3": "5 dam" },
+      { "name": "Rend", "bonus": 3, "range": "Melee 2", "tier2": "5 dam", "tier3": "9 dam" }
+    ],
+    "features": [
+      { "name": "Fire Beam", "description": "As an action, the undead shoots fire in a 10 x 2 line within 1 square of them. Each creature in the area must make an Agility RR. 1: 10 dam, 2: 5 dam, 3: No effect", "uses": "1/Day" },
+      { "name": "Absorb", "description": "As a maneuver, the undead can grab the corpse of a human who has died within the last 24 hours that is within 2 squares of them and incorporate it into their form. The corpse and any mundane equipment it carries are destroyed, and the undead regains 10 Stamina." }
+    ]
+  },
+  {
+    "id": "undead-e",
+    "name": "Undead E",
+    "type": "Undead",
+    "size": "Large",
+    "power": 12,
+    "stamina": 60,
+    "speed": "4",
+    "reactions": 2,
+    "agility": -2,
+    "mind": 0,
+    "strength": 3,
+    "colloquialNames": ["babbling death", "hideous choir"],
+    "description": "This lumbering pile of flesh seems to be two smaller humans fused to the back of a giant. All three of the heads are equipped with razor sharp teeth and babble nonsense as they stalk prey with heavy, tireless steps.",
+    "attacks": [
+      { "name": "Fist", "bonus": 3, "range": "Melee 1 (2 tar)", "tier2": "3 dam", "tier3": "5 dam", "note": "Grabbing Fist" },
+      { "name": "Bite", "bonus": 3, "range": "Melee 1", "tier2": "6 dam", "tier3": "10 dam" }
+    ],
+    "features": [
+      { "name": "Grabbing Fist", "description": "When the undead gets a tier 3 result with their fist against a Medium or smaller target, the target is grabbed. The undead can grab up to two targets at a time, and deals an additional 3 damage to targets they have grabbed with melee attacks." },
+      { "name": "Bite Frenzy", "description": "As an action, the undead makes a bite attack that targets each enemy within 1 square of them.", "uses": "1/Day" },
+      { "name": "Horrid Gnashing", "description": "When a non-undead creature with a Mind score of 1 or lower starts their turn within 1 square of the undead, they take a bane on all tests until the start of their next turn." }
+    ]
+  },
+  {
+    "id": "undead-f",
+    "name": "Undead F",
+    "type": "Undead",
+    "size": "Large",
+    "power": 15,
+    "stamina": 75,
+    "speed": "4, climb 4",
+    "reactions": 3,
+    "agility": -2,
+    "mind": 1,
+    "strength": 4,
+    "colloquialNames": ["gore beast", "rot pile", "sludge"],
+    "description": "Formed from the muscle, sinew, and jagged bones of humans, this moving pile of gore can form weapons out of their bones and hurl toxic chunks of its own flesh at their enemies.",
+    "attacks": [
+      { "name": "Boneshard", "bonus": 4, "range": "Melee 2/Ranged 5", "tier2": "7 dam", "tier3": "12 dam" }
+    ],
+    "features": [
+      { "name": "Exploding Mote", "description": "As an action, the undead hurls a chunk of their flesh that explodes into gas in a 4 cube within 10 squares of them. Each non-undead creature in the area must make a Strength RR. 1: 15 dam, 2: 7 dam, 3: No effect", "uses": "2/Day" },
+      { "name": "Glorp Through", "description": "As a maneuver, the undead moves their speed without provoking opportunity attacks while entering other creatures' spaces at no speed penalty. Each creature's space they enter takes 1d6 dam. If they end this movement in another creature's space, the undead slides the creature into the nearest unoccupied space of their choice.", "uses": "3/Day" },
+      { "name": "Liquid Death", "description": "When the undead is reduced to 0 Stamina, their body explodes in a fountain of acidic gore. Each creature within 2 squares of them takes 1d10 dam." }
+    ]
+  },
+  {
+    "id": "undead-g",
+    "name": "Undead G",
+    "type": "Undead",
+    "size": "Medium",
+    "power": 20,
+    "stamina": 100,
+    "speed": "6, fly 6",
+    "reactions": 4,
+    "agility": 2,
+    "mind": 5,
+    "strength": 5,
+    "colloquialNames": ["fallen knight", "rusted one"],
+    "description": "The souls of powerful warriors and mages are fused into a single corpse and suit of armor to create this undead, who is a master of magic and swordplay. They take great delight in crushing their toughest opponent in front of an audience of weaklings.",
+    "attacks": [
+      { "name": "Rustswords", "bonus": 5, "range": "Melee 1", "tier2": "8 dam", "tier3": "16 dam", "note": "Rust" },
+      { "name": "Begone", "bonus": 5, "range": "Ranged 10", "tier2": "8 dam", "tier3": "14 dam", "note": "Hurl Away" }
+    ],
+    "features": [
+      { "name": "Rust", "description": "When the undead deals damage to a creature wearing metal armor or wielding a sword or a shield with Rustswords, each item has its AD reduced by 5 after the attack." },
+      { "name": "Hurl Away", "description": "When the undead hits with Begone, they can vertically slide the target 3 squares on a tier 2 result, or 5 squares on a tier 3." },
+      { "name": "Extra Action", "description": "The undead can take one additional action or maneuver on their combat turn." },
+      { "name": "Insect Breath", "description": "As an action, the undead breathes a plague of stinging insects in a 5 cube within 1 square of them. Each enemy in the cube must make an Agility RR. 1: 20 dam, 2: 10 dam, 3: No effect", "uses": "3/Day; only once per turn" },
+      { "name": "Rise!", "description": "A human killed by this undead rises as an undead creature A 1d6 rounds after death." }
+    ]
+  },
+  {
+    "id": "undead-h",
+    "name": "Undead H",
+    "type": "Undead",
+    "size": "Huge",
+    "power": 25,
+    "stamina": 120,
+    "speed": "7",
+    "reactions": 4,
+    "agility": 3,
+    "mind": 4,
+    "strength": 5,
+    "colloquialNames": ["flayer of souls", "spinecruncher"],
+    "description": "A massive tower of bone, muscle, mouths, and thinly stretched skin, this undead hoards the remains of their kills, forming them into new undead once enough have been gathered. They can also grow swords made of human spines instantaneously from their hands.",
+    "attacks": [
+      { "name": "Spineswords", "bonus": 5, "range": "Melee 2/Ranged 5", "tier2": "10 dam", "tier3": "19 dam", "note": "Weakening Blade" },
+      { "name": "Bites", "bonus": 5, "range": "Melee 1 (2 tar)", "tier2": "5 dam", "tier3": "10 dam", "note": "Vorpal Bite" }
+    ],
+    "features": [
+      { "name": "Weakening Blade", "description": "When the undead damages a creature with their spineswords, the creature is weakened." },
+      { "name": "Vorpal Bite", "description": "When the undead scores a crit with their bite attack against a Large or smaller creature, the creature's head is removed." },
+      { "name": "Extra Action", "description": "The undead can take one additional action or maneuver on their combat turn." },
+      { "name": "Whirlwind", "description": "As an action, the undead moves up to their speed without provoking opportunity attacks. Each enemy they come within 2 squares of at the start of, end of, and during the move takes 1d10 dam.", "uses": "3/Day; only once per turn" },
+      { "name": "Damned Shriek", "description": "As a maneuver, the undead's many mouths open in a hideous, discordant scream. Each enemy within 5 squares of the undead must make a Mind RR. 1: Prone and vulnerable, 2: Prone, 3: No effect", "uses": "2/Day; only once per turn" }
+    ]
+  }
+]
