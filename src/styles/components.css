@@ -506,7 +506,7 @@
   max-width: 560px;
   max-height: 80dvh;
   overflow-y: auto;
-  padding: 0;
+  padding: var(--space-4);
 }
 
 .popup__header {
@@ -537,7 +537,14 @@
   margin: 0;
 }
 
-/* Roll result entity link */
+/* Roll result description and entity link */
+
+.roll-result__description {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
 
 .roll-result__entity-link {
   margin-top: var(--space-2);

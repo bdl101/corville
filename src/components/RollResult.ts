@@ -36,6 +36,13 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
   text.textContent = entry.resolvedText
   el.appendChild(text)
 
+  if (entry.result.description) {
+    const desc = document.createElement('div')
+    desc.className = 'roll-result__description'
+    desc.textContent = entry.result.description
+    el.appendChild(desc)
+  }
+
   if (entry.result.entityRef && options.onEntityClick) {
     const ref = entry.result.entityRef
     const entity = getCreatureById(ref) ?? getItemById(ref)

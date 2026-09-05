@@ -8,6 +8,7 @@ export interface TableInput {
 export interface TableResult {
   range: [number, number]
   text: string
+  description?: string
   chain?: string
   chains?: string[]
   entityRef?: string
@@ -18,6 +19,8 @@ export interface RolledTable {
   name: string
   die: number
   requiresInput?: TableInput
+  inputChains?: Record<string, string[]>
+  repeatDie?: number
   results: TableResult[]
   notes?: string
 }
