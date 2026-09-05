@@ -1,8 +1,21 @@
 import type { RollEntry } from '../logic/roller'
 import { getCreatureById, getItemById } from '../data/loader'
+import { addCreature } from '../state/encounter'
+import type { Creature } from '../types'
 
 interface RollResultOptions {
   onEntityClick?: (id: string) => void
+}
+
+function collectEntityRefs(entry: RollEntry): string[] {
+  const refs: string[] = []
+  if (entry.result.entityRef) refs.push(entry.result.entityRef)
+  for (const chain of entry.chains ?? []) refs.push(...collectEntityRefs(chain))
+  return refs
+}
+
+function switchToEncounter(): void {
+  window.dispatchEvent(new CustomEvent('corville:navigate', { detail: { tab: 'encounter' } }))
 }
 
 export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptions = {}): HTMLElement {
@@ -55,6 +68,20 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
     }
   }
 
+  if (entry.result.entityRef) {
+    const creature = getCreatureById(entry.result.entityRef)
+    if (creature) {
+      const btn = document.createElement('button')
+      btn.className = 'btn btn--sm roll-result__add-creature'
+      btn.textContent = `+ Add ${creature.name} to Encounter`
+      btn.addEventListener('click', () => {
+        addCreature(creature)
+        switchToEncounter()
+      })
+      el.appendChild(btn)
+    }
+  }
+
   if (entry.chains?.length) {
     const chainsEl = document.createElement('div')
     chainsEl.className = 'roll-result__chains'
@@ -62,6 +89,26 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
       chainsEl.appendChild(RollResult(chain, depth + 1, options))
     }
     el.appendChild(chainsEl)
+  }
+
+  if (depth === 0) {
+    const allRefs = collectEntityRefs(entry)
+    const resolvable = allRefs
+      .map(ref => getCreatureById(ref))
+      .filter((c): c is Creature => c !== undefined)
+
+    if (resolvable.length >= 2) {
+      const addAllBtn = document.createElement('button')
+      addAllBtn.className = 'btn roll-result__add-all'
+      addAllBtn.textContent = 'Add all to Encounter'
+      addAllBtn.addEventListener('click', () => {
+        for (const creature of resolvable) {
+          addCreature(creature)
+        }
+        switchToEncounter()
+      })
+      el.appendChild(addAllBtn)
+    }
   }
 
   return el

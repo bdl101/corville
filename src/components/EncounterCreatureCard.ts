@@ -25,7 +25,8 @@ function el<K extends keyof HTMLElementTagNameMap>(
 export function EncounterCreatureCard({ creature, onRequestDetail }: EncounterCreatureCardProps): HTMLElement {
   const { uid, displayName, currentStamina, maxStamina, hasTakenTurn, hasUsedReaction, creatureId } = creature
 
-  const card = el('div', 'encounter-creature-card' + (currentStamina === 0 ? ' disabled' : ''))
+  const isDead = currentStamina === 0
+  const card = el('div', 'encounter-creature-card' + (isDead ? ' disabled' : hasTakenTurn ? ' turn-taken' : ''))
 
   // Row 1: [×] [name] [Turn] [Reaction]
   const row1 = el('div', 'encounter-creature-card__row')

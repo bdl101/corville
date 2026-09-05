@@ -55,6 +55,11 @@
   color: var(--color-text-primary);
 }
 
+.btn--sm {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+}
+
 .input {
   display: block;
   width: 100%;
@@ -583,6 +588,10 @@
   opacity: 0.4;
 }
 
+.encounter-creature-card.turn-taken {
+  opacity: 0.6;
+}
+
 .encounter-creature-card__row {
   display: flex;
   align-items: center;
@@ -624,7 +633,7 @@
 .encounter-toggle {
   display: inline-flex;
   align-items: center;
-  padding: var(--space-1) var(--space-2);
+  padding: var(--space-3) var(--space-3);
   background: none;
   border: var(--border-width) solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -794,4 +803,14 @@
   margin-top: var(--space-2);
   font-size: var(--font-size-sm);
   padding: var(--space-1) var(--space-2);
+}
+
+.roll-result__add-creature {
+  display: block;
+  margin-top: var(--space-2);
+}
+
+.roll-result__add-all {
+  display: block;
+  margin-top: var(--space-3);
 }

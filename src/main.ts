@@ -35,4 +35,8 @@ function navigate(tab: Tab) {
   renderTabBar()
 }
 
+window.addEventListener('corville:navigate', (e) => {
+  navigate((e as CustomEvent<{ tab: Tab }>).detail.tab)
+})
+
 navigate(currentTab)

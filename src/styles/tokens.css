@@ -11,10 +11,10 @@
 
   /* Typography */
   --font-family: system-ui, -apple-system, sans-serif;
-  --font-size-sm: 0.8125rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.0625rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.4375rem;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
 

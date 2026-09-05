@@ -8,7 +8,7 @@ interface TabBarOptions {
 const TABS: { id: Tab; label: string; disabled?: boolean }[] = [
   { id: 'tables', label: 'Tables' },
   { id: 'lookup', label: 'Lookup' },
-  { id: 'encounter', label: 'Encounter', disabled: true },
+  { id: 'encounter', label: 'Encounter' },
 ]
 
 export function TabBar({ activeTab, onNavigate }: TabBarOptions): HTMLElement {
