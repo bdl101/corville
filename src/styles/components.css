@@ -544,6 +544,7 @@
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
   font-style: italic;
+  white-space: pre-line;
 }
 
 .roll-result__entity-link {

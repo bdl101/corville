@@ -234,7 +234,7 @@
           1
         ],
         "text": "Blizzard",
-        "description": ""
+        "description": "During a blizzard, the group's daily travel speed is reduced by 2 hexes. At the end of each hour a human spends outside without cold weather gear, they make a Strength RR.\n2d10 + S\n1  They take 4d6 P dam.\n2  They take 3d6 P dam.\n3  They take 2d6 P dam.\nA creature takes a cumulative -2 penalty to this test for each time they've previously made this test before donning cold weather gear, taking shelter, or experiencing a change in the weather.\nGuides, scouts, and trackers take a double bane on tests made to fulfill their roles during the blizzard."
       },
       {
         "range": [
@@ -242,7 +242,7 @@
           2
         ],
         "text": "Cold Snap",
-        "description": ""
+        "description": "During a cold snap, at the end of each hour a human spends outside without cold weather gear, they make a Strength RR.\n2d10 + S\n1  They take 3d6 P dam.\n2  They take 2d6 P dam.\n3  They take 1d6 P dam.\nA creature takes a cumulative -2 penalty to this test for each time they previously made this test before donning cold weather gear, taking shelter, or experiencing a change in the weather."
       }
     ]
   },
@@ -257,7 +257,7 @@
           1
         ],
         "text": "Heat Wave",
-        "description": ""
+        "description": "During a heat wave, if a creature travels more than 2 hexes in a day, they must make a Strength RR.\n2d10 + S\n1  They take 2d6 P dam.\n2  They take 1d6 P dam.\n3  No effect."
       },
       {
         "range": [
@@ -265,7 +265,7 @@
           2
         ],
         "text": "Sandstorm",
-        "description": ""
+        "description": "During a sandstorm, the group's travel speed is reduced by 2 hexes. Guides, scouts, and trackers take a double bane on tests made to fulfill their roles during a sandstorm."
       }
     ]
   },
@@ -280,7 +280,7 @@
           1
         ],
         "text": "Rain",
-        "description": ""
+        "description": "In the rain, the group's travel speed is reduced by 1 hex. Creatures carrying rations must make the following Mind test.\n2d10 + M\n1  They lose 1d6 + 1 rations to mold.\n2  They lose 1 ration to mold.\n3  No effect."
       },
       {
         "range": [
@@ -288,7 +288,7 @@
           2
         ],
         "text": "Thunderstorm",
-        "description": ""
+        "description": "In a thunderstorm, the group's travel pace is reduced by 2 hexes. Creatures carrying rations must make the following Mind test.\n2d10 + M\n1  They lose 2d6 rations to mold.\n2  They lose 1d6 rations to mold.\n3  No effect.\nGuides, scouts, and trackers take a bane on tests made to fulfill their roles during the thunderstorm."
       }
     ]
   },
@@ -303,7 +303,7 @@
           1
         ],
         "text": "Rain",
-        "description": ""
+        "description": "In the rain, the group's travel speed is reduced by 1 hex. Creatures carrying rations must make the following Mind test.\n2d10 + M\n1  They lose 1d6 + 1 rations to mold.\n2  They lose 1 ration to mold.\n3  No effect."
       },
       {
         "range": [
@@ -311,7 +311,7 @@
           2
         ],
         "text": "Thunderstorm",
-        "description": ""
+        "description": "In a thunderstorm, the group's travel pace is reduced by 2 hexes. Creatures carrying rations must make the following Mind test.\n2d10 + M\n1  They lose 2d6 rations to mold.\n2  They lose 1d6 rations to mold.\n3  No effect.\nGuides, scouts, and trackers take a bane on tests made to fulfill their roles during the thunderstorm."
       }
     ]
   },
@@ -326,7 +326,7 @@
           1
         ],
         "text": "Heat Wave",
-        "description": ""
+        "description": "During a heat wave, if a creature travels more than 2 hexes in a day, they must make a Strength RR.\n2d10 + S\n1  They take 2d6 P dam.\n2  They take 1d6 P dam.\n3  No effect."
       },
       {
         "range": [
@@ -334,7 +334,7 @@
           2
         ],
         "text": "Thunderstorm",
-        "description": ""
+        "description": "In a thunderstorm, the group's travel pace is reduced by 2 hexes. Creatures carrying rations must make the following Mind test.\n2d10 + M\n1  They lose 2d6 rations to mold.\n2  They lose 1d6 rations to mold.\n3  No effect.\nGuides, scouts, and trackers take a bane on tests made to fulfill their roles during the thunderstorm."
       }
     ]
   },
