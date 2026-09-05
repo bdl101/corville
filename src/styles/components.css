@@ -537,6 +537,249 @@
   margin: 0;
 }
 
+/* Encounter view */
+
+.encounter-view__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: var(--border-width) solid var(--color-border);
+  margin-bottom: var(--space-4);
+}
+
+.encounter-view__round {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.encounter-view__actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.encounter-creature-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.encounter-creature-card {
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.encounter-creature-card.disabled {
+  background: var(--color-bg);
+  border-color: var(--color-border);
+}
+
+.encounter-creature-card.disabled .encounter-creature-card__name,
+.encounter-creature-card.disabled .encounter-creature-card__stamina {
+  opacity: 0.4;
+}
+
+.encounter-creature-card__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.encounter-creature-card__row + .encounter-creature-card__row {
+  margin-top: var(--space-2);
+}
+
+.encounter-creature-card__remove {
+  flex-shrink: 0;
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-lg);
+  line-height: 1;
+}
+
+.encounter-creature-card__name {
+  flex: 1;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  padding: 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.encounter-creature-card__name:hover {
+  color: var(--color-accent-hover);
+}
+
+.encounter-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-2);
+  background: none;
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.encounter-toggle--active {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-text-primary);
+}
+
+.encounter-creature-card__row-spacer {
+  width: calc(1.5rem + var(--space-2));
+  flex-shrink: 0;
+}
+
+.encounter-creature-card__stamina {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.encounter-stamina-controls {
+  display: flex;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+.encounter-stamina-btn {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-base);
+  line-height: 1;
+  min-width: 2rem;
+}
+
+.encounter-stamina-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.encounter-empty {
+  text-align: center;
+  padding: var(--space-8) 0;
+  color: var(--color-text-secondary);
+}
+
+.encounter-empty p {
+  margin: 0 0 var(--space-4);
+}
+
+.encounter-view__add-btn {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Add creature panel */
+
+.add-creature-panel {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-4);
+  z-index: 200;
+}
+
+.add-creature-panel__dialog {
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 560px;
+  max-height: 70dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.add-creature-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: var(--border-width) solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.add-creature-panel__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.add-creature-panel__search {
+  padding: var(--space-3) var(--space-4);
+  flex-shrink: 0;
+}
+
+.add-creature-panel__list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.add-creature-panel__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: none;
+  border: none;
+  border-bottom: var(--border-width) solid var(--color-border);
+  text-align: left;
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.add-creature-panel__row:hover {
+  background: var(--color-bg);
+}
+
+.add-creature-panel__row:last-child {
+  border-bottom: none;
+}
+
+.add-creature-panel__row-name {
+  font-weight: var(--font-weight-bold);
+}
+
+.add-creature-panel__row-meta {
+  color: var(--color-text-secondary);
+  flex-shrink: 0;
+  margin-left: var(--space-3);
+}
+
+.add-creature-panel__empty {
+  text-align: center;
+  padding: var(--space-6) 0;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
 /* Roll result description and entity link */
 
 .roll-result__description {

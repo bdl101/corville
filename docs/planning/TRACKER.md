@@ -23,7 +23,7 @@ Each milestone has a spec file with full task details, deliverables, and accepta
 | 04 | Data layer — TS types, JSON configs, stub data, loader | [04-data-layer.md](04-data-layer.md) | [x] Done |
 | 05 | Rolled Tables — table selection, input prompting, chaining, session log | [05-rolled-tables.md](05-rolled-tables.md) | [x] Done |
 | 06 | Statblock Lookup — filter-as-you-type list, detail view | [06-statblock-lookup.md](06-statblock-lookup.md) | [x] Done |
-| 07 | Encounter Builder — state layer, encounter view, creature cards, stamina/turn/reaction tracking | [07-encounter-builder.md](07-encounter-builder.md) | [ ] Not started |
+| 07 | Encounter Builder — state layer, encounter view, creature cards, stamina/turn/reaction tracking | [07-encounter-builder.md](07-encounter-builder.md) | [x] Done |
 | 08 | Table-to-Encounter — entityRef CTAs on roll results, "Add all" button, tab navigation | [08-encounter-table-integration.md](08-encounter-table-integration.md) | [ ] Not started |
 
 Spec 08 depends on Spec 07 being complete. Both can begin after all prior specs are done.
