@@ -48,14 +48,14 @@
           51,
           70
         ],
-        "text": "Monster from Nearby — use the encounter table for the nearest dungeon"
+        "text": "Monster from Nearby \u2014 use the encounter table for the nearest dungeon"
       },
       {
         "range": [
           71,
           75
         ],
-        "text": "Strong Miasma — the area is saturated with miasma"
+        "text": "Strong Miasma \u2014 the area is saturated with miasma"
       },
       {
         "range": [
@@ -73,7 +73,7 @@
           81,
           100
         ],
-        "text": "Wild Animal — roll on the habitat animal encounter table, then Wild Animal Reaction",
+        "text": "Wild Animal \u2014 roll on the habitat animal encounter table, then Wild Animal Reaction",
         "chain": "wild-animal-dispatch"
       }
     ]
@@ -348,140 +348,140 @@
           1,
           10
         ],
-        "text": "Alchemist — 1st level"
+        "text": "Alchemist \u2014 1st level"
       },
       {
         "range": [
           11,
           15
         ],
-        "text": "Alchemist — 2nd level"
+        "text": "Alchemist \u2014 2nd level"
       },
       {
         "range": [
           16,
           18
         ],
-        "text": "Alchemist — 3rd level"
+        "text": "Alchemist \u2014 3rd level"
       },
       {
         "range": [
           19,
           20
         ],
-        "text": "Alchemist — 4th level"
+        "text": "Alchemist \u2014 4th level"
       },
       {
         "range": [
           21,
           30
         ],
-        "text": "Blacksmith — 1st level"
+        "text": "Blacksmith \u2014 1st level"
       },
       {
         "range": [
           31,
           35
         ],
-        "text": "Blacksmith — 2nd level"
+        "text": "Blacksmith \u2014 2nd level"
       },
       {
         "range": [
           36,
           38
         ],
-        "text": "Blacksmith — 3rd level"
+        "text": "Blacksmith \u2014 3rd level"
       },
       {
         "range": [
           39,
           40
         ],
-        "text": "Blacksmith — 4th level"
+        "text": "Blacksmith \u2014 4th level"
       },
       {
         "range": [
           41,
           50
         ],
-        "text": "Bookseller — 1st level"
+        "text": "Bookseller \u2014 1st level"
       },
       {
         "range": [
           51,
           55
         ],
-        "text": "Bookseller — 2nd level"
+        "text": "Bookseller \u2014 2nd level"
       },
       {
         "range": [
           56,
           58
         ],
-        "text": "Bookseller — 3rd level"
+        "text": "Bookseller \u2014 3rd level"
       },
       {
         "range": [
           59,
           60
         ],
-        "text": "Bookseller — 4th level"
+        "text": "Bookseller \u2014 4th level"
       },
       {
         "range": [
           61,
           70
         ],
-        "text": "Enchanter — 1st level"
+        "text": "Enchanter \u2014 1st level"
       },
       {
         "range": [
           71,
           75
         ],
-        "text": "Enchanter — 2nd level"
+        "text": "Enchanter \u2014 2nd level"
       },
       {
         "range": [
           76,
           78
         ],
-        "text": "Enchanter — 3rd level"
+        "text": "Enchanter \u2014 3rd level"
       },
       {
         "range": [
           79,
           80
         ],
-        "text": "Enchanter — 4th level"
+        "text": "Enchanter \u2014 4th level"
       },
       {
         "range": [
           81,
           90
         ],
-        "text": "General Store — 1st level"
+        "text": "General Store \u2014 1st level"
       },
       {
         "range": [
           91,
           95
         ],
-        "text": "General Store — 2nd level"
+        "text": "General Store \u2014 2nd level"
       },
       {
         "range": [
           96,
           98
         ],
-        "text": "General Store — 3rd level"
+        "text": "General Store \u2014 3rd level"
       },
       {
         "range": [
           99,
           100
         ],
-        "text": "Roll twice — merchant operates as two different institutions"
+        "text": "Roll twice \u2014 merchant operates as two different institutions"
       }
     ]
   },
@@ -664,105 +664,105 @@
           1,
           5
         ],
-        "text": "Asleep — unconscious in the PCs' path. Waking the animal causes them to become violent."
+        "text": "Asleep \u2014 unconscious in the PCs' path. Waking the animal causes them to become violent."
       },
       {
         "range": [
           6,
           10
         ],
-        "text": "Attached — inexplicably attracted to a randomly chosen PC. Follows and is friendly toward that PC, but frightened of all others."
+        "text": "Attached \u2014 inexplicably attracted to a randomly chosen PC. Follows and is friendly toward that PC, but frightened of all others."
       },
       {
         "range": [
           11,
           15
         ],
-        "text": "Curious — approaches cautiously but openly. Aggressive behavior causes fright; calm behavior causes them to investigate then leave; sharing food makes them friendly."
+        "text": "Curious \u2014 approaches cautiously but openly. Aggressive behavior causes fright; calm behavior causes them to investigate then leave; sharing food makes them friendly."
       },
       {
         "range": [
           16,
           20
         ],
-        "text": "Embattled — pick or roll on an encounter table for other animals, humans, or monsters battling the animals. If the PCs aid the original group, one animal becomes friendly."
+        "text": "Embattled \u2014 pick or roll on an encounter table for other animals, humans, or monsters battling the animals. If the PCs aid the original group, one animal becomes friendly."
       },
       {
         "range": [
           21,
           25
         ],
-        "text": "Friendly — happily follows the PCs for an hour. A PC can make a test to become the animal's owner. Mean or aggressive behavior causes them to flee."
+        "text": "Friendly \u2014 happily follows the PCs for an hour. A PC can make a test to become the animal's owner. Mean or aggressive behavior causes them to flee."
       },
       {
         "range": [
           26,
           35
         ],
-        "text": "Frightened — freezes and stares at the PCs. Anything other than utmost calm causes flight (if outmatched and has a way out) or fighting until PCs flee (if cornered). A Mind test with Handle Animal can turn attitude to curious."
+        "text": "Frightened \u2014 freezes and stares at the PCs. Anything other than utmost calm causes flight (if outmatched and has a way out) or fighting until PCs flee (if cornered). A Mind test with Handle Animal can turn attitude to curious."
       },
       {
         "range": [
           36,
           45
         ],
-        "text": "Hungry — approaches when PCs are eating. If given ≥1 ration, becomes friendly. If not fed, attacks to steal food and flee."
+        "text": "Hungry \u2014 approaches when PCs are eating. If given \u22651 ration, becomes friendly. If not fed, attacks to steal food and flee."
       },
       {
         "range": [
           46,
           50
         ],
-        "text": "Injured — Stamina equal to half maximum, visibly hurt. Frightened and considered cornered, but any PC who heals them turns their attitude to friendly."
+        "text": "Injured \u2014 Stamina equal to half maximum, visibly hurt. Frightened and considered cornered, but any PC who heals them turns their attitude to friendly."
       },
       {
         "range": [
           51,
           55
         ],
-        "text": "Playful — wants to catch sticks, be chased, wrestle, etc. Approaches energetically. If PCs engage in play, becomes friendly. If not, becomes violent."
+        "text": "Playful \u2014 wants to catch sticks, be chased, wrestle, etc. Approaches energetically. If PCs engage in play, becomes friendly. If not, becomes violent."
       },
       {
         "range": [
           56,
           65
         ],
-        "text": "Protective — guarding something; attacks any creature who approaches it; fights to the death. Roll any die: even = defending a nest with 1d10 babies or eggs (each sellable to a village stables as a pet). Odd = protecting one thing from the Minor Interesting Things table."
+        "text": "Protective \u2014 guarding something; attacks any creature who approaches it; fights to the death. Roll any die: even = defending a nest with 1d10 babies or eggs (each sellable to a village stables as a pet). Odd = protecting one thing from the Minor Interesting Things table."
       },
       {
         "range": [
           66,
           70
         ],
-        "text": "Stalking — follows the PCs from hidden positions. Waits until one or two PCs are alone, then pounces."
+        "text": "Stalking \u2014 follows the PCs from hidden positions. Waits until one or two PCs are alone, then pounces."
       },
       {
         "range": [
           71,
           80
         ],
-        "text": "Starved — desperate for food. Approaches aggressively. Attacks unless given a full day's worth of food (by size), then flees. Carnivores may attempt to kill and carry off a PC if not fed."
+        "text": "Starved \u2014 desperate for food. Approaches aggressively. Attacks unless given a full day's worth of food (by size), then flees. Carnivores may attempt to kill and carry off a PC if not fed."
       },
       {
         "range": [
           81,
           90
         ],
-        "text": "Territorial — follows the PCs displaying aggression but never closing in. Stops pursuing when PCs exit the hex where the encounter occurred. If the PCs stop moving, attacks and fights to the death."
+        "text": "Territorial \u2014 follows the PCs displaying aggression but never closing in. Stops pursuing when PCs exit the hex where the encounter occurred. If the PCs stop moving, attacks and fights to the death."
       },
       {
         "range": [
           91,
           95
         ],
-        "text": "Treasure-Seeking — attracted to something a PC wears or holds (often shiny or looks like food). Makes its interest clear; attacks if not given the item."
+        "text": "Treasure-Seeking \u2014 attracted to something a PC wears or holds (often shiny or looks like food). Makes its interest clear; attacks if not given the item."
       },
       {
         "range": [
           96,
           100
         ],
-        "text": "Violent — out for blood due to past trauma or incurable infection. Ambushes and attacks the PCs."
+        "text": "Violent \u2014 out for blood due to past trauma or incurable infection. Ambushes and attacks the PCs."
       }
     ]
   },
@@ -2252,7 +2252,7 @@
           1,
           1
         ],
-        "text": "Animal Hunt — travelers hunt an animal on the appropriate habitat table. If the PCs help, reward from Traveler Rewards.",
+        "text": "Animal Hunt \u2014 travelers hunt an animal on the appropriate habitat table. If the PCs help, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2260,7 +2260,7 @@
           2,
           2
         ],
-        "text": "Battle — travelers battling 2d6 Miasma-touched humans. Roll 1d6: 1–2 bandits, 3–4 cannibals, 5–6 cultists. If PCs save the travelers, reward from Traveler Rewards.",
+        "text": "Battle \u2014 travelers battling 2d6 Miasma-touched humans. Roll 1d6: 1\u20132 bandits, 3\u20134 cannibals, 5\u20136 cultists. If PCs save the travelers, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2268,21 +2268,21 @@
           3,
           3
         ],
-        "text": "Camping — travelers camping, welcoming PCs with caution. Friendly PCs are offered a shared meal (skip rations next rest). Standoffish PCs are asked to leave."
+        "text": "Camping \u2014 travelers camping, welcoming PCs with caution. Friendly PCs are offered a shared meal (skip rations next rest). Standoffish PCs are asked to leave."
       },
       {
         "range": [
           4,
           4
         ],
-        "text": "Crows — another crow group heading to a nearby dungeon. Roll 1d6: 1–2 invite PCs along; 3–4 standoffish but share lore if PCs are kind; 5–6 view PCs as rivals and plan to kill them."
+        "text": "Crows \u2014 another crow group heading to a nearby dungeon. Roll 1d6: 1\u20132 invite PCs along; 3\u20134 standoffish but share lore if PCs are kind; 5\u20136 view PCs as rivals and plan to kill them."
       },
       {
         "range": [
           5,
           5
         ],
-        "text": "Injured — one or more travelers has 1d6 wounds and an injured leg. If PCs heal them or provide a mount, reward from Traveler Rewards.",
+        "text": "Injured \u2014 one or more travelers has 1d6 wounds and an injured leg. If PCs heal them or provide a mount, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2290,7 +2290,7 @@
           6,
           6
         ],
-        "text": "Lost — travelers are lost. If PCs spend a day guiding them, reward from Traveler Rewards.",
+        "text": "Lost \u2014 travelers are lost. If PCs spend a day guiding them, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2298,7 +2298,7 @@
           7,
           7
         ],
-        "text": "Need an Escort — survivors of a monster attack need escort to the nearest village. If PCs agree, reward from Traveler Rewards.",
+        "text": "Need an Escort \u2014 survivors of a monster attack need escort to the nearest village. If PCs agree, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2306,14 +2306,14 @@
           8,
           8
         ],
-        "text": "Pursued by Monsters — travelers chased by monsters from the nearest dungeon's encounter table. If PCs intervene, travelers flee, leaving their dead behind."
+        "text": "Pursued by Monsters \u2014 travelers chased by monsters from the nearest dungeon's encounter table. If PCs intervene, travelers flee, leaving their dead behind."
       },
       {
         "range": [
           9,
           9
         ],
-        "text": "Starving — travelers are out of food. If PCs provide 1d6 days of food, reward from Traveler Rewards.",
+        "text": "Starving \u2014 travelers are out of food. If PCs provide 1d6 days of food, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       },
       {
@@ -2321,7 +2321,7 @@
           10,
           10
         ],
-        "text": "Treasure Hunt — travelers searching for a specific item (perhaps from Major Interesting Things). If PCs help and hand over the item, reward from Traveler Rewards.",
+        "text": "Treasure Hunt \u2014 travelers searching for a specific item (perhaps from Major Interesting Things). If PCs help and hand over the item, reward from Traveler Rewards.",
         "chain": "traveler-rewards"
       }
     ]
@@ -2336,7 +2336,7 @@
           1,
           1
         ],
-        "text": "Nothing — the travelers have nothing to give, or consider virtue its own reward. Jerks."
+        "text": "Nothing \u2014 the travelers have nothing to give, or consider virtue its own reward. Jerks."
       },
       {
         "range": [
@@ -2350,14 +2350,14 @@
           3,
           3
         ],
-        "text": "1d6 × 100 gc"
+        "text": "1d6 \u00d7 100 gc"
       },
       {
         "range": [
           4,
           4
         ],
-        "text": "2d10 × 100 gc"
+        "text": "2d10 \u00d7 100 gc"
       },
       {
         "range": [
@@ -2385,154 +2385,154 @@
           1,
           10
         ],
-        "text": "Bandits — threaten to kill PCs unless given 10d10 × 10 gc worth of goods. Only attack if refused and they believe they have the advantage."
+        "text": "Bandits \u2014 threaten to kill PCs unless given 10d10 \u00d7 10 gc worth of goods. Only attack if refused and they believe they have the advantage."
       },
       {
         "range": [
           11,
           14
         ],
-        "text": "Cannibals — want to eat the PCs. If they outnumber the PCs, ambush them. Otherwise pose as fellow travelers, then attack when PCs are vulnerable."
+        "text": "Cannibals \u2014 want to eat the PCs. If they outnumber the PCs, ambush them. Otherwise pose as fellow travelers, then attack when PCs are vulnerable."
       },
       {
         "range": [
           15,
           18
         ],
-        "text": "Competitive — challenge PCs to a contest (strength, foot race, trivia) with a wager. Gracious winner/loser = they leave. Disagreement or gloating = attack."
+        "text": "Competitive \u2014 challenge PCs to a contest (strength, foot race, trivia) with a wager. Gracious winner/loser = they leave. Disagreement or gloating = attack."
       },
       {
         "range": [
           19,
           22
         ],
-        "text": "Cruel — revel in cruelty. 50% chance they've captured a creature to torture. Otherwise approach as friendly, planning to kidnap a PC."
+        "text": "Cruel \u2014 revel in cruelty. 50% chance they've captured a creature to torture. Otherwise approach as friendly, planning to kidnap a PC."
       },
       {
         "range": [
           23,
           32
         ],
-        "text": "Cultists — cult of a Necromancer. Trade anything for necromancy spellbooks. Attempt to convert PCs; attack those who've stolen from or insulted their Necromancer."
+        "text": "Cultists \u2014 cult of a Necromancer. Trade anything for necromancy spellbooks. Attempt to convert PCs; attack those who've stolen from or insulted their Necromancer."
       },
       {
         "range": [
           33,
           36
         ],
-        "text": "Death to the Gods — hate all religion. If any PCs carry religious material, wait for an opportune moment to attack them. Agreeable PCs may receive assistance, though the NPCs won't enter towns."
+        "text": "Death to the Gods \u2014 hate all religion. If any PCs carry religious material, wait for an opportune moment to attack them. Agreeable PCs may receive assistance, though the NPCs won't enter towns."
       },
       {
         "range": [
           37,
           40
         ],
-        "text": "Deceitful — fabricate tales about nearby monsters, dungeons, and landmarks. Lure believers into traps. If accused of lying, attack (if confident) or flee."
+        "text": "Deceitful \u2014 fabricate tales about nearby monsters, dungeons, and landmarks. Lure believers into traps. If accused of lying, attack (if confident) or flee."
       },
       {
         "range": [
           41,
           44
         ],
-        "text": "Despondent — trudge through the world crying and upset. Defend themselves if threatened; lash out verbally then physically at anyone who tries to comfort them."
+        "text": "Despondent \u2014 trudge through the world crying and upset. Defend themselves if threatened; lash out verbally then physically at anyone who tries to comfort them."
       },
       {
         "range": [
           45,
           48
         ],
-        "text": "Destructive — confrontational, trying to bait a fight. Give their anger a direction and they go destroy it. Otherwise they battle the PCs."
+        "text": "Destructive \u2014 confrontational, trying to bait a fight. Give their anger a direction and they go destroy it. Otherwise they battle the PCs."
       },
       {
         "range": [
           49,
           52
         ],
-        "text": "False Bravado — claim to be brave crows seeking treasure. Invite PCs to join them. Actually cowards who run off when any fight starts."
+        "text": "False Bravado \u2014 claim to be brave crows seeking treasure. Invite PCs to join them. Actually cowards who run off when any fight starts."
       },
       {
         "range": [
           53,
           56
         ],
-        "text": "Greedy — want food, shelter, supplies, and treasure for as little effort as possible. Appear as beggars if PCs are stronger; as bandits if PCs can be bullied."
+        "text": "Greedy \u2014 want food, shelter, supplies, and treasure for as little effort as possible. Appear as beggars if PCs are stronger; as bandits if PCs can be bullied."
       },
       {
         "range": [
           57,
           60
         ],
-        "text": "Knowledge Seeker — want lore books and expert conversations. Stop PCs and pepper them with questions. Attack if PCs try to leave, planning to kidnap the most knowledgeable."
+        "text": "Knowledge Seeker \u2014 want lore books and expert conversations. Stop PCs and pepper them with questions. Attack if PCs try to leave, planning to kidnap the most knowledgeable."
       },
       {
         "range": [
           61,
           64
         ],
-        "text": "Mage Hunter — ambush PCs openly carrying spellbooks. If none, ask if PCs know of any mages. Goal: kill magic users and claim their spellbooks."
+        "text": "Mage Hunter \u2014 ambush PCs openly carrying spellbooks. If none, ask if PCs know of any mages. Goal: kill magic users and claim their spellbooks."
       },
       {
         "range": [
           65,
           68
         ],
-        "text": "Monster Hatred — hate a specific monster type in a nearby dungeon or POI. Ask PCs to help kill them. Rush in recklessly as soon as monsters are encountered."
+        "text": "Monster Hatred \u2014 hate a specific monster type in a nearby dungeon or POI. Ask PCs to help kill them. Rush in recklessly as soon as monsters are encountered."
       },
       {
         "range": [
           69,
           72
         ],
-        "text": "Monster Obsessed — love a specific monster nearby. Lure PCs inside with treasure rumors. The place is rigged with bear traps for their favorite monsters."
+        "text": "Monster Obsessed \u2014 love a specific monster nearby. Lure PCs inside with treasure rumors. The place is rigged with bear traps for their favorite monsters."
       },
       {
         "range": [
           73,
           76
         ],
-        "text": "Sluggish — claim to be lost, want to find civilization. Actually aimless wanderers who slow the group by 1 hex/day. Leave happily at a village. If abandoned, ambush PCs on next outdoor encounter."
+        "text": "Sluggish \u2014 claim to be lost, want to find civilization. Actually aimless wanderers who slow the group by 1 hex/day. Leave happily at a village. If abandoned, ambush PCs on next outdoor encounter."
       },
       {
         "range": [
           77,
           80
         ],
-        "text": "Suspicious — friendly at first, then quickly suspicious of the PCs' intentions. Flee if outmatched; follow and ambush the PCs' camp if they believe they can win."
+        "text": "Suspicious \u2014 friendly at first, then quickly suspicious of the PCs' intentions. Flee if outmatched; follow and ambush the PCs' camp if they believe they can win."
       },
       {
         "range": [
           81,
           84
         ],
-        "text": "Thieves — befriend PCs while sizing up their possessions. Steal one or more valuable items and flee when an opportunity arises."
+        "text": "Thieves \u2014 befriend PCs while sizing up their possessions. Steal one or more valuable items and flee when an opportunity arises."
       },
       {
         "range": [
           85,
           88
         ],
-        "text": "Tyrant — one leader whom the others worship. Demands fealty from all; kills those who refuse. Grants a blessing to those who swear loyalty. Next time this encounter is rolled, the group demands a progress update."
+        "text": "Tyrant \u2014 one leader whom the others worship. Demands fealty from all; kills those who refuse. Grants a blessing to those who swear loyalty. Next time this encounter is rolled, the group demands a progress update."
       },
       {
         "range": [
           89,
           92
         ],
-        "text": "Vain — value appearance above all. Praise well-groomed PCs; suggest a bath to dirty ones; plot to kidnap and clean those who refuse."
+        "text": "Vain \u2014 value appearance above all. Praise well-groomed PCs; suggest a bath to dirty ones; plot to kidnap and clean those who refuse."
       },
       {
         "range": [
           93,
           96
         ],
-        "text": "Violent — attack PCs on the road, offering to stop if just one PC agrees to die for the others."
+        "text": "Violent \u2014 attack PCs on the road, offering to stop if just one PC agrees to die for the others."
       },
       {
         "range": [
           97,
           100
         ],
-        "text": "Wicked Crows — corrupted crows who offer to raid a dungeon together. Once inside, they systematically use the dungeon's horrors to eliminate the PCs one by one."
+        "text": "Wicked Crows \u2014 corrupted crows who offer to raid a dungeon together. Once inside, they systematically use the dungeon's horrors to eliminate the PCs one by one."
       }
     ]
   },
@@ -2595,77 +2595,88 @@
           8,
           9
         ],
-        "text": "An empty coin purse"
+        "text": "An empty coin purse",
+        "entityRef": "coin-purse"
       },
       {
         "range": [
           10,
           11
         ],
-        "text": "A bag of ball bearings"
+        "text": "A bag of ball bearings",
+        "entityRef": "ball-bearings"
       },
       {
         "range": [
           12,
           13
         ],
-        "text": "A bag of caltrops"
+        "text": "A bag of caltrops",
+        "entityRef": "caltrops"
       },
       {
         "range": [
           14,
           15
         ],
-        "text": "10 feet of chain"
+        "text": "10 feet of chain",
+        "entityRef": "chain"
       },
       {
         "range": [
           16,
           17
         ],
-        "text": "Flask of oil"
+        "text": "Flask of oil",
+        "entityRef": "oil-flask"
       },
       {
         "range": [
           18,
           19
         ],
-        "text": "Net"
+        "text": "Net",
+        "entityRef": "net"
       },
       {
         "range": [
           20,
           21
         ],
-        "text": "Quiver of arrows"
+        "text": "Quiver of arrows",
+        "entityRef": "quiver-of-arrows"
       },
       {
         "range": [
           22,
           23
         ],
-        "text": "Case of crossbow bolts"
+        "text": "Case of crossbow bolts",
+        "entityRef": "case-of-crossbow-bolts"
       },
       {
         "range": [
           24,
           25
         ],
-        "text": "Soap"
+        "text": "Soap",
+        "entityRef": "soap"
       },
       {
         "range": [
           26,
           27
         ],
-        "text": "Acid vial"
+        "text": "Acid vial",
+        "entityRef": "acid-vial"
       },
       {
         "range": [
           28,
           29
         ],
-        "text": "Poison vial"
+        "text": "Poison vial",
+        "entityRef": "poison-vial"
       },
       {
         "range": [
@@ -2714,98 +2725,112 @@
           41,
           41
         ],
-        "text": "Shield with 0 AD remaining"
+        "text": "Shield with 0 AD remaining",
+        "entityRef": "shield"
       },
       {
         "range": [
           42,
           42
         ],
-        "text": "Gluepot"
+        "text": "Gluepot",
+        "entityRef": "glue-pot"
       },
       {
         "range": [
           43,
           44
         ],
-        "text": "Padlock"
+        "text": "Padlock",
+        "entityRef": "padlock"
       },
       {
         "range": [
           45,
           45
         ],
-        "text": "Lockpick set"
+        "text": "Lockpick set",
+        "entityRef": "lockpick-set"
       },
       {
         "range": [
           46,
           46
         ],
-        "text": "Gem worth 10d10 gc"
+        "text": "Gem worth 10d10 gc",
+        "entityRef": "gem"
       },
       {
         "range": [
           47,
           48
         ],
-        "text": "Lore book with an expertise chosen by the Ref"
+        "text": "Lore book with an expertise chosen by the Ref",
+        "entityRef": "lore-book"
       },
       {
         "range": [
           49,
           49
         ],
-        "text": "Light armor with 0 AD remaining"
+        "text": "Light armor with 0 AD remaining",
+        "entityRef": "light-armor"
       },
       {
         "range": [
           50,
           50
         ],
-        "text": "Smoke bomb"
+        "text": "Smoke bomb",
+        "entityRef": "smoke-bomb"
       },
       {
         "range": [
           51,
           51
         ],
-        "text": "Healing potion"
+        "text": "Healing potion",
+        "entityRef": "healing-potion"
       },
       {
         "range": [
           52,
           54
         ],
-        "text": "Surgical kit"
+        "text": "Surgical kit",
+        "entityRef": "surgical-kit"
       },
       {
         "range": [
           55,
           55
         ],
-        "text": "Speed potion"
+        "text": "Speed potion",
+        "entityRef": "speed-potion"
       },
       {
         "range": [
           56,
           57
         ],
-        "text": "Quiver of steel arrows"
+        "text": "Quiver of steel arrows",
+        "entityRef": "quiver-of-arrows"
       },
       {
         "range": [
           58,
           58
         ],
-        "text": "Case of steel crossbow bolts"
+        "text": "Case of steel crossbow bolts",
+        "entityRef": "case-of-crossbow-bolts"
       },
       {
         "range": [
           59,
           59
         ],
-        "text": "Fine torch"
+        "text": "Fine torch",
+        "entityRef": "torch"
       },
       {
         "range": [
@@ -2819,42 +2844,48 @@
           62,
           62
         ],
-        "text": "Medium armor with 0 AD remaining"
+        "text": "Medium armor with 0 AD remaining",
+        "entityRef": "medium-armor"
       },
       {
         "range": [
           63,
           63
         ],
-        "text": "Masterwork torch"
+        "text": "Masterwork torch",
+        "entityRef": "torch"
       },
       {
         "range": [
           64,
           65
         ],
-        "text": "Strong Acid Vial"
+        "text": "Strong Acid Vial",
+        "entityRef": "strong-acid-vial"
       },
       {
         "range": [
           66,
           67
         ],
-        "text": "Strong Poison Vial"
+        "text": "Strong Poison Vial",
+        "entityRef": "strong-poison"
       },
       {
         "range": [
           68,
           68
         ],
-        "text": "Fire bomb"
+        "text": "Fire bomb",
+        "entityRef": "fire-bomb"
       },
       {
         "range": [
           69,
           69
         ],
-        "text": "Rage potion"
+        "text": "Rage potion",
+        "entityRef": "rage-potion"
       },
       {
         "range": [
@@ -2903,21 +2934,24 @@
           76,
           76
         ],
-        "text": "Bear trap"
+        "text": "Bear trap",
+        "entityRef": "bear-trap"
       },
       {
         "range": [
           77,
           77
         ],
-        "text": "Gem worth 1d6 × 100 gc"
+        "text": "Gem worth 1d6 \u00d7 100 gc",
+        "entityRef": "gem"
       },
       {
         "range": [
           78,
           78
         ],
-        "text": "Steel shield with 0 AD remaining"
+        "text": "Steel shield with 0 AD remaining",
+        "entityRef": "shield"
       },
       {
         "range": [
@@ -2931,84 +2965,96 @@
           80,
           80
         ],
-        "text": "Heavy armor with 0 AD remaining"
+        "text": "Heavy armor with 0 AD remaining",
+        "entityRef": "heavy-armor"
       },
       {
         "range": [
           81,
           81
         ],
-        "text": "Boom wand"
+        "text": "Boom wand",
+        "entityRef": "boom-wand"
       },
       {
         "range": [
           82,
           82
         ],
-        "text": "Fine block and tackle"
+        "text": "Fine block and tackle",
+        "entityRef": "block-and-tackle"
       },
       {
         "range": [
           83,
           83
         ],
-        "text": "Fine ladder"
+        "text": "Fine ladder",
+        "entityRef": "ladder"
       },
       {
         "range": [
           84,
           84
         ],
-        "text": "Fine spyglass"
+        "text": "Fine spyglass",
+        "entityRef": "spyglass"
       },
       {
         "range": [
           85,
           85
         ],
-        "text": "Fine coin purse"
+        "text": "Fine coin purse",
+        "entityRef": "coin-purse"
       },
       {
         "range": [
           86,
           86
         ],
-        "text": "Fine rope"
+        "text": "Fine rope",
+        "entityRef": "rope"
       },
       {
         "range": [
           87,
           87
         ],
-        "text": "Fine alchemist's tools"
+        "text": "Fine alchemist's tools",
+        "entityRef": "alchemists-tools"
       },
       {
         "range": [
           88,
           88
         ],
-        "text": "Fine blacksmith's tools"
+        "text": "Fine blacksmith's tools",
+        "entityRef": "blacksmiths-tools"
       },
       {
         "range": [
           89,
           89
         ],
-        "text": "Fine enchanter's tools"
+        "text": "Fine enchanter's tools",
+        "entityRef": "enchanters-tools"
       },
       {
         "range": [
           90,
           90
         ],
-        "text": "Plague mask"
+        "text": "Plague mask",
+        "entityRef": "plague-mask"
       },
       {
         "range": [
           91,
           91
         ],
-        "text": "Light bloodhide armor with 0 AD remaining"
+        "text": "Light bloodhide armor with 0 AD remaining",
+        "entityRef": "light-armor"
       },
       {
         "range": [
@@ -3123,91 +3169,104 @@
           11,
           12
         ],
-        "text": "Steel medium armor with 0 AD remaining"
+        "text": "Steel medium armor with 0 AD remaining",
+        "entityRef": "medium-armor"
       },
       {
         "range": [
           13,
           14
         ],
-        "text": "Fine lockpick set"
+        "text": "Fine lockpick set",
+        "entityRef": "lockpick-set"
       },
       {
         "range": [
           15,
           16
         ],
-        "text": "Fine padlock"
+        "text": "Fine padlock",
+        "entityRef": "padlock"
       },
       {
         "range": [
           17,
           18
         ],
-        "text": "Fine compass"
+        "text": "Fine compass",
+        "entityRef": "compass"
       },
       {
         "range": [
           19,
           20
         ],
-        "text": "Fine lantern"
+        "text": "Fine lantern",
+        "entityRef": "lantern"
       },
       {
         "range": [
           21,
           22
         ],
-        "text": "Fine lore book with an expertise chosen by the Ref"
+        "text": "Fine lore book with an expertise chosen by the Ref",
+        "entityRef": "lore-book"
       },
       {
         "range": [
           23,
           24
         ],
-        "text": "Masterwork block and tackle"
+        "text": "Masterwork block and tackle",
+        "entityRef": "block-and-tackle"
       },
       {
         "range": [
           25,
           26
         ],
-        "text": "Masterwork alchemist's tools"
+        "text": "Masterwork alchemist's tools",
+        "entityRef": "alchemists-tools"
       },
       {
         "range": [
           27,
           28
         ],
-        "text": "Masterwork blacksmith's tools"
+        "text": "Masterwork blacksmith's tools",
+        "entityRef": "blacksmiths-tools"
       },
       {
         "range": [
           29,
           30
         ],
-        "text": "Masterwork enchanter's tools"
+        "text": "Masterwork enchanter's tools",
+        "entityRef": "enchanters-tools"
       },
       {
         "range": [
           31,
           32
         ],
-        "text": "Masterwork coin purse"
+        "text": "Masterwork coin purse",
+        "entityRef": "coin-purse"
       },
       {
         "range": [
           33,
           34
         ],
-        "text": "Masterwork rope"
+        "text": "Masterwork rope",
+        "entityRef": "rope"
       },
       {
         "range": [
           35,
           36
         ],
-        "text": "Masterwork spyglass"
+        "text": "Masterwork spyglass",
+        "entityRef": "spyglass"
       },
       {
         "range": [
@@ -3326,21 +3385,24 @@
           69,
           70
         ],
-        "text": "Heavy steel armor with 0 AD remaining"
+        "text": "Heavy steel armor with 0 AD remaining",
+        "entityRef": "heavy-armor"
       },
       {
         "range": [
           71,
           72
         ],
-        "text": "Masterwork lockpick set"
+        "text": "Masterwork lockpick set",
+        "entityRef": "lockpick-set"
       },
       {
         "range": [
           73,
           74
         ],
-        "text": "Masterwork padlock"
+        "text": "Masterwork padlock",
+        "entityRef": "padlock"
       },
       {
         "range": [
@@ -3361,21 +3423,24 @@
           79,
           80
         ],
-        "text": "Masterwork compass"
+        "text": "Masterwork compass",
+        "entityRef": "compass"
       },
       {
         "range": [
           81,
           82
         ],
-        "text": "Masterwork lantern"
+        "text": "Masterwork lantern",
+        "entityRef": "lantern"
       },
       {
         "range": [
           83,
           84
         ],
-        "text": "Masterwork lore book with an expertise chosen by the Ref"
+        "text": "Masterwork lore book with an expertise chosen by the Ref",
+        "entityRef": "lore-book"
       },
       {
         "range": [

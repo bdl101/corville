@@ -7,6 +7,20 @@
   height: 100dvh;
   max-width: 768px;
   margin: 0 auto;
+  position: relative;
+}
+
+#app::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/corville_bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: -1;
 }
 
 #view-container {
