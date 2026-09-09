@@ -42,7 +42,20 @@ function field(label: string, value: string): HTMLElement {
   return p
 }
 
-function renderAttacks(attacks: Attack[]): HTMLElement {
+function buildFeatureAsterisks(attacks: Attack[], features: Feature[]): Map<string, string> {
+  const featureNames = new Set(features.map(f => f.name))
+  const order: string[] = []
+  for (const atk of attacks) {
+    if (atk.note && featureNames.has(atk.note) && !order.includes(atk.note)) {
+      order.push(atk.note)
+    }
+  }
+  const map = new Map<string, string>()
+  order.forEach((name, i) => map.set(name, '*'.repeat(i + 1)))
+  return map
+}
+
+function renderAttacks(attacks: Attack[], featureAsterisks: Map<string, string>): HTMLElement {
   const { wrapper, body } = section('Attacks')
   const table = el('table', 'attacks-table')
   const thead = el('thead')
@@ -56,7 +69,9 @@ function renderAttacks(attacks: Attack[]): HTMLElement {
   const tbody = el('tbody')
   for (const atk of attacks) {
     const row = el('tr')
-    const nameCell = el('td', undefined, atk.name)
+    const bonusStr = atk.bonus >= 0 ? `(+${atk.bonus})` : `(${atk.bonus})`
+    const asterisk = atk.note ? (featureAsterisks.get(atk.note) ?? '') : ''
+    const nameCell = el('td', undefined, `${atk.name} ${bonusStr}${asterisk}`)
     if (atk.note) {
       nameCell.title = atk.note
     }
@@ -71,12 +86,13 @@ function renderAttacks(attacks: Attack[]): HTMLElement {
   return wrapper
 }
 
-function renderFeatures(features: Feature[]): HTMLElement {
+function renderFeatures(features: Feature[], featureAsterisks: Map<string, string>): HTMLElement {
   const { wrapper, body } = section('Features')
   body.className = 'features-list'
   for (const feat of features) {
     const item = el('div', 'feature')
-    const nameText = feat.uses ? `${feat.name} — ${feat.uses}` : feat.name
+    const asterisk = featureAsterisks.get(feat.name) ?? ''
+    const nameText = feat.uses ? `${asterisk}${feat.name} — ${feat.uses}` : `${asterisk}${feat.name}`
     item.appendChild(el('p', 'feature__name', nameText))
     item.appendChild(el('p', 'feature__description', feat.description))
     body.appendChild(item)
@@ -169,7 +185,8 @@ function renderCreature(creature: Creature): DocumentFragment {
   header.appendChild(statsRow2)
   frag.appendChild(header)
 
-  frag.appendChild(renderAttacks(creature.attacks))
+  const featureAsterisks = buildFeatureAsterisks(creature.attacks, creature.features)
+  frag.appendChild(renderAttacks(creature.attacks, featureAsterisks))
 
   // Human-only fields (rendered after attacks, before features)
   if (creature.type === 'Human') {
@@ -182,7 +199,7 @@ function renderCreature(creature: Creature): DocumentFragment {
   }
 
   if (creature.features.length > 0) {
-    frag.appendChild(renderFeatures(creature.features))
+    frag.appendChild(renderFeatures(creature.features, featureAsterisks))
   }
 
   return frag
