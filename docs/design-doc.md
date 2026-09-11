@@ -56,24 +56,46 @@ Each table entry in the rolled tables config follows this shape:
   "id": "table-id",
   "name": "Display Name",
   "die": 6,
+  "repeatDie": 4,
+  "notes": "Optional referee notes shown alongside the table",
   "requiresInput": {
     "prompt": "Question to ask the user?",
     "options": ["option-a", "option-b"]
   },
+  "inputChains": {
+    "option-a": ["some-table-id"],
+    "option-b": ["another-table-id"]
+  },
   "results": [
-    { "range": [1, 3], "text": "Result text" },
+    { "range": [1, 3], "text": "Result text", "description": "Optional extra context" },
     {
-      "range": [4, 6],
-      "text": "Result with chain",
+      "range": [4, 4],
+      "text": "Single chain",
       "chain": "another-table-id"
+    },
+    {
+      "range": [5, 5],
+      "text": "Multiple chains",
+      "chains": ["table-a", "table-b"]
+    },
+    {
+      "range": [6, 6],
+      "text": "Result referencing entities",
+      "entityRef": "creature-id",
+      "entityRefs": [{ "id": "creature-id", "count": "2d6" }]
     }
   ]
 }
 ```
 
 - `requiresInput` is optional; omit it for tables that need no user input before rolling
-- `chain` on a result is optional; when present the tool automatically rolls the referenced table and appends its result to the log
-- Chains can be multiple levels deep
+- `inputChains` maps each input option to a list of table IDs that are automatically chained when that option is selected
+- `repeatDie` causes the chained table to be rolled that many times (e.g. `repeatDie: 4` rolls 1d4 times)
+- `chain` (singular) and `chains` (array) on a result are optional; when present the tool automatically rolls those tables and appends results to the log
+- `entityRef` / `entityRefs` link a result to one or more creatures or items in the data; the UI renders clickable links to their statblocks. `count` can be a fixed number or a dice expression string (e.g. `"2d6"`)
+- `description` on a result is optional extra referee-facing context displayed alongside the result text
+- `notes` on a table is optional metadata displayed with the table
+- Chains can be multiple levels deep (max depth: 8)
 
 ### Layout/UI
 
@@ -86,7 +108,6 @@ Each table entry in the rolled tables config follows this shape:
 
 - Persistent tab bar with three tabs: **Tables**, **Lookup**, **Encounter**
 - Tab bar is always visible regardless of active view
-- Encounter tab is present in the nav but non-functional until Encounter Builder is implemented (post-MVP)
 
 ## MVP Scope
 
@@ -94,13 +115,14 @@ The following are in scope for MVP:
 
 - Rolled Tables — full feature including chaining and session log
 - Statblock Lookup — Creatures and Items lists with filter-as-you-type and detail view
-- Tab bar navigation with Tables, Lookup, and Encounter tabs (Encounter is non-functional)
+- Tab bar navigation with Tables, Lookup, and Encounter tabs
+- Encounter Builder — full feature
 - Vite + TypeScript project hosted on GitHub Pages
 
 The following are explicitly post-MVP:
 
-- Encounter Builder
-- Browser localStorage persistence
+- Browser localStorage persistence (module-level state currently preserves data within a session but not across page refreshes)
+- Conditions on encounter creatures
 
 ## Core Features
 
@@ -123,22 +145,19 @@ _Note_: For the purposes of this doc, the term `creatures` refers to any no-PC e
 - Lookup is divided into two sub-lists: **Creatures** (monsters + NPCs) and **Items**
 - Each list supports filter-as-you-type search
 - Selecting an entry opens a full detail view (replaces the list; back button returns to list)
-- Creature fields: name, size, power, type, stamina, speed, agility, mind, strength, attacks, features; humans also have AD, expertises, and equipment; monsters also have colloquial names and reactions
-- Item fields: name, category (weapon/armor/ammo/consumable/magic/book/tool/gear/treasure), stack, slots, cost; weapons also have range, attackStat, damage tiers (12-16 / 17+), keywords; armor has AD; consumables and magic items have ud, maneuver/action text, and an optional RR table (≤11 / 12-16 / 17+); books have rank, school, actionType, range, target, duration, and an RR table; tools/gear have optional fine and masterwork upgrade descriptions
+- Creature fields: name, size, power, type, stamina, speed, agility, mind, strength, attacks, features; animals and humans also have slots (inventory slots the creature occupies); humans also have AD, expertises, and equipment; monsters also have colloquial names, reactions (count), and an optional description
+- Item fields: name, category (weapon/armor/ammo/consumable/magic/book/tool/gear/treasure), stack, slots, cost, optional description, optional crafting recipe (skill, materials, time); weapons also have range, attackStat, damage tiers (12-16 / 17+), keywords; armor has AD; ammo has ammoFor (weapon name) and optional ud; consumables and magic items have ud, maneuver/action text, and an optional RR table (≤11 / 12-16 / 17+); magic items also have an optional slot (body location); books have rank, school, actionType, range, target, duration, and an RR table; tools/gear have optional fine and masterwork upgrade descriptions; gear also supports maneuver/action text and an optional RR table
 
-### Encounter Builder (post MVP)
+### Encounter Builder
 
-- rolled tables that lead to encounters should prompt user, asking if they want to create an encounter using the values from the rolled table
-- encounters only need to track creatures
-- if multiple identical creatures are added, they should have incrementing numbers next to their name
-- user should be able to add or remove creatures from an encounter
-- user should be able to exit and re-enter encounter UI without losing state of current encounter
-- user should be able to wipe an encounter clean and start a fresh one
-- user should be able to track creature stamina
-- user should be able to add/remove creature stamina
-- creature UI should show disabled state if stamina reaches 0 or below
-- creature UI should be minimal (show bare minimum info), but user should be able to select creature to see full stats
-- post-post-MVP: user should be able to apply a condition to creatures and have it be obvious in the UI
-- user should be able to mark a creature as having taken its turn during the round
-- user should be able to mark a creature as having used its reaction the round
-- user should be able to trigger a new round, resetting creature turns and reactions
+- encounters track creatures; each creature card shows display name, current/max stamina, turn and reaction toggles
+- if multiple identical creatures are added, their names get incrementing suffixes (e.g. "Rat 1", "Rat 2"), and the first is retroactively renamed when a second is added
+- user can add creatures via a search panel; user can remove individual creatures from an encounter
+- encounter state persists when switching tabs (module-level state — resets on page refresh)
+- user can wipe the encounter clean and start fresh (with a confirmation prompt)
+- user can adjust creature stamina with ± buttons (clamped to 0–max)
+- creature card shows a disabled/greyed state when stamina reaches 0
+- user can click a creature name to open its full statblock in a popup overlay
+- user can mark a creature as having taken its turn (Turn toggle) or used its reaction (Reaction toggle)
+- user can trigger a new round, which increments the round counter and resets all turn and reaction toggles
+- post-MVP: applying conditions to creatures
