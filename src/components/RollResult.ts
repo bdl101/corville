@@ -9,7 +9,6 @@ interface RollResultOptions {
 
 function collectResolvedRefs(entry: RollEntry): ResolvedEntityRef[] {
   const refs: ResolvedEntityRef[] = []
-  if (entry.result.entityRef) refs.push({ id: entry.result.entityRef, count: 1 })
   for (const ref of entry.resolvedEntityRefs ?? []) refs.push(ref)
   for (const chain of entry.chains ?? []) refs.push(...collectResolvedRefs(chain))
   return refs
@@ -69,26 +68,14 @@ export function RollResult(entry: RollEntry, depth = 0, options: RollResultOptio
     }
   }
 
-  if (entry.result.entityRef) {
-    const creature = getCreatureById(entry.result.entityRef)
-    if (creature) {
-      const btn = document.createElement('button')
-      btn.className = 'btn btn--sm roll-result__add-creature'
-      btn.textContent = `+ Add ${creature.name} to Encounter`
-      btn.addEventListener('click', () => {
-        addCreature(creature)
-        switchToEncounter()
-      })
-      el.appendChild(btn)
-    }
-  }
-
   for (const ref of entry.resolvedEntityRefs ?? []) {
     const creature = getCreatureById(ref.id)
     if (creature) {
       const btn = document.createElement('button')
       btn.className = 'btn btn--sm roll-result__add-creature'
-      btn.textContent = `+ Add ${ref.count} ${creature.name} to Encounter`
+      btn.textContent = ref.count === 1
+        ? `+ Add ${creature.name} to Encounter`
+        : `+ Add ${ref.count} ${creature.name} to Encounter`
       btn.addEventListener('click', () => {
         for (let i = 0; i < ref.count; i++) addCreature(creature)
         switchToEncounter()

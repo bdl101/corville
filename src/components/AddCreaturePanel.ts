@@ -34,12 +34,24 @@ export function AddCreaturePanel({ allCreatures, onClose }: AddCreaturePanelProp
   header.appendChild(closeBtn)
   dialog.appendChild(header)
 
-  // Search input
+  // Search + quantity row
   const searchWrapper = el('div', 'add-creature-panel__search')
   const searchInput = el('input', 'input')
   searchInput.type = 'text'
   searchInput.placeholder = 'Filter creatures…'
+
+  const qtyWrapper = el('div', 'add-creature-panel__qty')
+  const qtyLabel = el('label', 'add-creature-panel__qty-label', 'Qty')
+  const qtyInput = el('input', 'input add-creature-panel__qty-input')
+  qtyInput.type = 'number'
+  qtyInput.min = '1'
+  qtyInput.max = '99'
+  qtyInput.value = '1'
+  qtyWrapper.appendChild(qtyLabel)
+  qtyWrapper.appendChild(qtyInput)
+
   searchWrapper.appendChild(searchInput)
+  searchWrapper.appendChild(qtyWrapper)
   dialog.appendChild(searchWrapper)
 
   // List
@@ -65,7 +77,8 @@ export function AddCreaturePanel({ allCreatures, onClose }: AddCreaturePanelProp
       row.appendChild(nameSpan)
       row.appendChild(metaSpan)
       row.addEventListener('click', () => {
-        addCreature(creature)
+        const qty = Math.max(1, parseInt(qtyInput.value, 10) || 1)
+        for (let i = 0; i < qty; i++) addCreature(creature)
         overlay.remove()
         onClose()
       })

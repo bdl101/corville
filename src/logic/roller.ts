@@ -26,14 +26,17 @@ function rollDiceExpr(expr: string): number {
   return total
 }
 
-function resolveInlineRolls(text: string): string {
-  return text.replace(/\b(\d+)d(\d+)\b/gi, (match, count, sides) => {
+function resolveInlineRolls(text: string): { resolved: string; firstRolledCount: number | null } {
+  let firstRolledCount: number | null = null
+  const resolved = text.replace(/\b(\d+)d(\d+)\b/gi, (match, count, sides) => {
     let total = 0
     const c = parseInt(count, 10)
     const s = parseInt(sides, 10)
     for (let i = 0; i < c; i++) total += Math.ceil(Math.random() * s)
+    if (firstRolledCount === null) firstRolledCount = total
     return `${total} (${match})`
   })
+  return { resolved, firstRolledCount }
 }
 
 const MAX_CHAIN_DEPTH = 8
@@ -48,18 +51,23 @@ export async function rollTable(
   const result = table.results.find(r => rolledValue >= r.range[0] && rolledValue <= r.range[1])!
   const inputChainIds: string[] = (input !== undefined ? table.inputChains?.[input] : undefined) ?? []
   const chains = await resolveChains(result, onNeedsInput, depth, inputChainIds)
-  const resolvedEntityRefs = result.entityRefs?.map(ref => ({
+  const { resolved: resolvedText, firstRolledCount } = resolveInlineRolls(result.text)
+  const entityRefEntries: ResolvedEntityRef[] = result.entityRef
+    ? [{ id: result.entityRef, count: firstRolledCount ?? 1 }]
+    : []
+  const entityRefsEntries: ResolvedEntityRef[] = result.entityRefs?.map(ref => ({
     id: ref.id,
     count: typeof ref.count === 'number' ? ref.count : rollDiceExpr(String(ref.count)),
-  }))
+  })) ?? []
+  const allResolvedRefs = [...entityRefEntries, ...entityRefsEntries]
   return {
     table,
     rolledValue,
     result,
-    resolvedText: resolveInlineRolls(result.text).replace('{roll}', String(rolledValue)),
+    resolvedText: resolvedText.replace('{roll}', String(rolledValue)),
     input,
     chains: chains.length ? chains : undefined,
-    resolvedEntityRefs: resolvedEntityRefs?.length ? resolvedEntityRefs : undefined,
+    resolvedEntityRefs: allResolvedRefs.length ? allResolvedRefs : undefined,
   }
 }
 

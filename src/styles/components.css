@@ -739,8 +739,35 @@
 }
 
 .add-creature-panel__search {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
   padding: var(--space-3) var(--space-4);
   flex-shrink: 0;
+}
+
+.add-creature-panel__search .input:first-child {
+  flex: 1;
+}
+
+.add-creature-panel__qty {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+.add-creature-panel__qty-label {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.add-creature-panel__qty-input {
+  width: 4.5rem;
+  text-align: center;
+  padding-block: var(--space-2);
+  font-size: var(--text-base);
 }
 
 .add-creature-panel__list {
